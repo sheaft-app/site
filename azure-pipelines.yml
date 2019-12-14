@@ -16,10 +16,10 @@ steps:
   inputs: 
       SourceFolder: '$(Build.SourcesDirectory)'
       contents: '**\*' 
-      targetFolder: $(Build.ArtifactStagingDirectory)
+      targetFolder: $(Build.ArtifactStagingDirectory)/build
       cleanTargetFolder: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/build'
     artifactName: site
