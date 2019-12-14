@@ -16,11 +16,11 @@ steps:
   inputs: 
       SourceFolder: '$(Build.SourcesDirectory)'
       contents: '**\*'
-      targetFolder: $(Build.BinariesDirectory)/build
+      targetFolder: $(Build.BinariesDirectory)
       cleanTargetFolder: true
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)/build'
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
