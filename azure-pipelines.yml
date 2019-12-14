@@ -16,10 +16,12 @@ steps:
   inputs: 
       SourceFolder: '$(Build.SourcesDirectory)'
       contents: '**\*'
-      targetFolder: $(Build.ArtifactStagingDirectory)\build
+      targetFolder: $(Build.BinariesDirectory)/build
       cleanTargetFolder: true
-
-- task: PublishBuildArtifacts@1
+- task: ArchiveFiles@2
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)\build'
-    artifactName: site
+    rootFolderOrFile: '$(Build.BinariesDirectory)/build'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
