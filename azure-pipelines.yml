@@ -15,11 +15,11 @@ steps:
   displayName: 'Copy content'
   inputs: 
       SourceFolder: '$(Build.SourcesDirectory)'
-      contents: '**\*' 
-      targetFolder: $(Build.ArtifactStagingDirectory)/build
+      contents: '**\*'
+      targetFolder: $(Build.ArtifactStagingDirectory)\build
       cleanTargetFolder: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/build'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)\build'
     artifactName: site
