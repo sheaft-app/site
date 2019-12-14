@@ -186,7 +186,7 @@ ul li, ol li {
 .inner-title {
   font-size: 24px;
   font-weight: 700;
-  text-tranform: capitalize;
+  text-transform: capitalize;
 }
 
 .page-tagline {
@@ -636,7 +636,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
-  color: #ff7c7c !important;
+  color: #212121 !important;
+
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
@@ -699,7 +700,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .navbar-expand-lg .navbar-nav,
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #ff7c7c !important;
+  color: #212121 !important;
 }
 
 .navbar {
@@ -1806,16 +1807,19 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
 }
 
-.footer-area .footer-social li .facebook:hover {
+.footer-area .footer-social li .facebook {
   background: #3B5998;
+  color:#fff;
 }
 
-.footer-area .footer-social li .twitter:hover {
+.footer-area .footer-social li .twitter {
   background: #00aced;
+  color: #fff;
 }
 
-.footer-area .footer-social li .linkedin:hover {
+.footer-area .footer-social li .linkedin {
   background: #0073b1;
+  color:#fff;
 }
 
 .footer-area .footer-social li .foursqare:hover {
@@ -1917,7 +1921,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   top: 0;
   right: 0px;
   border-radius: 0;
-  padding: 10px 20px;
+  padding: 6px 20px;
 }
 
 .widget {
