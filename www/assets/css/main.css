@@ -86,7 +86,7 @@ ul li, ol li {
   letter-spacing: 0.1rem;
 }
 
-.section-titile-bg {
+.section-title-bg {
   display: inline;
   font-size: 115px;
   font-weight: 700;
@@ -115,7 +115,7 @@ ul li, ol li {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .section-title:before {
@@ -636,7 +636,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
-  color: #33D7A3 !important;
+  color: #ff7c7c !important;
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
@@ -692,14 +692,14 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .navbar-expand-lg .navbar-nav li a:hover,
 .navbar-expand-lg .navbar-nav li .active > a,
-.navbar-expand-lg .navbar-nav li a:focus {
+.navbar-expand-lg .navbar-nav li {
   color: #33D7A3;
   outline: none;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:focus,
+.navbar-expand-lg .navbar-nav,
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #33D7A3 !important;
+  color: #ff7c7c !important;
 }
 
 .navbar {
@@ -707,7 +707,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar li.active a.nav-link {
-  color: #33D7A3 !important;
+  color: #fff !important;
 }
 
 .dropdown-toggle::after {
@@ -1438,6 +1438,13 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #cfcfcf;
 }
 
+.team-item .info-text i {
+  background-color: #027bff;
+  color: white;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
 .team-item:hover .team-overlay {
   opacity: 1;
 }
@@ -2113,6 +2120,41 @@ a.back-to-top:hover, a.back-to-top:focus {
 #pricing .price-block-wrapper .btn i {
   font-size: 12px;
   margin-right: 5px;
+}
+
+#landing {
+  color: white;
+  background-color: #33D7A3;
+  min-height: 100vh;
+}
+
+#landing .landing-inner {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  height: 200px;
+}
+
+#landing h1 {
+  font-size: 120px;
+  font-weight: 300 !important;
+}
+
+#landing p {
+  font-size: 3vh;
+  font-weight: 300 !important;
+}
+
+#landing a {
+  background-color: #ffffff;
+  font-size: 2vh;
+  color: #33D7A3;
+  border: none;
+}
+
+#landing a:hover{
+  background-color: #ff7c7c;
+  color: #fff;
 }
 
 #main-slide .carousel-control {
