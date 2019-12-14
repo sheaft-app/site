@@ -15,18 +15,10 @@ steps:
   displayName: 'Copy content'
   inputs: 
       SourceFolder: '$(Build.SourcesDirectory)'
-      contents: '**\*'
-      targetFolder: $(Build.BinariesDirectory)
+      contents: '**'
+      targetFolder: $(Build.ArtifactStagingDirectory)
       cleanTargetFolder: true
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
-
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: site
