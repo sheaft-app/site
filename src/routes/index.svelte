@@ -206,7 +206,7 @@
           </a>
         </div>
         <div class="flex-1">
-          <p class="bg-white uppercase text-gray-500 md:mb-6 copyright">Copyright Sheaft @ 2020</p>
+          <p class="bg-white uppercase text-gray-500 md:mb-6 copyright text-center">Copyright Sheaft @ 2020</p>
         </div>
       </div>
   </div>
@@ -214,17 +214,17 @@
 
 
 <style lang="scss">
+@media (min-width: 768px) {
   .copyright {
-    @apply text-center;
-    
-    @media (min-width: 768px) {
-      margin-right: 96px;
-    }
-
-    @media (min-width: 1024px) {
-      margin-right: 144px;
-    }
+    margin-right: 96px;
   }
+}
+
+@media (min-width: 1024px) {
+  .copyright {
+    margin-right: 144px;
+  }
+}
 
   .profile-picture {
     width: 150px;
