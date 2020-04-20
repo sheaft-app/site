@@ -3,10 +3,14 @@
   import Tailwindcss from "../components/Tailwind.svelte";
 
   export let segment;
+
+  let y;
 </script>
 
+<svelte:window bind:scrollY={y}/>
+
 <Tailwindcss />
-<Nav {segment} />
+<Nav {segment} isActive={y > 100} />
 
 <main>
   <slot />

@@ -1,14 +1,12 @@
 <script>
-  export let segment;
+  export let segment, isActive = false;
 </script>
 
 <!--Nav-->
-<nav id="header" class="fixed w-full z-30 top-0 bg-white">
-
+<nav id="header" class="fixed w-full z-30 top-0" class:bg-primary={isActive} style="transition: all 0.3s ease-in-out;">
 	<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-			
 		<div class="pl-4 flex items-center">
-			<a class="text-gray-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#"> 
+			<a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#"> 
        SHEAFT
 			</a>
 		</div>
@@ -22,21 +20,19 @@
 		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
 			<ul class="list-reset lg:flex justify-end flex-1 items-center">
 				<li class="mr-3">
-          <a class="inline-block py-2 px-4 text-black font-bold no-underline" aria-current={segment === undefined ? 'page' : undefined} href=".">
+          <a class="inline-block py-2 px-4 text-white font-bold no-underline" aria-current={segment === undefined ? 'page' : undefined} href=".">
             Accueil
           </a>
 				</li>
 				<li class="mr-3">
-					<a class="inline-block py-2 px-4 text-black font-bold no-underline" aria-current={segment === 'about' ? 'page' : undefined} href="about">
+					<a class="inline-block py-2 px-4 text-white font-bold no-underline" aria-current={segment === 'about' ? 'page' : undefined} href="about">
             A propos
           </a>
 				</li>
 			</ul>
-			<a id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75" target="_blank" href="https://app.sheaft.com">Ouvrir Sheaft</a>
+			<a id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow" target="_blank" href="https://app.sheaft.com">Ouvrir Sheaft</a>
 		</div>
 	</div>
-	
-	<hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
 </nav>
 <!-- 
 <style lang="scss">

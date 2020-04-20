@@ -3,18 +3,21 @@
 </svelte:head>
 
 <div class="pt-24">
-	<div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center text-white">
+	<div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center text-white p-16 md:p-0">
 		<!--Left Col-->
-		<div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+		<div class="flex flex-col w-full md:w-2/5 justify-center items-start text-left">
 			<!-- <p class="uppercase tracking-loose w-full">un petit texte</p> -->
-			<h1 class="my-4 text-5xl font-bold leading-tight">Consommer local,<br/>faire la différence.</h1>
-			<p class="leading-normal text-2xl mb-8">Vers une consommation plus saine et plus responsable.</p>
+			<h1 class="my-4 text-3xl md:text-5xl font-bold leading-tight">Bien consommer,<br/>plus facilement.</h1>
+			<p class="leading-normal text-xl md:text-2xl mb-8">Découvrez et commandez les bons produits des producteurs autour de vous.</p>
 
-			<button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Lancer l'application</button>
+      <div class="flex flex-wrap flex-col-reverse md:flex-row self-center md:self-auto">
+        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Lancer l'application</button>
+        <a href="#introduction" class="mx-auto hover:underline text-white font-bold self-center lg:ml-2">En savoir plus</a>
+      </div>
 			
 		</div>
 		<!--Right Col-->
-		<div class="w-full md:w-3/5 py-6 text-center">
+		<div class="hidden md:block w-full md:w-3/5 py-6 text-center">
 			<img class="w-full md:w-4/5 z-50" src="img/shopping.svg" alt="Shopper des produits locaux">
 		</div>
 		
@@ -36,63 +39,111 @@
 	</svg>
 </div>    
 
- <div id="process" class="relative bg-white">
-    <div class="container mx-auto px-6 pt-6 pb-12 relative">
-      <h3 class="flex flex-col items-center text-4xl text-secondary font-bold mb-12">Une consommation en 3 étapes <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
-      <div class="flex flex-col md:flex-row xl:px-32">
-        <div class="flex flex-col items-center md:px-6 lg:px-12">
-          <span class="text-6xl text-primary">1</span>
-          <h4 class="font-semibold text-2xl text-gray-800 mb-2">Rechercher</h4>
-          <p class="text-center text-gray-600 text-xl leading-relaxed">Sheaft affiche tous les produits de tous les producteurs <b>autour de vous</b>. Vous n'avez qu'à faire vos emplettes !</p>
-        </div>
-        <div class="flex flex-col items-center md:px-6 lg:px-12">
-          <span class="text-6xl text-primary">2</span>
-          <h4 class="font-semibold text-2xl text-gray-800 mb-2">Récupérer</h4>
-          <p class="text-center text-gray-600 text-xl leading-relaxed">Le producteur vous préviendra quand votre commande sera prête. Il n'y a plus qu'à aller la chercher !</p>
-        </div>
-        <div class="flex flex-col items-center md:px-6 lg:px-12">
-          <span class="text-6xl text-primary">3</span>
-          <h4 class="font-semibold text-2xl text-gray-800 mb-2">Accumuler</h4>
-        <p class="text-center text-gray-600 text-xl leading-relaxed">A mesure que vous utilisez l'application, vous gagnez des points et faites aussi gagner des points à votre région.</p>
-        </div>
+<div id="introduction" class="relative bg-white">
+  <div class="container mx-auto px-6 py-6 md:py-24 relative">
+    <div class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 md:mt-16 lg:mt-0">
+      <img src="/img/easy.svg" class="md:w-1/3">
+      <div class="md:ml-16 xl:ml-32">
+        <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">Bien consommer, du parcours d'obstacle à la promenade de santé <span class="bg-primary h-1 w-20 block mt-4"></span></h4>
+        <p class="text-gray-600 text-xl mb-4">Vous savez qu'il est important de consommer local. Vous voulez aider les agriculteurs de votre région, améliorer leur rémunération et leurs conditions de travail et participer à la lutte contre le réchauffement climatique.</p>
+        <!-- <p class="text-gray-600 text-xl mb-4">Il y a plein de producteurs autour de votre maison, que vous soyez en Île-de-France ou en Ardèche. Pourtant, c'est un effort de les trouver et d'acheter leurs produits.</p> -->
+        <p class="text-gray-600 text-xl mb-4">Pourtant, il est plus compliqué et plus long d'acheter un yaourt produit à 20km de chez vous qu'un avocat produit au Mexique.</p>
+        <!-- <p class="text-gray-600 text-xl mb-4">700km pour amener des légumes que nous pouvons presque aller chercher à vélo sur le lieu de production ? Non merci.</p> -->
+        <p class="text-gray-600 text-xl mb-4">Il est temps de changer les choses. Il est temps d'utiliser Sheaft.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <div id="missions" class="relative bg-white">
-    <div class="container mx-auto px-6 py-32 relative">
-      <h3 class="flex flex-col items-center text-4xl text-gray-800 font-bold">Nos missions <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
-      <div class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 md:mt-16 lg:mt-0">
-        <img src="/img/pushing_forward.svg" class="md:w-1/3">
-        <div class="md:ml-16 xl:ml-32">
-          <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Mettre en avant les produits locaux</h4>
-          <p class="text-gray-600 text-xl mb-4">Pour faciliter la transition vers une consommation plus responsable, Sheaft permet de trouver des produits en fonction de leur proximité.</p>
-          <!-- <p class="text-secondary-700 text-lg">Aliquam eget semper mi. Mauris magna risus, viverra in nulla id, placerat fermentum tellus. Aliquam non felis eu dui fermentum auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.</p> -->
-        </div>
+<div id="process" class="relative bg-gray-100">
+  <div class="container mx-auto px-6 py-12 pb-12 relative">
+    <h3 class="flex flex-col items-center text-4xl text-secondary font-bold mb-12">Une consommation en 3 étapes <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col items-center md:px-6 lg:px-12">
+        <span class="text-6xl text-primary">1</span>
+        <h4 class="font-semibold text-2xl text-gray-800 mb-2">Rechercher</h4>
+        <p class="text-center text-gray-600 text-xl leading-relaxed">Sheaft affiche tous les produits de tous les producteurs <b>autour de vous</b>. Vous n'avez qu'à faire vos emplettes !</p>
       </div>
+      <div class="flex flex-col items-center md:px-6 lg:px-12">
+        <span class="text-6xl text-primary">2</span>
+        <h4 class="font-semibold text-2xl text-gray-800 mb-2">Récupérer</h4>
+        <p class="text-center text-gray-600 text-xl leading-relaxed">Une fois votre commande prête, vous êtes notifié par le producteur. C'est l'heure d'aller la chercher !</p>
+      </div>
+      <div class="flex flex-col items-center md:px-6 lg:px-12">
+        <span class="text-6xl text-primary">3</span>
+        <h4 class="font-semibold text-2xl text-gray-800 mb-2">Accumuler</h4>
+      <p class="text-center text-gray-600 text-xl leading-relaxed">A mesure que vous utilisez l'application, vous gagnez des points et faites aussi gagner des points à votre région.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="missions" class="relative bg-white">
+  <div class="container mx-auto px-6 py-32 relative">
+    <div class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 md:mt-16 lg:mt-0">
+      <img src="/img/pushing_forward.svg" class="md:w-1/3">
+      <div class="md:ml-16 xl:ml-32">
+        <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">Mettre en avant les produits locaux <span class="bg-primary h-1 w-20 block mt-4"></span></h4>
+        <p class="text-gray-600 text-xl mb-4">Pour répondre à cette problématique, nous mettons à disposition un outil performant qui permet de rechercher efficacement des produits autour de soi.</p>
+        <p class="text-gray-600 text-xl mb-4">Chaque produit s'accompagne d'une jauge de proximité colorée allant de vert pour très proche à orange foncé pour très loin.</p>
+        <p class="text-gray-600 text-xl mb-4">La transparence est très importante pour nous et trouver le lieu de production d'un produit ne doit pas demander plus qu'un coup d'oeil sur une étiquette.</p>
+      </div>
+    </div>
+    <div class="flex flex-col-reverse md:flex-row items-center mb-24 md:mb-16 xl:mb-8">
+      <div class="md:mr-16 xl:mr-32">
+        <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">Soutenir nos producteurs <span class="bg-primary h-1 w-20 block mt-4"></span></h4>
+        <p class="text-gray-600 text-xl mb-4">Pour Sheaft, améliorer les conditions de travail et de rémunération des producteurs est une affaire de famille.</p>
+        <p class="text-gray-600 text-xl">Nous nous efforçons chaque jour de trouver de nouvelles idées pour que leurs produits soient plus visibles, et plus facilement accessibles aux commerces et aux consommateurs.</p>
+      </div>
+      <img src="/img/soutenir.svg" class="md:w-1/3">
+    </div>
+    <div class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 md:mt-16 lg:mt-0">
+      <img src="/img/cooking.svg" class="md:w-1/3">
+      <div class="md:ml-16 xl:ml-32">
+        <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">Réduire le gaspillage <span class="bg-primary h-1 w-20 block mt-4"></span></h4>
+        <p class="text-gray-600 text-xl mb-4">Parfois, certains paniers ne seront pas récupérés par les consommateurs. Mais nous n'allons certainement pas gâcher tous ces bons produits.</p>
+        <p class="text-gray-600 text-xl mb-4">Le panier rejoindra la carte Sheaft et chaque consommateur pourra sélectionner ces paniers perdus.</p>
+        <p class="text-gray-600 text-xl mb-4">Les producteurs pourront même afficher des invendus et des produits proche de leur date limite de consommation. Et oui, les légumes en fin de vie font de très bonnes soupes !</p>
+      </div>
+    </div>
       <div class="flex flex-col-reverse md:flex-row items-center mb-24 md:mb-16 xl:mb-8">
-        <div class="md:mr-16 xl:mr-32">
-          <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Soutenir nos producteurs</h4>
-          <p class="text-gray-600 text-xl mb-4">Nous avons à cœur d’améliorer les conditions de travail et de rémunération des producteurs. C’est pour cela que nous faisons le choix de rendre l’utilisation de la plateforme gratuite.</p>
-          <p class="text-gray-600 text-xl">Grâce à Sheaft, leurs produits sont plus visibles, et plus facilement accessibles aux commerces et aux consommateurs.</p>
-        </div>
-        <img src="/img/soutenir.svg" class="md:w-1/3">
+      <div class="md:mr-16 xl:mr-32">
+        <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">Vous mettre en valeur <span class="bg-primary h-1 w-20 block mt-4"></span></h4>
+        <p class="text-gray-600 text-xl mb-4">Qui a dit que consommer local devait être ennuyeux ? Certainement pas nous. Sur Sheaft, chacune de vos actions vous rapporte des points, à vous et à votre région : un achat, un avis sur un produit, un partage sur les réseaux... tout ce qui peut aider à faire connaître et vivre un producteur !</p>
+        <p class="text-gray-600 text-xl">Vous êtes un consommateur éthique et responsable, soyez fier de l'être ! Notre carte affichera en temps réel le score de toutes les régions de France ainsi que les meilleurs producteurs et consommateurs.</p>
       </div>
-      <div class="flex flex-col md:flex-row items-center">
-        <img src="/img/local_economy.svg" class="md:w-1/3">
-        <div class="md:ml-16 xl:ml-32">
-          <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Maintenir l'économie locale</h4>
-          <p class="text-gray-600 text-xl mb-4">Dans une situation économique compliquée, il n'a jamais été aussi important d'aider nos producteurs et petits commerçants à maintenir la tête hors de l'eau.</p>
-          <p class="text-gray-600 text-xl">En utilisant notre plateforme ils augmentent leur visibilité et donc leur chiffre d'affaire potentiel.</p>
+      <img src="/img/valorize.svg" class="md:w-1/3">
+    </div>
+  </div>
+</div>
+
+<h3 class="text-center py-12 px-6 text-4xl text-white font-light pb-40">Briser les obstacles d'une consommation éthique en offrant une transition en douceur vers des modes de consommation plus responsables</h3>
+
+<div class="bg-white">
+  <div id="about-us" class="py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 md:pr-8 lg:pr-16">
+          <img src="/img/team.svg" class="-mt-24 md:mt-0 lg:-mt-24 mb-16 md:mb-0" />
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="flex flex-col text-4xl text-gray-800 font-bold mb-6 mt-4 md:mt-0">Une idée née à la ferme <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
+          <p class="text-xl text-gray-700 mb-4">Sheaft est littéralement né dans une ferme, plus précisément au sein du GAEC La Ferme du Parquet en Haute-Savoie.</p>
+          <p class="text-xl text-gray-700 mb-4">Un jour que leur frère leur fait part de ses problèmes en tant que producteur et éleveur, les développeurs informatiques et futurs co-fondateurs de Sheaft, Noël et Geoffrey, font le constat que les problèmes qu'il décrit peuvent être résolus par une plateforme unique de prise de commande.</p>
+          <p class="text-xl text-gray-700 mb-4">Leur défi ? Briser les barrières de la consommation locale.</p>
+          <div class="my-8">
+            <a class="hover:underline bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg text-xl ml-2" href="/about" target="_blank">En savoir plus</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 <!-- <div class="flex flex-col text-justify bg-white">
   <div class="overflow-x-auto">
     <div class="p-4">
-      <h2 class="text-2xl text-center">Sheaft, c'est quoi ?</h2>
+      <h2 class="text-2xl text-center">Sheaft, c'est quoi ?</h2> 
       <div class="flex">
         <div class="services-content w-1/2 p-4">
           <h3 class="text-gray-700 text-xl text-center">
@@ -132,40 +183,6 @@
   </div>
 </div> -->
 
-<div class="section bg-white">
-  <h3 class="flex flex-col items-center text-4xl text-secondary font-bold">Notre équipe <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
-  <div class="flex justify-center flex-wrap">
-    <div class="w-64 m-4 py-12 bg-white shadow-lg px-3">
-      <img class="w-24 h-24 mx-auto rounded-full" src="img/team/fanny.jpg" />
-      <p class="mt-2 text-center text-lg text-gray-700 font-semibold">Fanny Mugnier</p>
-      <p class="text-center text-gray-600 mb-2">Le spectre</p>
-      <hr />
-      <p class="text-center text-gray-600 mt-2">"Non, je suis sur WoW."</p>
-    </div>
-    <div class="w-64 m-4 py-12 bg-white shadow-lg px-3">
-      <img class="w-24 h-24 mx-auto rounded-full" src="img/team/nono.jpg" />
-      <p class="mx-2 mt-2 text-center text-lg text-gray-700 font-semibold">Noël Mugnier</p>
-      <p class="text-center text-gray-600 mb-2">Le tech</p>
-      <hr />
-      <p class="text-center text-gray-600 mt-2">"Ouais ça c'est facile ! [...] sacrebleu de fichtre de bigre, tu vas marcher ?!"</p>
-    </div>
-    <div class="w-64 m-4 py-12 bg-white shadow-lg px-3">
-      <img class="w-24 h-24 mx-auto rounded-full" src="img/team/geoffrey.jpg" />
-      <p class="mx-2 mt-2 text-center text-lg text-gray-700 font-semibold">Geoffrey Mugnier</p>
-      <p class="text-center text-gray-600 mb-2">L'autre tech</p>
-      <hr />
-      <p class="text-center text-gray-600 mt-2">"Ah ça marche pas ? Je l'ai fait un peu rapidement, je regarde après."</p>
-    </div>
-    <div class="w-64 m-4 py-12 bg-white shadow-lg px-3">
-      <img class="w-24 h-24 mx-auto rounded-full" src="img/team/coffee.jpeg" />
-      <p class="mx-2 mt-2 text-center text-lg text-gray-700 font-semibold">Machine à café</p>
-      <p class="text-center text-gray-600 mb-2">Responsable du bonheur</p>
-      <hr />
-      <p class="text-center text-gray-600 mt-2">"Brrrrrrr...br...br...br...brrrrrr..."</p>
-    </div>
-  </div>
-</div>
-
 <!-- Change the colour #f8fafc to match the previous section colour -->
 <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -189,43 +206,16 @@
 	<div class="w-full mb-4">	
 		<div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
 	</div>
-	<h3 class="my-4 text-3xl leading-tight text-white">Pour rester informé de toutes nos avancées, inscrivez-vous à notre newsletter</h3>	
+	<h3 class="my-4 text-3xl leading-tight text-white px-3 md:px-0">Pour rester informé de toutes nos avancées, inscrivez-vous à notre newsletter</h3>	
   <div class="flex items-center justify-center flex-wrap">
     <input class="w-11/12 md:w-2/5 bg-white text-gray-800 font-bold rounded my-6 py-4 px-3 shadow-lg text-xl" id="email" type="email" placeholder="Votre e-mail">
 	  <button class="hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg text-xl ml-2">Je m'inscris !</button>  
   </div>
+  <p class="uppercase md:mb-6 copyright text-center text-white">Copyright Sheaft @ 2020</p>
 </section>
-
-<!--Footer-->
-<footer class="bg-white">
-	<div class="container mx-auto px-8 bg-white">
-      <div class="w-full flex flex-col md:flex-row py-6">
-        <div class="mb-6">
-          <a class="text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-            SHEAFT
-          </a>
-        </div>
-        <div class="flex-1">
-          <p class="bg-white uppercase text-gray-500 md:mb-6 copyright text-center">Copyright Sheaft @ 2020</p>
-        </div>
-      </div>
-  </div>
-</footer>
 
 
 <style lang="scss">
-@media (min-width: 768px) {
-  .copyright {
-    margin-right: 96px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .copyright {
-    margin-right: 144px;
-  }
-}
-
   .profile-picture {
     width: 150px;
     border-radius: 100px;
