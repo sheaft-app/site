@@ -11,6 +11,18 @@
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
     <link rel="icon" type="image/png" href="favicon.png" />
 
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.sheaft.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://app.sheaft.com/?text={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
     <!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
@@ -20,7 +32,10 @@
 	     the current page has one -->
     %sapper.head%
   </head>
-  <body class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif;"> 
+  <body
+    class="leading-normal tracking-normal gradient"
+    style="font-family: 'Source Sans Pro', sans-serif;"
+  >
     <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
     <div id="sapper">%sapper.html%</div>
