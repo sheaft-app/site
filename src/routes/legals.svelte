@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Plus d'informations</title>
+  <title>Informations légales</title>
 </svelte:head>
 
 <div class="flex justify-center flex-wrap hidden" />
