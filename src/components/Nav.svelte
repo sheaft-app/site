@@ -1,6 +1,19 @@
 <script>
-  export let segment,
-    isActive = false;
+	import { slide } from 'svelte/transition';
+  export let segment;
+
+  let navExpended = false;
+
+  function openNav(){
+    navExpended = true;
+    document.querySelector('body').style.position = 'fixed';
+  }
+
+  function closeNav(){
+    navExpended = false;
+    document.querySelector('body').style.position = 'relative';
+  }
+
 </script>
 
 <!--Nav-->
@@ -20,18 +33,34 @@
       </a>
     </div>
 
-    <div class="block lg:hidden pr-4">
-      <button
-        id="nav-toggle"
-        class="flex items-center p-1 text-white focus:text-gray-500 hover:text-gray-500">
-        <svg
-          class="fill-current h-6 w-6"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
+    <div class="block lg:hidden pr-4" style="z-index:10;">
+      {#if !navExpended}
+        <button
+          id="nav-toggle"
+          on:click={openNav}
+          class="flex items-center p-1 text-white">
+          <svg
+            class="fill-current h-6 w-6"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      {:else}
+        <button
+          id="nav-close"
+          on:click={closeNav}
+          class="flex items-center p-1 text-white">
+          <svg
+            class="fill-current h-6 w-6"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Fermer</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      {/if}
     </div>
 
     <div
@@ -83,50 +112,84 @@
     </div>
   </div>
 </nav>
-<!-- <style lang="scss">
-  nav {
-    border-bottom: 1px solid #33d7a3;
-    font-weight: 300;
-    padding: 0 1em;
-    background-color: #33d7a3;
-    color: white;
+
+{#if navExpended}
+  <nav transition:slide
+    class="nav fixed content-between overflow-hidden lg:hidden"
+    class:active={navExpended}>
+    <div class="w-full">
+      <ul class="nav__menu">
+          <li>
+            <a
+              on:click={closeNav}
+              class="w-full inline-block py-5 px-4 text-white font-bold text-gray-700
+              no-underline border-b border-gray-300 hover:bg-gray-500"
+              aria-current={segment === undefined ? 'page' : undefined}
+              class:active={segment === undefined}
+              href="/">
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a
+              on:click={closeNav}
+              class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
+              border-b border-gray-300 hover:bg-gray-500"
+              aria-current={segment === 'producers' ? 'page' : undefined}
+              class:active={segment === 'producers'}
+              href="producers">
+              Producteurs
+            </a>
+          </li>
+          <li>
+            <a
+              on:click={closeNav}
+              class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
+              border-b border-gray-300 hover:bg-gray-500"
+              aria-current={segment === 'shops' ? 'page' : undefined}
+              class:active={segment === 'shops'}
+              href="shops">
+              Commerçants
+            </a>
+          </li>
+          <li>
+            <a
+              on:click={closeNav}
+              class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
+              border-b border-gray-300 hover:bg-gray-500"
+              aria-current={segment === 'about' ? 'page' : undefined}
+              class:active={segment === 'about'}
+              href="about">
+              A propos
+            </a>
+          </li>
+        </ul>
+            <a
+              on:click={closeNav}
+              class="w-full py-5 px-4 font-bold no-underline text-gray-700
+              border-t border-solid text-center border-gray-300 hover:bg-gray-500 absolute bottom-0"
+              href="https://app.sheaft.com"
+              target="_blank">
+              Ouvrir l'application
+            </a>
+    </div>
+  </nav>
+{/if}
+
+<style>
+  .nav {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #fdfdfd;
+    transition: all 0.3s linear;    
+      position: fixed;
+      padding-top: 50px;
+      width: 100%;
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
+  .nav a.active {
+    color: #33d7a3 !important;
   }
-
-  /* clearfix */
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  li {
-    display: block;
-    float: left;
-  }
-
-  [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
-
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: #8cfbd8;
-    display: block;
-    bottom: -1px;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
-  }
-</style> -->
+</style>
