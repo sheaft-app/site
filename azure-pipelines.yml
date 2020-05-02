@@ -14,8 +14,7 @@ pool:
 
 steps:
   - script: |
-      npm install
-      npm run export
+      npm run publish
   - task: ArchiveFiles@2
     displayName: "Archive files"
     inputs:
