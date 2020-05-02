@@ -425,35 +425,43 @@
   <div class="w-full mb-4">
     <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
   </div>
-  <h3 class="my-4 md:my-8 text-xl md:text-3xl leading-tight text-white px-3 md:px-0">
+  <h3
+    class="my-4 md:my-8 text-xl md:text-3xl leading-tight text-white px-3
+    md:px-0">
     Pour rester informé de toutes nos avancées, inscrivez-vous à notre
     newsletter
   </h3>
   <div class="items-center w-full px-4 pb-6">
-    <div class="flex flex-wrap my-8 justify-center">
-      <div class="w-full md:w-4/12 md:pr-2 text-left">
-        <label class="font-semibold text-white md:text-xl">Prénom</label>
-        <input
-          class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4 px-3
-          shadow-lg md:text-xl"
-          id="firstname"
-          type="firstname"
-          placeholder="Jean" />
+    <form method="POST" action="https://functions.sheaft.com/api/CreateContactCommand?code=oamUmnFWNVSRlfaMke7a/mAVIkaUr19iCapj9/7YX0zkPUnrGDCUFQ==">
+      <div class="flex flex-wrap my-8 justify-center">
+        <div class="w-full md:w-4/12 md:pr-2 text-left">
+          <label class="font-semibold text-white md:text-xl">Prénom</label>
+          <input
+            class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
+            px-3 shadow-lg md:text-xl"
+            id="FirstName"
+            name="FirstName"
+            type="FirstName"
+            placeholder="Jean" />
+        </div>
+        <div class="w-full md:w-6/12 text-left">
+          <label class="font-semibold text-white md:text-xl">
+            Adresse e-mail
+          </label>
+          <input
+            class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
+            px-3 shadow-lg md:text-xl"
+            id="Email"
+            type="Email"
+            name="Email"
+            placeholder="bon@beurre" />
+        </div>
       </div>
-      <div class="w-full md:w-6/12 text-left">
-        <label class="font-semibold text-white md:text-xl">Adresse e-mail</label>
-        <input
-          class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4 px-3
-          shadow-lg md:text-xl"
-          id="email"
-          type="email"
-          placeholder="bon@beu.rre" />
-      </div>
-    </div>
-    <button
-      class="hover:underline bg-white text-gray-800 font-bold rounded-full my-3
-      py-4 px-8 shadow-lg md:text-xl">
-      Je m'inscris à la newsletter
-    </button>
+      <button type="submit"
+        class="hover:underline bg-white text-gray-800 font-bold rounded-full
+        my-3 py-4 px-8 shadow-lg md:text-xl">
+        Je m'inscris à la newsletter
+      </button>
+    </form>
   </div>
 </section>
