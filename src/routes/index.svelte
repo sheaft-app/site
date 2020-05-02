@@ -447,7 +447,7 @@
           shadow-lg md:text-xl"
           id="email"
           type="email"
-          placeholder="jean-bon@beu.rre" />
+          placeholder="bon@beu.rre" />
       </div>
     </div>
     <button
