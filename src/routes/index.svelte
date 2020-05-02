@@ -2,21 +2,22 @@
   <title>Accueil</title>
 </svelte:head>
 
-<div class="pt-24">
+<div class="pt-16 md:pt-24">
   <div
     class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row
-    items-center text-white p-16 md:p-0">
+    items-center text-white pb-12 md:p-16 md:p-0">
     <!--Left Col-->
     <div
       class="flex flex-col w-full md:w-2/5 justify-center items-start text-left">
       <!-- <p class="uppercase tracking-loose w-full">un petit texte</p> -->
-      <h1 class="my-4 text-3xl md:text-5xl font-bold leading-tight">
-        Bien consommer,
+      <h1 class="my-4 text-4xl md:text-5xl font-bold leading-tight">
+        Consommer local,
         <br />
         plus facilement.
       </h1>
       <p class="leading-normal text-xl md:text-2xl mb-8">
-        Découvrez et commandez les bons produits des producteurs autour de vous.
+        Découvrez et commandez en quelques clics des produits de qualité issus
+        de la production locale.
       </p>
 
       <div
@@ -102,25 +103,27 @@
 <div id="introduction" class="relative bg-white">
   <div class="container mx-auto px-6 py-6 md:py-24 relative">
     <div
-      class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16
-      md:mt-0 md:mt-16 lg:mt-0">
-      <img src="/img/easy.svg" class="md:w-1/3" />
+      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
+      md:mt-16 lg:mt-0">
+      <img
+        src="/img/easy.svg"
+        class="md:w-1/3"
+        alt="consommer local difficil" />
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">
-          Bien consommer, du parcours d'obstacle à la promenade de santé
+          Consommer local, du parcours d'obstacle à la promenade de santé
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-gray-600 text-xl mb-4">
-          Vous savez qu'il est important de consommer local. Vous voulez aider
-          les agriculteurs de votre région, améliorer leur rémunération et leurs
-          conditions de travail et participer à la lutte contre le réchauffement
-          climatique.
+          Vous voulez aider les agriculteurs de votre région, améliorer leur
+          rémunération et leurs conditions de travail et participer à la lutte
+          contre le réchauffement climatique.
         </p>
         <!-- <p class="text-gray-600 text-xl mb-4">Il y a plein de producteurs autour de votre maison, que vous soyez en Île-de-France ou en Ardèche. Pourtant, c'est un effort de les trouver et d'acheter leurs produits.</p> -->
         <p class="text-gray-600 text-xl mb-4">
-          Pourtant, il est plus compliqué et plus long d'acheter un yaourt
-          produit à 20km de chez vous qu'un avocat produit au Mexique.
+          Pourtant, il est plus compliqué d'acheter un yaourt produit à 20km de
+          chez vous qu'un avocat produit au Mexique.
         </p>
         <!-- <p class="text-gray-600 text-xl mb-4">700km pour amener des légumes que nous pouvons presque aller chercher à vélo sur le lieu de production ? Non merci.</p> -->
         <p class="text-gray-600 text-xl mb-4">
@@ -134,7 +137,8 @@
 <div id="process" class="relative bg-gray-100">
   <div class="container mx-auto px-6 py-12 pb-12 relative">
     <h3
-      class="flex flex-col items-center text-4xl text-secondary font-bold mb-12">
+      class="flex flex-col items-center text-3xl md:text-4xl text-secondary
+      font-bold mb-12">
       Une consommation en 3 étapes
       <span class="bg-primary h-1 w-20 block mt-4" />
     </h3>
@@ -169,11 +173,14 @@
 </div>
 
 <div id="missions" class="relative bg-white">
-  <div class="container mx-auto px-6 py-32 relative">
+  <div class="container mx-auto px-6 py-16 relative">
     <div
-      class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16
-      md:mt-0 md:mt-16 lg:mt-0">
-      <img src="/img/pushing_forward.svg" class="md:w-1/3" />
+      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
+      md:mt-16 lg:mt-0">
+      <img
+        src="/img/pushing_forward.svg"
+        class="md:w-1/3"
+        alt="mettre en avant" />
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">
@@ -196,9 +203,7 @@
         </p>
       </div>
     </div>
-    <div
-      class="flex flex-col-reverse md:flex-row items-center mb-24 md:mb-16
-      xl:mb-8">
+    <div class="flex flex-col-reverse md:flex-row items-center mb-16 xl:mb-8">
       <div class="md:mr-16 xl:mr-32">
         <h4
           class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">
@@ -215,12 +220,12 @@
           aux commerces et aux consommateurs.
         </p>
       </div>
-      <img src="/img/soutenir.svg" class="md:w-1/3" />
+      <img src="/img/soutenir.svg" class="md:w-1/3" alt="soutenez-les" />
     </div>
     <div
-      class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16
-      md:mt-0 md:mt-16 lg:mt-0">
-      <img src="/img/cooking.svg" class="md:w-1/3" />
+      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
+      md:mt-16 lg:mt-0">
+      <img src="/img/cooking.svg" class="md:w-1/3" alt="cuisinez" />
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">
@@ -243,12 +248,10 @@
         </p>
       </div>
     </div>
-    <div
-      class="flex flex-col-reverse md:flex-row items-center mb-24 md:mb-16
-      xl:mb-8">
+    <div class="flex flex-col-reverse md:flex-row items-center mb-16 xl:mb-8">
       <div class="md:mr-16 xl:mr-32">
         <h4
-          class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-4 md:mt-0">
+          class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-8 md:mt-10">
           Vous mettre en valeur
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
@@ -265,12 +268,13 @@
           de France ainsi que les meilleurs producteurs et consommateurs.
         </p>
       </div>
-      <img src="/img/valorize.svg" class="md:w-1/3" />
+      <img src="/img/valorize.svg" class="md:w-1/3" alt="récompense" />
     </div>
   </div>
 </div>
 
-<h3 class="text-center py-12 px-6 text-4xl text-white font-light pb-40">
+<h3
+  class="text-center py-12 px-6 text-3xl md:text-4xl text-white font-light pb-20">
   Briser les obstacles d'une consommation éthique en offrant une transition en
   douceur vers des modes de consommation plus responsables
 </h3>
@@ -282,12 +286,13 @@
         <div class="md:w-1/2 md:pr-8 lg:pr-16">
           <img
             src="/img/team.svg"
-            class="-mt-24 md:mt-0 lg:-mt-24 mb-16 md:mb-0" />
+            class="-mt-24 md:mt-0 lg:-mt-24 mb-16 md:mb-0"
+            alt="d'où nous venons" />
         </div>
         <div class="md:w-1/2">
           <h3
-            class="flex flex-col text-4xl text-gray-800 font-bold mb-6 mt-4
-            md:mt-0">
+            class="flex flex-col text-3xl md:text-4xl text-gray-800 font-bold
+            mb-6 mt-4 md:mt-0">
             Une idée née à la ferme
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h3>
@@ -297,13 +302,14 @@
           </p>
           <p class="text-xl text-gray-700 mb-4">
             Un jour que leur frère leur fait part de ses problèmes en tant que
-            producteur et éleveur, les développeurs informatiques et futurs
-            co-fondateurs de Sheaft, Noël et Geoffrey, font le constat que les
-            problèmes qu'il décrit peuvent être résolus par une plateforme
-            unique de prise de commande.
+            producteur de yaourts, les développeurs et futurs co-fondateurs de
+            Sheaft, Noël et Geoffrey, font le constat que ces problèmes peuvent
+            être résolus à l'aide d'une plateforme unique regroupant tous les
+            acteurs concernés.
           </p>
           <p class="text-xl text-gray-700 mb-4">
-            Leur défi ? Briser les barrières de la consommation locale.
+            Leur défi ? Briser les barrières de la consommation locale, pour
+            faciliter ce mode d'achat.
           </p>
           <div class="my-8">
             <a
@@ -410,48 +416,44 @@
   </g>
 </svg>
 
-<section class="container mx-auto text-center py-5 mb-3">
+<section class="container mx-auto text-center pt-5 mt-3">
   <h1
-    class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+    class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center
+    text-white">
     Restons en contact !
   </h1>
   <div class="w-full mb-4">
     <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
   </div>
-  <h3 class="my-4 text-3xl leading-tight text-white px-3 md:px-0">
+  <h3 class="my-4 md:my-8 text-xl md:text-3xl leading-tight text-white px-3 md:px-0">
     Pour rester informé de toutes nos avancées, inscrivez-vous à notre
     newsletter
   </h3>
-  <div class="flex items-center justify-center flex-wrap">
-    <input
-      class="w-11/12 md:w-2/5 bg-white text-gray-800 font-bold rounded my-6 py-4
-      px-3 shadow-lg text-xl"
-      id="email"
-      type="email"
-      placeholder="Votre e-mail" />
+  <div class="items-center w-full px-4 pb-6">
+    <div class="flex flex-wrap my-8 justify-center">
+      <div class="w-full md:w-4/12 md:pr-2 text-left">
+        <label class="font-semibold text-white md:text-xl">Prénom</label>
+        <input
+          class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4 px-3
+          shadow-lg md:text-xl"
+          id="firstname"
+          type="firstname"
+          placeholder="Jean" />
+      </div>
+      <div class="w-full md:w-6/12 text-left">
+        <label class="font-semibold text-white md:text-xl">Adresse e-mail</label>
+        <input
+          class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4 px-3
+          shadow-lg md:text-xl"
+          id="email"
+          type="email"
+          placeholder="jean-bon@beu.rre" />
+      </div>
+    </div>
     <button
-      class="hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4
-      px-8 shadow-lg text-xl ml-2">
-      Je m'inscris !
+      class="hover:underline bg-white text-gray-800 font-bold rounded-full my-3
+      py-4 px-8 shadow-lg md:text-xl">
+      Je m'inscris à la newsletter
     </button>
   </div>
-  <p class="uppercase md:mb-6 copyright text-center text-white">
-    Copyright Sheaft @ 2020
-  </p>
 </section>
-
-<style lang="scss">
-  .profile-picture {
-    width: 150px;
-    border-radius: 100px;
-  }
-  .jumbotron {
-    height: 400px;
-    background: url("/img/home.jpg") no-repeat center center fixed !important;
-    color: white;
-    padding: 9em;
-  }
-  .jumbotron h1 {
-    color: white !important;
-  }
-</style>

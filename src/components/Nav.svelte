@@ -6,8 +6,7 @@
 <!--Nav-->
 <nav
   id="header"
-  class="fixed w-full z-30 top-0"
-  class:bg-primary={isActive}
+  class="fixed w-full z-30 top-0 bg-primary"
   style="transition: all 0.3s ease-in-out;">
   <div
     class="w-full container mx-auto flex flex-wrap items-center justify-between
@@ -24,7 +23,7 @@
     <div class="block lg:hidden pr-4">
       <button
         id="nav-toggle"
-        class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+        class="flex items-center p-1 text-white focus:text-gray-500 hover:text-gray-500">
         <svg
           class="fill-current h-6 w-6"
           viewBox="0 0 20 20"
