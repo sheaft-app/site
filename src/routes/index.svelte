@@ -1,3 +1,12 @@
+<script>
+  import qs from "qs";
+  import { onMount } from "svelte";
+  let error = null;
+  onMount(() => {
+    error = qs.parse(window.location.search.slice(1))["error"];
+  });
+</script>
+
 <svelte:head>
   <title>Accueil</title>
 </svelte:head>
@@ -432,7 +441,9 @@
     newsletter
   </h3>
   <div class="items-center w-full px-4 pb-6">
-    <form method="POST" action="https://functions.sheaft.com/api/CreateContactCommand?code=oamUmnFWNVSRlfaMke7a/mAVIkaUr19iCapj9/7YX0zkPUnrGDCUFQ==">
+    <form
+      method="POST"
+      action="https://functions.sheaft.com/api/CreateContactCommand?code=oamUmnFWNVSRlfaMke7a/mAVIkaUr19iCapj9/7YX0zkPUnrGDCUFQ==">
       <div class="flex flex-wrap my-8 justify-center">
         <div class="w-full md:w-4/12 md:pr-2 text-left">
           <label class="font-semibold text-white md:text-xl">Prénom</label>
@@ -456,8 +467,12 @@
             name="Email"
             placeholder="bon@beurre" />
         </div>
+        {#if error}
+          <p class="w-full text-red-600 text-xl">{error}</p>
+        {/if}
       </div>
-      <button type="submit"
+      <button
+        type="submit"
         class="hover:underline bg-white text-gray-800 font-bold rounded-full
         my-3 py-4 px-8 shadow-lg md:text-xl">
         Je m'inscris à la newsletter
