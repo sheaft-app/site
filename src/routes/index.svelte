@@ -446,18 +446,19 @@
       action="https://functions.sheaft.com/api/CreateContactCommand?code=oamUmnFWNVSRlfaMke7a/mAVIkaUr19iCapj9/7YX0zkPUnrGDCUFQ==">
       <div class="flex flex-wrap my-8 justify-center">
         <div class="w-full md:w-4/12 md:pr-2 text-left">
-          <label class="font-semibold text-white md:text-xl">Prénom</label>
+          <label class="font-semibold text-white md:text-xl">Prénom*</label>
           <input
             class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
             px-3 shadow-lg md:text-xl"
             id="FirstName"
             name="FirstName"
             type="FirstName"
+            required="required"
             placeholder="Jean" />
         </div>
         <div class="w-full md:w-6/12 text-left">
           <label class="font-semibold text-white md:text-xl">
-            Adresse e-mail
+            Adresse e-mail*
           </label>
           <input
             class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
@@ -465,8 +466,10 @@
             id="Email"
             type="Email"
             name="Email"
+            required="required"
             placeholder="bon@beurre" />
         </div>
+        <p class="w-full text-white">(*) champs requis</p>
         {#if error}
           <p class="w-full text-red-600 text-xl">{error}</p>
         {/if}
