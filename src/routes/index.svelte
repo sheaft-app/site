@@ -1,10 +1,19 @@
 <script>
   import qs from "qs";
   import { onMount } from "svelte";
+  import { mapActive } from "../stores";
+  import Map from "../components/Map.svelte";
   let error = null;
+
   onMount(() => {
     error = qs.parse(window.location.search.slice(1))["error"];
   });
+
+  const showMap = () => {
+    mapActive.set(true);
+
+    document.body.classList.add('overflow-hidden'); 
+  }
 </script>
 
 <svelte:head>
@@ -136,7 +145,7 @@
         </p>
         <!-- <p class="text-gray-600 text-xl mb-4">700km pour amener des légumes que nous pouvons presque aller chercher à vélo sur le lieu de production ? Non merci.</p> -->
         <p class="text-gray-600 text-xl mb-4">
-          Il est temps de changer les choses. Il est temps d'utiliser Sheaft.
+          Il est temps de changer les choses.
         </p>
       </div>
     </div>
@@ -179,6 +188,32 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="block lg:hidden bg-white container mx-auto px-6 py-16 relative">
+  <h4
+  class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-8 md:mt-10">
+  Consommez local, gagnez des cadeaux !
+    <span class="bg-primary h-1 w-20 block mt-4" />
+  </h4>
+  <p class="text-gray-600 text-xl mb-4">
+    Quand on fait quelque chose de bien, il est normal d'être récompensé.
+  </p>
+  <p class="text-gray-600 text-xl mb-4">
+    Sur Sheaft, chacune de vos actions vous rapporte des points : un achat, un avis sur un produit, un partage
+    sur les réseaux... toutes ces actions qui aident à faire connaître et améliorer les conditions de travail de nos producteurs.
+  </p>
+  <p class="text-gray-600 text-xl mb-4">
+    Tous les mois, nous établissons des partenariats avec des artisans et producteurs de votre région qui proposeront des cadeaux aux membres ayant le plus de points.
+  </p>
+  <p class="text-gray-600 text-xl mb-4">
+    Votre position sera, avec votre accord, visible de tous en temps réel. Vous êtes un consommateur éthique et responsable, vous pouvez être fier !
+  </p>
+  <button style="background-color: #33D7A3;" class="hover:underline text-white font-bold rounded-full py-4 px-8 shadow-lg md:text-xl" on:click={showMap}>Montrez moi la carte !</button>
+</div>
+
+<div class="fixed lg:static map-module bottom-0 w-full z-10" class:active={$mapActive}>
+  <Map />
 </div>
 
 <div id="missions" class="relative bg-white">
@@ -257,28 +292,6 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-col-reverse md:flex-row items-center mb-16 xl:mb-8">
-      <div class="md:mr-16 xl:mr-32">
-        <h4
-          class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-8 md:mt-10">
-          Vous mettre en valeur
-          <span class="bg-primary h-1 w-20 block mt-4" />
-        </h4>
-        <p class="text-gray-600 text-xl mb-4">
-          Qui a dit que consommer local devait être ennuyeux ? Certainement pas
-          nous. Sur Sheaft, chacune de vos actions vous rapporte des points, à
-          vous et à votre région : un achat, un avis sur un produit, un partage
-          sur les réseaux... tout ce qui peut aider à faire connaître et vivre
-          un producteur !
-        </p>
-        <p class="text-gray-600 text-xl">
-          Vous êtes un consommateur éthique et responsable, soyez fier de l'être
-          ! Notre carte affichera en temps réel le score de toutes les régions
-          de France ainsi que les meilleurs producteurs et consommateurs.
-        </p>
-      </div>
-      <img src="/img/valorize.svg" class="md:w-1/3" alt="récompense" />
-    </div>
   </div>
 </div>
 
@@ -335,50 +348,6 @@
   </div>
 </div>
 
-<!-- <div class="flex flex-col text-justify bg-white">
-  <div class="overflow-x-auto">
-    <div class="p-4">
-      <h2 class="text-2xl text-center">Sheaft, c'est quoi ?</h2> 
-      <div class="flex">
-        <div class="services-content w-1/2 p-4">
-          <h3 class="text-gray-700 text-xl text-center">
-            Une recherche performante
-          </h3>
-          <br />
-          <p class="text-justify">
-            Sur notre plateforme, les catalogues producteurs sont centralisés,
-            que vous soyez commerçant ou consommateur trouver des produits
-            locaux est un jeu d'enfants et ne requiert plus de jongler entre de
-            multiple sites pour faire ses courses!
-          </p>
-        </div>
-        <div class="services-content w-1/2 p-4">
-          <h3 class="text-gray-700 text-xl text-center">
-            Une jauge de proximité
-          </h3>
-          <br />
-          <p class="text-justify">
-            Grâce à une jauge colorée en fonction de la proximité géographique,
-            vous pouvez voir en un coup d'oeil quels produits sont proches de
-            vous. Consommer local n'a jamais été aussi facile !
-          </p>
-        </div>
-      </div>
-      <br />
-      <h2 class="text-2xl text-center">D'où vient Sheaft ?</h2>
-      <p class="p-4 text-justify">
-        L'idée est née dans une ferme, au sein du GAEC La Ferme du Parquet, à
-        Gruffy (Haute-Savoie). C'est en voyant la rudimentarité des outils
-        utilisés pour prendre les commandes des différents magasins ainsi que la
-        grande profilération de site web que Noël, développeur en reconversion
-        agricole, décide de faire avancer les choses. Adieu les fichiers Excel,
-        les mails et le trop grand nombre de site, place à Sheaft !
-      </p>
-    </div>
-  </div>
-</div> -->
-
-<!-- Change the colour #f8fafc to match the previous section colour -->
 <svg
   class="wave-top"
   viewBox="0 0 1439 147"
@@ -483,3 +452,18 @@
     </form>
   </div>
 </section>
+
+<style>
+
+@media (max-width: 1024px) {
+    .map-module {
+      transition: .3s all ease-in-out;
+      transform: translateY(-100%);
+    }
+
+    .map-module.active {
+      transform: translateY(0);
+    }
+  }
+
+</style>

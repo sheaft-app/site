@@ -1,5 +1,6 @@
 <script>
   import Nav from "../components/Nav.svelte";
+  import { mapActive } from '../stores';
   import Tailwindcss from "../components/Tailwind.svelte";
 
   export let segment;
@@ -8,6 +9,8 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
+
+<svelte:body class:overflow-hidden={mapActive} />
 
 <Tailwindcss />
 <Nav {segment} isActive={y > 100} />
@@ -27,10 +30,14 @@
     <a href="/nlregistered" class="hidden"> </a>
   </p>
 
-<style lang="scss">
+<style lang="scss" global>
   main {
     position: relative;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  svg {
+    display: inline !important;
   }
 </style>

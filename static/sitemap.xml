@@ -47,7 +47,7 @@
         <changefreq>monthly</changefreq>
 
     </url>
-    <url>
+    <!-- <url>
 
         <loc>https://www.sheaft.com/shops</loc>
 
@@ -55,7 +55,7 @@
 
         <changefreq>monthly</changefreq>
 
-    </url>
+    </!--> -->
     <url>
 
         <loc>https://www.sheaft.com/teams</loc>

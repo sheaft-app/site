@@ -76,7 +76,7 @@
       class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
       md:mt-16 lg:mt-0">
       <div class="relative w-full" style="height: 300px; background-image: url('img/blob-shape-2.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-        <img style="top: 20%;" class="absolute shadow" src="/img/producer/1.png" alt="Trouvé" />  
+        <img style="top: 20%;" class="absolute shadow" src="/img/shops/search.jpg" alt="Trouvé" />  
       </div>
       <div class="md:ml-16 xl:ml-32 lg:px-24">
         <h4

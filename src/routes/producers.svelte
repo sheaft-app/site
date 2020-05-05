@@ -53,7 +53,7 @@
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Traitez vos commandes à un seul et même endroit qu’elles soient pour un commerce ou pour un particulier. Terminé les prises de commande par téléphone, les modifications par email : toutes vos commandes apparaissent en temps réel dans votre espace.
+          Traitez vos commandes à un seul et même endroit. Terminé les prises de commande par téléphone, les modifications par email : toutes vos commandes apparaissent en temps réel dans votre espace.
         </p>
       </div>
     </div>
@@ -65,11 +65,11 @@
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Les consommateurs et les commerces vous trouveront plus facilement et pourront immédiatement connaître vos produits et vos stocks. Ils seront donc plus enclin à acheter vos produits et ce en plus grande quantité.
+          Les consommateurs vous trouveront plus facilement et pourront immédiatement connaître vos produits et vos stocks. Ils seront donc plus enclin à acheter vos produits et ce en plus grande quantité.
         </p>
       </div>
       <div class="relative w-full" style="height: 300px; background-image: url('img/blob-shape-2.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-        <img style="top: 20%;" class="absolute shadow" src="/img/producer/1.png" alt="Trouvé" />  
+        <img style="top: 10%; width:300px;" class="absolute shadow" src="/img/shops/search.jpg" alt="Trouvé" />  
       </div>
     </div>
     <div

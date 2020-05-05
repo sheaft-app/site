@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.progressbar .progressbar-radial {
+  display: inline !important;
+}
+
 body {
   margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
