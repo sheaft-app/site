@@ -5,6 +5,7 @@
   import "leaflet/dist/leaflet.css";
 
   let id = "sheaft-map";
+  let regionsData = null;
   var map = null;
   let regionsGeojson = null;
   let departmentsGeojson = null;
@@ -13,9 +14,16 @@
   let hoveredElement = null;
   let detailsActive = false;
 
+  function getProgressColor(p) {
+    return p >= 100 ? '#33D7A3' :
+           p > 50  ? '#9ff193' :
+           p > 25  ? '#ffcb92' :
+           p >= 0  ? '#ffe0e0' : '#ffe0e0';
+  }
+
   function style(feature) {
       return {
-          fillColor: '#33D7A3',
+          fillColor: getProgressColor(regionsData.Regions.find((r) => r.Code === feature.properties.code).Progress),
           weight: 2,
           opacity: 1,
           color: 'white',
@@ -68,8 +76,11 @@
     }
   }
 
-  async function zoomToFeature(e) {
-    selectedRegion = e.target.feature;
+  async function zoomToFeature(e, region) {
+    selectedRegion = {
+      ...e.target.feature,
+      ...region
+    };
     
     await loadBoundaries("department", e.target.feature.properties.code);
     map.removeLayer(regionsGeojson);
@@ -100,12 +111,21 @@
         case 'region':
           return await fetch('https://sheaftapp.blob.core.windows.net/resources/json/regions.json').then((response) => { response.json().then((res) => {
               regionsGeojson = L.geoJson(res, {
-                  style,
+                  style: (feature, layer) => {
+                    return {
+                      fillColor: getProgressColor(regionsData.Regions.find((r) => r.Code === feature.properties.code).Progress),
+                      weight: 2,
+                      opacity: 1,
+                      color: 'white',
+                      dashArray: '0',
+                      fillOpacity: 1
+                    }
+                  },
                   onEachFeature: (feature, layer) => {
                     layer.on({
                         mouseover: highlightFeature,
                         mouseout: resetHighlight,
-                        click: zoomToFeature,
+                        click: (e) => zoomToFeature(e, regionsData.Regions.find((r) => r.Code === feature.properties.code)),
                     });
                   }
               }).addTo(map);
@@ -115,14 +135,28 @@
         case 'department':
           return await fetch(`https://sheaftapp.blob.core.windows.net/resources/json/departments/${code}.geojson`).then((response) => { response.json().then((res) => {
             departmentsGeojson = L.geoJson(res, {
-                style,
+                style: (feature, layer) => {
+                  return {
+                    fillColor: getProgressColor(regionsData.Regions.find((r) => r.Code === selectedRegion.properties.code).Departments.find((d) => d.Code === feature.properties.code).Progress),
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '0',
+                    fillOpacity: 1
+                  }
+                },
                 onEachFeature: (feature, layer) => {
                   layer.on({
                     mouseover: (e) => highlightFeature(e, "department"),
                     mouseout: (e) => resetHighlight(e, "department"),
                     click: (e) => {
+                      if (selectedDepartment && (e.target.feature.properties.nom === selectedDepartment.properties.nom)) return;
+
                       departmentsGeojson.resetStyle();
-                      selectedDepartment = e.target.feature,
+                      selectedDepartment = {
+                        ...e.target.feature,
+                        ...regionsData.Regions.find((r) => r.Code === selectedRegion.properties.code).Departments.find((d) => d.Code === feature.properties.code)
+                      };
                       layer.setStyle({
                         weight: 6,
                         dashArray: '',
@@ -150,7 +184,6 @@
     
     map = L.map(id).setView([46.428967, 4.664555], 5);
     map.doubleClickZoom.disable();
-    map.scrollWheelZoom.disable();
 
     L.tileLayer(
       "https://api.maptiler.com/maps/voyager/{z}/{x}/{y}.png?key=xdycAkqlmra0OjZw2dPy",
@@ -166,6 +199,10 @@
     // no controls on this map
     var lc = document.getElementsByClassName('leaflet-control-container');
     lc[0].style.visibility = 'hidden';
+
+    const regionsDataQuery = await fetch('https://sheaftapp.blob.core.windows.net/progress/departments.json');
+
+    regionsDataQuery.json().then((res) => regionsData = res);
 
     loadBoundaries();
   });
@@ -190,33 +227,87 @@
         {#if selectedDepartment || selectedRegion}
           {#if selectedDepartment}
             <h2 class="text-3xl text-gray-800 font-semibold uppercase text-center pt-2">{selectedDepartment.properties.nom}</h2>
+            <div class="text-center py-5 progress">
+              <!-- Comportement un peu mystique de ProgressBar : quand on lui passe selectedDepartment.Progress et qu'il vaut 0  -->
+              <!-- il fini par passer undefined à ProgressBar -> crash  -->
+              {#if selectedDepartment.Progress}
+                <ProgressBar style='radial' series={[selectedDepartment.Progress]} thickness={4} width={150} thresholds={[
+                  {
+                    till: 24,       //Color stays red from 0% to 24%
+                    color: '#ffe0e0'
+                  },
+                  {
+                    till: 50,       //Color stays orange from 25% to 50%
+                    color: '#ffcb92'
+                  },
+                  {
+                    till: 99,       //Color stays green from 51% to 99%
+                    color: '#9ff193'
+                  },
+                  {
+                    till: 100,      //Color goes primary at 100%
+                    color: '#33D7A3'
+                  }
+                ]} />
+              {:else}
+                <ProgressBar style='radial' series={[0]} thickness={4} width={150} thresholds={[
+                  {
+                    till: 24,       //Color stays red from 0% to 24%
+                    color: '#ffe0e0'
+                  },
+                  {
+                    till: 50,       //Color stays orange from 25% to 50%
+                    color: '#ffcb92'
+                  },
+                  {
+                    till: 99,       //Color stays green from 51% to 99%
+                    color: '#9ff193'
+                  },
+                  {
+                    till: 100,      //Color goes primary at 100%
+                    color: '#33D7A3'
+                  }
+                ]} />
+              {/if}
+            </div>
           {:else if selectedRegion}
             <h2 class="text-3xl text-gray-800 font-semibold uppercase text-center pt-2">{selectedRegion.properties.nom}</h2>
+            <div class="text-center py-5 progress">
+              <ProgressBar style='radial' series={[selectedRegion.Progress]} thickness={4} width={150} thresholds={[
+                {
+                  till: 24,       //Color stays red from 0% to 24%
+                  color: '#ffe0e0'
+                },
+                {
+                  till: 50,       //Color stays orange from 25% to 50%
+                  color: '#ffcb92'
+                },
+                {
+                  till: 99,       //Color stays green from 51% to 99%
+                  color: '#9ff193'
+                },
+                {
+                  till: 100,      //Color goes primary at 100%
+                  color: '#33D7A3'
+                }
+              ]} />
+            </div>
           {/if}
 
-          <div class="text-center py-5 progress">
-            <ProgressBar style='radial' series={[40]} thickness={4} width={150} thresholds={[
-              {
-                till: 50,       //Color stays red from 0% to 50%
-                color: '#800000'
-              },
-              {
-                till: 100,      //Color goes green from 51% to 100%
-                color: '#008000'
-              }
-            ]} />
-          </div>
-
-          {#if selectedDepartment && !selectedDepartment.unlocked}
-            <p class="text-xl uppercase py-3 text-center"><span class="text-primary text-2xl">8 producteurs nécessaires</span> <br/> pour déverrouiller cette zone</p>
+          {#if selectedDepartment && selectedDepartment.Locked}
+            <p class="text-xl uppercase py-3 text-center">Plus que <span class="text-primary text-2xl">{parseInt(selectedDepartment.Target) - parseInt(selectedDepartment.Active)} producteurs</span> <br/> pour déverrouiller cette zone</p>
           {/if}
           
-          {#if selectedDepartment && selectedDepartment.unlocked}
+          {#if selectedDepartment && !selectedDepartment.Locked}
             <p class="text-xl uppercase py-3 text-center"><span class="text-primary text-2xl">144 producteurs</span> <br/> inscrits dans cette zone</p>
           {/if}
 
           {#if selectedRegion && !selectedDepartment}
-            <p class="text-xl uppercase py-3 text-center"><span class="text-primary text-2xl">3 départements déverrouillés</span> <br/> sur 12</p>
+            {#if selectedRegion.DepartmentsUnlockedCount == 0}
+              <p class="text-xl uppercase py-3 text-center">Aucun département n'a été déverrouillé.</p>
+            {:else}
+              <p class="text-xl uppercase py-3 text-center"><span class="text-primary text-2xl">{selectedRegion.DepartmentsUnlockedCount} départements déverrouillés</span> <br/> sur {selectedRegion.DepartmentsCount}</p>
+            {/if}
           {/if}
           
           <div class="flex flex-wrap justify-center mt-3">
@@ -287,14 +378,14 @@
         {/if}
     </div>
     <div class="relative lg:w-6/12 w-full">
-        <div class:block={selectedDepartment && selectedRegion} class="hidden lg:block absolute text-white bg-white shadow px-1 py-1" style="z-index: 10;">
+        <div class:block={selectedDepartment && selectedRegion} class="hidden lg:block absolute text-white bg-white shadow m-auto rounded-full" style="z-index: 10; left: 50%; transform: translateX(-50%); top: 10px;">
           {#if selectedDepartment}
-            <button class="text-left text-xl font-semibold uppercase text-gray-800 flex items-center rounded-full" on:click={() => handleReturn()}>
-              Dézoomer vers {selectedRegion.properties.nom}
+            <button class="text-left text-xl font-semibold uppercase text-gray-800 flex items-center rounded-full text-center px-4 py-2" on:click={() => handleReturn()}>
+              Afficher {selectedRegion.properties.nom}
             </button>
           {:else if selectedRegion}
-            <button class="text-left text-xl font-semibold uppercase text-gray-800 flex items-center rounded-full" on:click={() => handleReturn()}>
-              Dézoomer vers France
+            <button class="text-left text-xl font-semibold uppercase text-gray-800 flex items-center rounded-full text-center px-4 py-2" on:click={() => handleReturn()}>
+              Afficher la carte de France
             </button>
           {/if}
         </div>
