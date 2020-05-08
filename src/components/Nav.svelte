@@ -72,7 +72,7 @@
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === undefined ? 'page' : undefined}
-            href=".">
+            href="/">
             Accueil
           </a>
         </li>
@@ -80,15 +80,23 @@
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === 'producers' ? 'page' : undefined}
-            href="producers">
+            href="/producers">
             Je suis producteur
           </a>
         </li>
         <li class="mr-3">
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
+            aria-current={segment === 'shops' ? 'page' : undefined}
+            href="/shops">
+            Je suis commercant
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
+            class="inline-block py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === 'about' ? 'page' : undefined}
-            href="about">
+            href="/about">
             A propos
           </a>
         </li>
@@ -129,8 +137,19 @@
               border-b border-gray-300 hover:bg-gray-500"
               aria-current={segment === 'producers' ? 'page' : undefined}
               class:active={segment === 'producers'}
-              href="producers">
+              href="/producers">
               Je suis producteur
+            </a>
+          </li>
+          <li>
+            <a
+              on:click={closeNav}
+              class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
+              border-b border-gray-300 hover:bg-gray-500"
+              aria-current={segment === 'shops' ? 'page' : undefined}
+              class:active={segment === 'shops'}
+              href="/producers">
+              Je suis commercant
             </a>
           </li>
           <li>
@@ -140,7 +159,7 @@
               border-b border-gray-300 hover:bg-gray-500"
               aria-current={segment === 'about' ? 'page' : undefined}
               class:active={segment === 'about'}
-              href="about">
+              href="/about">
               A propos
             </a>
           </li>
