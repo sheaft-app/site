@@ -115,7 +115,7 @@
 
 {#if navExpended}
   <nav transition:slide
-    class="nav fixed content-between overflow-hidden lg:hidden"
+    class="nav fixed content-between overflow-hidden lg:hidden z-20"
     class:active={navExpended}>
     <div class="w-full">
       <ul class="nav__menu">
@@ -178,7 +178,6 @@
 
 <style>
   .nav {
-    z-index: 5;
     width: 100%;
     height: 100%;
     top: 0;
