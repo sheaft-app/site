@@ -414,34 +414,53 @@
       method="POST"
       action="https://functions.sheaft.com/api/CreateContactCommand?code=oamUmnFWNVSRlfaMke7a/mAVIkaUr19iCapj9/7YX0zkPUnrGDCUFQ==">
       <div class="flex flex-wrap my-8 justify-center">
-        <div class="w-full md:w-4/12 md:pr-2 text-left">
-          <label class="font-semibold text-white md:text-xl">Prénom*</label>
-          <input
-            class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
-            px-3 shadow-lg md:text-xl"
-            id="FirstName"
-            name="FirstName"
-            type="FirstName"
-            required="required"
-            placeholder="Jean" />
+        <div class=" w-full md:w-6/12">
+          <div class="w-full md:pr-2 text-left">
+            <label class="font-semibold text-white md:text-xl">Prénom*</label>
+            <input
+              class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
+              px-3 shadow-lg md:text-xl"
+              id="FirstName"
+              name="FirstName"
+              type="FirstName"
+              required="required"
+              placeholder="jean" />
+          </div>
+          <div class="w-full text-left">
+            <label class="font-semibold text-white md:text-xl">
+              Adresse e-mail*
+            </label>
+            <input
+              class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
+              px-3 shadow-lg md:text-xl"
+              id="Email"
+              type="Email"
+              name="Email"
+              required="required"
+              placeholder="jean@doe.xyz" />
+          </div>
+          <div class="w-full text-left">
+            <label class="font-semibold text-white md:text-xl">Je suis*</label>
+            <select
+              class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
+              px-3 shadow-lg md:text-xl"
+              id="Role"
+              type="Role"
+              name="Role"
+              required="required">
+              <option></option>
+              <option value="consumer">Consommateur</option>
+              <option value="producer">Producteur</option>
+              <option value="shop">Commerçant</option>
+              <option value="">Restaurateur</option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+          <p class="w-full text-white text-left pt-4">(*) champs requis</p>
+          {#if error}
+            <p class="w-full text-red-600 text-xl">{error}</p>
+          {/if}
         </div>
-        <div class="w-full md:w-6/12 text-left">
-          <label class="font-semibold text-white md:text-xl">
-            Adresse e-mail*
-          </label>
-          <input
-            class="w-full bg-white text-gray-800 font-bold rounded my-2 py-4
-            px-3 shadow-lg md:text-xl"
-            id="Email"
-            type="Email"
-            name="Email"
-            required="required"
-            placeholder="bon@beurre" />
-        </div>
-        <p class="w-full text-white">(*) champs requis</p>
-        {#if error}
-          <p class="w-full text-red-600 text-xl">{error}</p>
-        {/if}
       </div>
       <button
         type="submit"
