@@ -464,7 +464,7 @@
               <option value="consumer">Consommateur</option>
               <option value="producer">Producteur</option>
               <option value="shop">Commerçant</option>
-              <option value="">Restaurateur</option>
+              <option value="restorer">Restaurateur</option>
               <option value="other">Autre</option>
             </select>
           </div>
