@@ -12,8 +12,8 @@
   const showMap = () => {
     mapActive.set(true);
 
-    document.body.classList.add('overflow-hidden'); 
-  }
+    document.body.classList.add("overflow-hidden");
+  };
 </script>
 
 <svelte:head>
@@ -191,28 +191,40 @@
 </div>
 
 <div class="block lg:hidden bg-white container mx-auto px-6 py-16 relative">
-  <h4
-  class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-8 md:mt-10">
-  Consommez local, gagnez des cadeaux !
+  <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-8 md:mt-10">
+    Consommez local, gagnez des cadeaux !
     <span class="bg-primary h-1 w-20 block mt-4" />
   </h4>
   <p class="text-gray-600 text-xl mb-4">
     Quand on fait quelque chose de bien, il est normal d'être récompensé.
   </p>
   <p class="text-gray-600 text-xl mb-4">
-    Sur Sheaft, chacune de vos actions vous rapporte des points : un achat, un avis sur un produit, un partage
-    sur les réseaux... toutes ces actions qui aident à faire connaître et améliorer les conditions de travail de nos producteurs.
+    Sur Sheaft, chacune de vos actions vous rapporte des points : un achat, un
+    avis sur un produit, un partage sur les réseaux... toutes ces actions qui
+    aident à faire connaître et améliorer les conditions de travail de nos
+    producteurs.
   </p>
   <p class="text-gray-600 text-xl mb-4">
-    Tous les mois, nous établissons des partenariats avec des artisans et producteurs de votre région qui proposeront des cadeaux aux membres ayant le plus de points.
+    Tous les mois, nous établissons des partenariats avec des artisans et
+    producteurs de votre région qui proposeront des cadeaux aux membres ayant le
+    plus de points.
   </p>
   <p class="text-gray-600 text-xl mb-4">
-    Votre position sera, avec votre accord, visible de tous en temps réel. Vous êtes un consommateur éthique et responsable, vous pouvez être fier !
+    Votre position sera, avec votre accord, visible de tous en temps réel. Vous
+    êtes un consommateur éthique et responsable, vous pouvez être fier !
   </p>
-  <button style="background-color: #33D7A3;" class="hover:underline text-white font-bold rounded-full py-4 px-8 shadow-lg md:text-xl" on:click={showMap}>Montrez moi la carte !</button>
+  <button
+    style="background-color: #33D7A3;"
+    class="hover:underline text-white font-bold rounded-full py-4 px-8 shadow-lg
+    md:text-xl"
+    on:click={showMap}>
+    Montrez moi la carte !
+  </button>
 </div>
 
-<div class="fixed lg:static map-module bottom-0 w-full z-10" class:active={$mapActive}>
+<div
+  class="fixed lg:static map-module bottom-0 w-full z-10"
+  class:active={$mapActive}>
   <Map />
 </div>
 
@@ -473,10 +485,9 @@
 </section>
 
 <style>
-
-@media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .map-module {
-      transition: .3s all ease-in-out;
+      transition: 0.3s all ease-in-out;
       transform: translateY(-100%);
     }
 
@@ -484,5 +495,4 @@
       transform: translateY(0);
     }
   }
-
 </style>
