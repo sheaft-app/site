@@ -12,11 +12,23 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #333;
+  color: #205164;
+}
+
+.text-normal {
+  color: #205164 !important;
+}
+
+.text-primary {
+  color: #009688 !important;
+}
+
+.text-accent {
+  color: #ff4081;
 }
 
 .gradient {
-  background: linear-gradient(90deg, #33d7c3 0%, #33D7A3 100%);
+  background: linear-gradient(90deg, #33d7c3 0%, #009688 100%);
 }
 
 h1,
@@ -31,11 +43,7 @@ h6 {
 }
 
 .bg-primary {
-  background: linear-gradient(90deg, #33d7c3 0%, #33D7A3 100%);
-}
-
-.text-primary {
-  color: #33D7A3;
+  background: #009688
 }
 
 h1 {
@@ -55,7 +63,7 @@ h1 {
 }
 
 main .btn-link {
-  color: #33d7a3 !important;
+  color: #009688 !important;
 }
 
 a.active {

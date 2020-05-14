@@ -23,7 +23,7 @@
       ? "#ffcb92"
       : p > 0
       ? "#ffe6c0"
-      : "#ffe0e0";
+      : "#e7e7e7";
   }
 
   function style(feature) {
@@ -322,13 +322,13 @@
   <div
     class:active={detailsActive}
     class="absolute lg:static bg-white w-full lg:w-6/12 px-5 py-5
-    overflow-y-scroll details-panel flex justify-center items-center"
+    overflow-y-scroll details-panel flex justify-center items-center h-full m-auto"
     style="z-index: 10;">
     {#if selectedDepartment || selectedRegion}
       <div>
         {#if selectedDepartment}
           <h2
-            class="text-3xl text-gray-800 font-semibold uppercase text-center
+            class="text-3xl font-semibold uppercase text-center
             pt-2">
             {selectedDepartment.properties.nom}
           </h2>
@@ -341,19 +341,19 @@
                 series={[selectedDepartment.Progress]}
                 thickness={4}
                 width={150}
-                thresholds={[{ till: 24, color: '#ffe0e0' }, { till: 50, color: '#ffcb92' }, { till: 99, color: '#9ff193' }, { till: 100, color: '#33D7A3' }]} />
+                thresholds={[{ till: 24, color: '#ffe0e0' }, { till: 50, color: '#ffcb92' }, { till: 99, color: '#9ff193' }, { till: 100, color: '#009688' }]} />
             {:else}
               <ProgressBar
                 style="radial"
                 series={[0]}
                 thickness={4}
                 width={150}
-                thresholds={[{ till: 24, color: '#ffe0e0' }, { till: 50, color: '#ffcb92' }, { till: 99, color: '#9ff193' }, { till: 100, color: '#33D7A3' }]} />
+                thresholds={[{ till: 24, color: '#ffe0e0' }, { till: 50, color: '#ffcb92' }, { till: 99, color: '#9ff193' }, { till: 100, color: '#009688' }]} />
             {/if}
           </div>
         {:else if selectedRegion}
           <h2
-            class="text-3xl text-gray-800 font-semibold uppercase text-center
+            class="text-3xl font-semibold uppercase text-center
             pt-2">
             {selectedRegion.properties.nom}
           </h2>
@@ -363,7 +363,7 @@
               series={[selectedRegion.Progress]}
               thickness={4}
               width={150}
-              thresholds={[{ till: 24, color: '#ffe0e0' }, { till: 50, color: '#ffcb92' }, { till: 99, color: '#9ff193' }, { till: 100, color: '#33D7A3' }]} />
+              thresholds={[{ till: 24, color: '#ffe0e0' }, { till: 50, color: '#ffcb92' }, { till: 99, color: '#9ff193' }, { till: 100, color: '#009688' }]} />
           </div>
         {/if}
 
@@ -376,12 +376,12 @@
             </span>
             <br />
             pour déverrouiller cette zone
-          </p>
+          </p>  
         {/if}
 
         {#if selectedDepartment && !selectedDepartment.Locked}
           <p class="text-xl uppercase py-3 text-center">
-            <span class="text-primary text-2xl">144 producteurs</span>
+            <span class="text-primary text-2xl">{selectedDepartment.Active} producteurs</span>
             <br />
             inscrits dans cette zone
           </p>
@@ -408,30 +408,30 @@
     {#if !selectedRegion && !selectedDepartment}
       <div class="hidden lg:block">
         <h4
-          class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-8 md:mt-10">
+          class="text-2xl md:text-3xl font-bold mb-4 mt-8 md:mt-10">
           Consommez local, gagnez des cadeaux !
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
-        <p class="text-gray-600 text-xl mb-4">
+        <p class=" text-xl mb-4">
           Quand on fait quelque chose de bien, il est normal d'être récompensé.
         </p>
-        <p class="text-gray-600 text-xl mb-4">
+        <p class=" text-xl mb-4">
           Sur Sheaft, chacune de vos actions vous rapporte des points : un
           achat, un avis sur un produit, un partage sur les réseaux... toutes
           ces actions qui aident à faire connaître et améliorer les conditions
           de travail de nos producteurs.
         </p>
-        <p class="text-gray-600 text-xl mb-4">
+        <p class=" text-xl mb-4">
           Tous les mois, nous établissons des partenariats avec des artisans et
           producteurs de votre région qui proposeront des cadeaux aux membres
           ayant le plus de points.
         </p>
-        <p class="text-gray-600 text-xl mb-4">
+        <p class=" text-xl mb-4">
           Votre position sera, avec votre accord, visible de tous en temps réel.
           Vous êtes un consommateur éthique et responsable, vous pouvez être
           fier !
         </p>
-        <p class="text-gray-700 font-semibold text-xl">
+        <p class=" font-semibold text-xl">
           Cliquez sur une région sur la carte pour consulter son état et celui
           de ses départements.
         </p>
@@ -467,7 +467,7 @@
         class="absolute text-center hidden lg:block"
         style="bottom: 20px; z-index: 1000; left: 50%; transform:
         translateX(-50%);">
-        <p class="text-3xl text-gray-700 bg-white py-2 px-4 shadow">
+        <p class="text-3xl bg-white py-2 px-4 shadow">
           {hoveredElement.properties.nom}
         </p>
       </div>
@@ -502,7 +502,7 @@
   }
 
   button.active {
-    background-color: #33d7a3;
+    background-color: #009688;
     color: #ffffff;
   }
 

@@ -19,7 +19,7 @@
 <!--Nav-->
 <nav
   id="header"
-  class="fixed w-full z-30 top-0 bg-primary"
+  class="fixed w-full z-30 top-0 gradient"
   style="transition: all 0.3s ease-in-out;">
   <div
     class="w-full container mx-auto flex flex-wrap items-center justify-between
@@ -189,6 +189,6 @@
   }
 
   .nav a.active {
-    color: #33d7a3 !important;
+    color: #009688 !important;
   }
 </style>
