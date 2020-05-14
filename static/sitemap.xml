@@ -8,7 +8,7 @@
 
         <lastmod>2020-05-01</lastmod>
 
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
 
     </url>
     <url>
@@ -35,7 +35,7 @@
 
         <lastmod>2020-05-01</lastmod>
 
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
 
     </url>
     <url>
@@ -44,25 +44,25 @@
 
         <lastmod>2020-05-01</lastmod>
 
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
 
     </url>
-    <!-- <url>
+    <url>
 
         <loc>https://www.sheaft.com/shops</loc>
 
         <lastmod>2020-05-01</lastmod>
 
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
 
-    </!--> -->
+    </!-->
     <url>
 
         <loc>https://www.sheaft.com/teams</loc>
 
         <lastmod>2020-05-01</lastmod>
 
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
 
     </url>
     <url>
@@ -71,7 +71,7 @@
 
         <lastmod>2020-05-01</lastmod>
 
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
 
     </url>
 
