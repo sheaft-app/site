@@ -23,14 +23,9 @@
   style="transition: all 0.3s ease-in-out;">
   <div
     class="w-full container mx-auto flex flex-wrap items-center justify-between
-    mt-0 py-2">
-    <div class="pl-4 flex items-center">
-      <a
-        class="text-white no-underline hover:no-underline font-bold text-2xl
-        lg:text-4xl"
-        href="/">
-        SHEAFT
-      </a>
+    mt-0 py-3">
+    <div class="pl-4 flex items-center" style="width: 40%;">
+        <img src="./img/sheaft_white.svg" style="max-width: 140px;" alt="SHEAFT" />
     </div>
 
     <div class="block lg:hidden pr-4" style="z-index:10;">
