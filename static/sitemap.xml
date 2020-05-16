@@ -1,78 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
     <url>
-
         <loc>https://www.sheaft.com/</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>daily</changefreq>
-
     </url>
     <url>
-
         <loc>https://www.sheaft.com/legals</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>monthly</changefreq>
-
     </url>
     <url>
-
         <loc>https://www.sheaft.com/privacy</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>monthly</changefreq>
-
     </url>
     <url>
-
         <loc>https://www.sheaft.com/about</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>daily</changefreq>
-
     </url>
     <url>
-
         <loc>https://www.sheaft.com/producers</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>daily</changefreq>
-
     </url>
     <url>
-
         <loc>https://www.sheaft.com/shops</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>daily</changefreq>
-
-    </!-->
-    <url>
-
-        <loc>https://www.sheaft.com/teams</loc>
-
-        <lastmod>2020-05-01</lastmod>
-
-        <changefreq>daily</changefreq>
-
     </url>
     <url>
-
         <loc>https://app.sheaft.com</loc>
-
         <lastmod>2020-05-01</lastmod>
-
         <changefreq>daily</changefreq>
-
     </url>
-
 </urlset>
