@@ -28,7 +28,7 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(90deg, #33d7c3 0%, #009688 100%);
+  background: linear-gradient(90deg, #009688 0%, #33d7c3 100%);
 }
 
 h1,

@@ -24,7 +24,7 @@
   <div
     class="w-full container mx-auto flex flex-wrap items-center justify-between
     mt-0 py-3">
-    <div class="pl-4 flex items-center" style="width: 40%;">
+    <div class="pl-4 flex items-center">
         <img src="./img/sheaft_white.svg" style="max-width: 140px;" alt="SHEAFT" />
     </div>
 
