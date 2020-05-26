@@ -159,14 +159,14 @@
             </a>
           </li>
         </ul>
-            <a
+            <!-- <a
               on:click={closeNav}
               class="w-full py-5 px-4 font-bold no-underline text-gray-700
               border-t border-solid text-center border-gray-300 hover:bg-gray-500 absolute bottom-0"
               href="https://app.sheaft.com"
               target="_blank">
               Ouvrir l'application
-            </a>
+            </a> -->
     </div>
   </nav>
 {/if}
