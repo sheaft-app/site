@@ -184,14 +184,14 @@
         <h4 class="font-semibold text-2xl mb-2">Accumuler</h4>
         <p class="text-center text-xl leading-relaxed">
           A mesure que vous utilisez l'application, vous gagnez des points et
-          faites aussi gagner des points à votre région.
+          faites aussi gagner des points à votre département.
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="block lg:hidden bg-white container mx-auto px-6 pt-16 relative">
+<!-- <div class="block lg:hidden bg-white container mx-auto px-6 pt-16 relative">
   <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-8 md:mt-10">
     Consommez local, gagnez des cadeaux !
     <span class="bg-primary h-1 w-20 block mt-4" />
@@ -220,13 +220,13 @@
     on:click={showMap}>
     Montrez moi la carte !
   </button>
-</div>
+</div> -->
 
-<div
+<!-- <div
   class="fixed lg:static map-module bottom-0 w-full z-10"
   class:active={$mapActive}>
   <Map />
-</div>
+</div> -->
 
 <div id="missions" class="relative bg-white pt-12">
   <div class="container mx-auto px-6 py-16 relative">
@@ -273,7 +273,7 @@
         <p class="text-xl">
           Nous nous efforçons chaque jour de trouver de nouvelles idées pour que
           leurs produits soient plus visibles, et plus facilement accessibles
-          aux commerces et aux consommateurs.
+          aux consommateurs et aux commerces.
         </p>
       </div>
       <img src="/img/soutenir.svg" class="md:w-1/3" alt="soutenez-les" />
@@ -281,31 +281,58 @@
     <div
       class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
       md:mt-16 lg:mt-0">
-      <img src="/img/cooking.svg" class="md:w-1/3" alt="cuisinez" />
+      <img src="/img/valorize.svg" class="md:w-1/3" alt="cuisinez" />
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-          Réduire le gaspillage
+          Valoriser une consommation plus responsable
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4">
-          Parfois, certains paniers ne seront pas récupérés par les
-          consommateurs. Mais nous n'allons certainement pas gâcher tous ces
-          bons produits.
+          Un achat, un avis sur un produit, un partage sur les réseaux… sur Sheaft, toutes vos actions augmentent le niveau de votre département ! 
         </p>
         <p class="text-xl mb-4">
-          Le panier rejoindra la carte Sheaft et chaque consommateur pourra
-          sélectionner ces paniers perdus.
+          Plus votre département a un niveau élevé, plus le taux de commission baisse. 
+          En gros, plus il y a de consommateurs sur Sheaft, plus les prix baissent. Alors parlez en à vos amis !
         </p>
         <p class="text-xl mb-4">
-          Les producteurs pourront même afficher des invendus et des produits
-          proche de leur date limite de consommation. Et oui, les légumes en fin
-          de vie font de très bonnes soupes !
+          Tous les mois, nous établissons des partenariats avec des artisans et producteurs de votre région qui pourront proposer des
+          cadeaux aux membres ayant le plus de points.
         </p>
       </div>
     </div>
   </div>
 </div>
+
+<!-- <div id="projects" class="relative bg-white pb-12">
+  <div class="container mx-auto px-6 py-16 relative">
+    <h4 class="text-2xl md:text-3xl font-bold text-center">Nos prochains projets</h4>
+    <span class="bg-primary h-1 w-20 block mt-4 m-auto mb-4" />
+    <div class="flex flex-wrap">
+      <div class="w-1/3 text-center">
+        <div class="rounded-full w-16 h-16 bg-red-500 m-auto"></div>
+        <div>
+          <p class="font-semibold text-2xl">Réduire le gaspillage</p>
+          <p class="text-xl">Une carte pour localiser rapidement des invendus à récupérer à la ferme.</p>
+        </div>
+      </div>
+      <div class="w-1/3 text-center">
+        <div class="rounded-full w-16 h-16 bg-red-500 m-auto"></div>
+        <div>
+          <p class="font-semibold text-2xl">Réduire les transports</p>
+          <p class="text-xl">Si mon voisin a commandé au même producteur, pourquoi ne pas récupérer sa commande ?</p>
+        </div>
+      </div> 
+      <div class="w-1/3 text-center">
+        <div class="rounded-full w-16 h-16 bg-red-500 m-auto"></div>
+        <div>
+          <p class="font-semibold text-2xl">Créer un réseau de points de retrait</p>
+          <p class="text-xl">Proposer aux petits commerces de devenir points de retrait pour éviter la mise en rayon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
 
 <h3
   class="text-center py-12 px-6 text-3xl md:text-4xl text-white font-light pb-20">
@@ -336,10 +363,8 @@
           </p>
           <p class="text-xl mb-4">
             Un jour que leur frère leur fait part de ses problèmes en tant que
-            producteur de yaourts, les développeurs et futurs co-fondateurs de
-            Sheaft, Noël et Geoffrey, font le constat que ces problèmes peuvent
-            être résolus à l'aide d'une plateforme unique regroupant tous les
-            acteurs concernés.
+            producteur de yaourts, Noël et Geoffrey, font le constat que ses problèmes peuvent
+            être résolus à l'aide d'une plateforme unique.
           </p>
           <p class="text-xl mb-4">
             Leur défi ? Briser les barrières de la consommation locale, pour
