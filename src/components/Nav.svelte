@@ -25,7 +25,7 @@
     class="w-full container mx-auto flex flex-wrap items-center justify-between
     mt-0 py-3">
     <div class="pl-4 flex items-center">
-        <img src="./img/sheaft_white.svg" style="max-width: 140px;" alt="SHEAFT" />
+        <a href="/"><img src="./img/sheaft_white.svg" width="150" height="70" style="max-width: 140px;" alt="SHEAFT" /></a>
     </div>
 
     <div class="block lg:hidden pr-4" style="z-index:10;">
@@ -79,14 +79,14 @@
             Je suis producteur
           </a>
         </li>
-        <li class="mr-3">
+        <!-- <li class="mr-3">
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === 'shops' ? 'page' : undefined}
             href="/shops">
             Je suis commercant
           </a>
-        </li>
+        </!--> 
         <li class="mr-3">
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"

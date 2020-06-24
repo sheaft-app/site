@@ -19,7 +19,7 @@
   <slot />
 </main>
 
-<p class="text-center w-full text-white mt-6 mb-2">
+<p class="text-center w-full text-white mt-6 mb-2 px-3">
   <a href="/legals" target="_blank">Informations légales</a>
   -
   <a href="/privacy" target="_blank">Déclaration de confidentialité</a>

@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Commerçants</title>
+  <title>Sheaft - Je suis commerçant</title>
 </svelte:head>
 
 <div class="relative bg-white overflow-hidden landing lg:flex" style="max-height: 100vh;">

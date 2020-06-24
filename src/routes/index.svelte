@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-  <title>Accueil</title>
+  <title>Sheaft - Consommer local, plus facilement</title>
 </svelte:head>
 
 <div class="pt-16 md:pt-24">
@@ -28,7 +28,7 @@
     items-center text-white pb-12 md:p-16 md:p-0">
     <!--Left Col-->
     <div
-      class="flex flex-col w-full md:w-2/5 justify-center items-start text-left">
+      class="flex flex-col w-full lg:w-2/5 justify-center items-start text-left">
       <!-- <p class="uppercase tracking-loose w-full">un petit texte</p> -->
       <h1 class="my-4 text-4xl md:text-5xl font-bold leading-tight">
         Consommer local,
@@ -52,15 +52,17 @@
         </a> -->
         <a
           href="#introduction"
-          class="mx-auto hover:underline text-white font-bold self-center
-          lg:ml-2">
+          class="mx-auto lg:mx-0 hover:underline bg-white 
+          font-bold rounded-full my-6 py-4 px-8 shadow-lg text-normal">
           En savoir plus
         </a>
       </div>
 
+                <!-- class="mx-auto hover:underline text-white font-bold self-center lg:ml-2" -->
+
     </div>
     <!--Right Col-->
-    <div class="hidden md:block w-full md:w-3/5 py-6 text-center">
+    <div class="hidden lg:block w-full md:w-3/5 py-6 text-center">
       <img
         class="w-full md:w-4/5 z-50"
         src="img/shopping.svg"
@@ -121,9 +123,9 @@
 </div>
 
 <div id="introduction" class="relative bg-white">
-  <div class="container mx-auto px-6 py-6 md:py-24 relative">
+  <div class="container mx-auto px-6 py-6 md:pt-24 relative">
     <div
-      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
+      class="flex flex-col md:flex-row items-center mt-16 md:mt-0
       md:mt-16 lg:mt-0">
       <img
         src="/img/easy.svg"
@@ -136,8 +138,7 @@
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4">
-          Vous voulez aider les agriculteurs de votre région, améliorer leur
-          rémunération et leurs conditions de travail et participer à la lutte
+          Vous voulez mieux manger, mieux rémunérer les agriculteurs de votre région et participer à la lutte
           contre le réchauffement climatique.
         </p>
         <!-- <p class="text-gray-600 text-xl mb-4">Il y a plein de producteurs autour de votre maison, que vous soyez en Île-de-France ou en Ardèche. Pourtant, c'est un effort de les trouver et d'acheter leurs produits.</p> -->
@@ -150,6 +151,57 @@
           Il est temps de changer les choses.
         </p>
       </div>
+    </div>
+  </div>
+</div>
+
+<div id="association" class="relative bg-white">
+  <div class="container mx-auto py-3 md:px-6 md:py-6 relative">
+    <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
+      Sheaft en trois mots
+      <span class="bg-primary h-1 w-20 block mt-4" />
+    </h4>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col px-6 bg-white lg:shadow-lg py-6 md:mr-2">
+        <div class="text-3xl text-primary w-16 h-16 rounded bg-green-100 flex justify-center items-center mb-6">
+        <svg version="1.1" class="fa-icon svelte-ieu2dh" width="10" height="16" role="presentation" viewBox="0 0 320 512" style=""><path key="path-0" d="M310.706 413.765c-1.314-6.63-7.835-10.872-14.424-9.369-10.692 2.439-27.422 5.413-45.426 5.413-56.763 0-101.929-34.79-121.461-85.449h113.689a12 12 0 0 0 11.708-9.369l6.373-28.36c1.686-7.502-4.019-14.631-11.708-14.631H115.22c-1.21-14.328-1.414-28.287.137-42.245H261.95a12 12 0 0 0 11.723-9.434l6.512-29.755c1.638-7.484-4.061-14.566-11.723-14.566H130.184c20.633-44.991 62.69-75.03 117.619-75.03 14.486 0 28.564 2.25 37.851 4.145 6.216 1.268 12.347-2.498 14.002-8.623l11.991-44.368c1.822-6.741-2.465-13.616-9.326-14.917C290.217 34.912 270.71 32 249.635 32 152.451 32 74.03 92.252 45.075 176H12c-6.627 0-12 5.373-12 12v29.755c0 6.627 5.373 12 12 12h21.569c-1.009 13.607-1.181 29.287-.181 42.245H12c-6.627 0-12 5.373-12 12v28.36c0 6.627 5.373 12 12 12h30.114C67.139 414.692 145.264 480 249.635 480c26.301 0 48.562-4.544 61.101-7.788 6.167-1.595 10.027-7.708 8.788-13.957l-8.818-44.49z"></path>  </svg>
+        </div>  
+        <h4 class="font-semibold text-xl mb-3">Gratuit</h4>
+        <p class="text-lg leading-relaxed text-gray-600">
+          Aucun abonnement, aucun taux de commission. Un producteur bien rémunéré, un consommateur qui paye moins cher.
+        </p>
+      </div>
+      <div class="flex flex-col px-6 bg-white lg:shadow-lg py-6 md:mr-2">
+        <div class="text-3xl text-primary w-16 h-16 rounded bg-green-100 flex justify-center items-center mb-6"><svg version="1.1" class="fa-icon svelte-ieu2dh" width="16" height="16" role="presentation" viewBox="0 0 512 512" style=""><path key="path-0" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path>  </svg></div>  
+        <h4 class="font-semibold text-xl mb-3">Transparent</h4>
+        <p class="text-lg leading-relaxed text-gray-600">
+          Sheaft est une association loi 1901, nous publions tous nos bilans ainsi que toutes nos prises de décision.
+        </p>
+      </div>
+      <div class="flex flex-col px-6 bg-white lg:shadow-lg py-6">
+        <div class="text-3xl text-primary w-16 h-16 rounded bg-green-100 flex justify-center items-center mb-6"><svg version="1.1" class="fa-icon svelte-ieu2dh" width="16" height="12.8" role="presentation" viewBox="0 0 640 512" style=""><path key="path-0" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path>  </svg></div>  
+        <h4 class="font-semibold text-xl mb-3">Communautaire</h4>
+        <p class="text-lg leading-relaxed text-gray-600">
+          N’importe qui peut consulter et proposer des modifications à l’écosystème Sheaft, même des personnes externes à l’association.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="our-app" class="relative">
+  <div class="container mx-auto px-6 py-12 pb-12 relative">
+    <h3
+      class="flex flex-col items-center text-3xl md:text-4xl text-white
+      font-bold mb-12 text-center">
+      Une expérience moderne et agréable
+      <span class="bg-white h-1 w-20 block mt-4" />
+    </h3>
+    <p class="text-white text-center text-xl mb-12">Consommer local ne devrait pas être synonyme de sacrifices sur l’expérience d’achat.
+     Pour nous, c’est important d’utiliser un outil qui soit agréable à l’utilisation et à l’oeil.</p>
+    <div class="flex flex-col md:flex-row justify-center mt-4">
+      <img src="./img/app_preview.jpg" class="shadow-lg hidden lg:block" alt="Notre application" style="max-width: 900px;" />
+      <img src="./img/app_preview_mobile.jpg" class="shadow-lg block lg:hidden m-auto" alt="Notre application" style="width: 300px;" />
     </div>
   </div>
 </div>
@@ -176,15 +228,15 @@
         <h4 class="font-semibold text-2xl mb-2">Récupérer</h4>
         <p class="text-center text-xl leading-relaxed">
           Une fois votre commande prête, vous êtes notifié par le producteur.
-          C'est l'heure d'aller la chercher !
+          C'est l'heure <b>d'aller la chercher</b> !
         </p>
       </div>
       <div class="flex flex-col items-center md:px-6 lg:px-12">
         <span class="text-6xl text-primary">3</span>
-        <h4 class="font-semibold text-2xl mb-2">Accumuler</h4>
+        <h4 class="font-semibold text-2xl mb-2">Acquérir</h4>
         <p class="text-center text-xl leading-relaxed">
-          A mesure que vous utilisez l'application, vous gagnez des points et
-          faites aussi gagner des points à votre département.
+          A mesure que vous utilisez l'application, vous gagnez des points vous permettant
+          de <b>gagner des cadeaux</b> des acteurs de votre région.
         </p>
       </div>
     </div>
@@ -228,77 +280,134 @@
   <Map />
 </div> -->
 
-<div id="missions" class="relative bg-white pt-12">
-  <div class="container mx-auto px-6 py-16 relative">
+<div id="features" class="relative bg-white">
+  <div class="container mx-auto px-6 py-6 relative">
     <div  
-      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
-      md:mt-16 lg:mt-0">
+      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 mt-6 md:mt-0
+      md:mt-16 lg:mt-0 feature-element justify-center">
       <img
-        src="/img/pushing_forward.svg"
-        class="md:w-1/3"
-        alt="mettre en avant" />
-      <div class="md:ml-16 xl:ml-32">
+        src="/img/1.jpg"
+        style="width: 700px;"
+        class="md:w-1/3 hidden lg:block"
+        alt="Trouver des produits locaux" />
+      <div class="lg:ml-16 xl:ml-32">
+        <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
+          <svg version="1.1" role="presentation" viewBox="0 0 512 512" style=""><path key="path-0" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>  </svg>
+        </div>
         <h4
-          class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-          Mettre en avant les produits locaux
-          <span class="bg-primary h-1 w-20 block mt-4" />
+          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
+          Trouvez les produits autour de vous
         </h4>
-        <p class="text-xl mb-4">
-          Pour répondre à cette problématique, nous mettons à disposition un
-          outil performant qui permet de rechercher efficacement des produits
-          autour de soi.
-        </p>
-        <p class="text-xl mb-4">
-          Chaque produit s'accompagne d'une jauge de proximité colorée allant de
-          vert pour très proche à orange foncé pour très loin.
-        </p>
-        <p class="text-xl mb-4">
-          La transparence est très importante pour nous et trouver le lieu de
-          production d'un produit ne doit pas demander plus qu'un coup d'oeil
-          sur une étiquette.
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Utilisez Sheaft pour trouver les producteurs et leurs produits autour de vous.
+          Chaque produit s’accompagne d’une jauge de proximité pour vous aider à juger plus vite de la distance de production.
         </p>
       </div>
     </div>
-    <div class="flex flex-col-reverse md:flex-row items-center mb-16 xl:mb-8">
+    <div class="flex flex-col-reverse md:flex-row items-center mb-6 xl:mb-8 feature-element justify-center">
       <div class="md:mr-16 xl:mr-32">
+        <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
+          <svg version="1.1" class="fa-icon" role="presentation" viewBox="0 0 384 512" style=""><path key="path-0" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>  </svg>
+        </div>
         <h4
-          class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-          Soutenir nos producteurs
-          <span class="bg-primary h-1 w-20 block mt-4" />
+          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
+          À la ferme, au marché, où vous voulez !
         </h4>
-        <p class="text-xl mb-4">
-          Pour Sheaft, améliorer les conditions de travail et de rémunération
-          des producteurs est une affaire de famille.
-        </p>
-        <p class="text-xl">
-          Nous nous efforçons chaque jour de trouver de nouvelles idées pour que
-          leurs produits soient plus visibles, et plus facilement accessibles
-          aux consommateurs et aux commerces.
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Notre outil permet au producteur de renseigner tous ses points de vente. S’il choisit de le faire, vous pourrez 
+          donc récupérer vos commandes directement à son point de vente qui peut être un marché, la ferme ou n’importe quel stand. Flexibilité !
         </p>
       </div>
-      <img src="/img/soutenir.svg" class="md:w-1/3" alt="soutenez-les" />
+      <img src="/img/2.jpg" class="md:w-1/3 hidden lg:block" alt="Choisissez votre lieu et horaire et récupération" />
     </div>
     <div
-      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
-      md:mt-16 lg:mt-0">
-      <img src="/img/valorize.svg" class="md:w-1/3" alt="cuisinez" />
-      <div class="md:ml-16 xl:ml-32">
+      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 feature-element justify-center">
+      <img src="/img/3.jpg" style="width: 700px;" class="md:w-1/3 hidden lg:block" alt="Gagnez des cadeaux !" />
+      <div class="lg:ml-16 xl:ml-32">
+        <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
+          <svg version="1.1" class="fa-icon svelte-ieu2dh" width="16" height="16" role="presentation" viewBox="0 0 512 512" style=""><path key="path-0" d="M32 448c0 17.7 14.3 32 32 32h160V320H32v128zm256 32h160c17.7 0 32-14.3 32-32V320H288v160zm192-320h-42.1c6.2-12.1 10.1-25.5 10.1-40 0-48.5-39.5-88-88-88-41.6 0-68.5 21.3-103 68.3-34.5-47-61.4-68.3-103-68.3-48.5 0-88 39.5-88 88 0 14.5 3.8 27.9 10.1 40H32c-17.7 0-32 14.3-32 32v80c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-80c0-17.7-14.3-32-32-32zm-326.1 0c-22.1 0-40-17.9-40-40s17.9-40 40-40c19.9 0 34.6 3.3 86.1 80h-86.1zm206.1 0h-86.1c51.4-76.5 65.7-80 86.1-80 22.1 0 40 17.9 40 40s-17.9 40-40 40z"></path>  </svg>
+        </div>
         <h4
-          class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-          Valoriser une consommation plus responsable
-          <span class="bg-primary h-1 w-20 block mt-4" />
+          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
+          Gagnez des cadeaux !
         </h4>
-        <p class="text-xl mb-4">
-          Un achat, un avis sur un produit, un partage sur les réseaux… sur Sheaft, toutes vos actions augmentent le niveau de votre département ! 
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Sur Sheaft, chaque action rapporte des points : commandes, avis, partage sur les réseaux, report d’un bug.
         </p>
-        <p class="text-xl mb-4">
-          Plus votre département a un niveau élevé, plus le taux de commission baisse. 
-          En gros, plus il y a de consommateurs sur Sheaft, plus les prix baissent. Alors parlez en à vos amis !
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Tous les mois, nous établissons des partenariats avec des artisans et producteurs de votre région qui pourront proposer des cadeaux aux membres ayant cumulé le plus de points.
         </p>
-        <p class="text-xl mb-4">
-          Tous les mois, nous établissons des partenariats avec des artisans et producteurs de votre région qui pourront proposer des
-          cadeaux aux membres ayant le plus de points.
+      </div>
+    </div>
+    <div class="flex flex-col-reverse md:flex-row items-center mb-6 xl:mb-8 feature-element justify-center">
+      <div class="lg:mr-16 xl:mr-32">
+        <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
+         <svg version="1.1" role="presentation" viewBox="0 0 576 512" style=""><path key="path-0" d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path>  </svg>
+        </div>
+        <h4
+          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
+          Dénichez les meilleurs produits
+        </h4>
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Chaque produit peut être évalué par les consommateurs. 
+          Trop salé ? Trop sucré ? Trop bon ? Plus rien ne vous échappera.
         </p>
+      </div>
+      <img src="/img/4.jpg" class="md:w-1/3 hidden lg:block" alt="Evaluations" />
+    </div>
+    <div
+      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 md:mt-0
+      lg:mt-0 feature-element justify-center">
+      <img src="/img/5.jpg" class="md:w-1/3 hidden lg:block" alt="Voir le lieu de production" style="width: 700px;" />
+      <div class="lg:ml-16 xl:ml-32">
+        <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
+          <svg version="1.1" class="fa-icon" role="presentation" viewBox="0 0 640 512" style=""><path key="path-0" d="M528 336c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 112c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24zm80-288h-64v-40.2c0-14.12 4.7-27.76 13.15-38.84 4.42-5.8 3.55-14.06-1.32-19.49L534.2 37.3c-6.66-7.45-18.32-6.92-24.7.78C490.58 60.9 480 89.81 480 119.8V160H377.67L321.58 29.14A47.914 47.914 0 0 0 277.45 0H144c-26.47 0-48 21.53-48 48v146.52c-8.63-6.73-20.96-6.46-28.89 1.47L36 227.1c-8.59 8.59-8.59 22.52 0 31.11l5.06 5.06c-4.99 9.26-8.96 18.82-11.91 28.72H22c-12.15 0-22 9.85-22 22v44c0 12.15 9.85 22 22 22h7.14c2.96 9.91 6.92 19.46 11.91 28.73l-5.06 5.06c-8.59 8.59-8.59 22.52 0 31.11L67.1 476c8.59 8.59 22.52 8.59 31.11 0l5.06-5.06c9.26 4.99 18.82 8.96 28.72 11.91V490c0 12.15 9.85 22 22 22h44c12.15 0 22-9.85 22-22v-7.14c9.9-2.95 19.46-6.92 28.72-11.91l5.06 5.06c8.59 8.59 22.52 8.59 31.11 0l31.11-31.11c8.59-8.59 8.59-22.52 0-31.11l-5.06-5.06c4.99-9.26 8.96-18.82 11.91-28.72H330c12.15 0 22-9.85 22-22v-6h80.54c21.91-28.99 56.32-48 95.46-48 18.64 0 36.07 4.61 51.8 12.2l50.82-50.82c6-6 9.37-14.14 9.37-22.63V192c.01-17.67-14.32-32-31.99-32zM176 416c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zm22-256h-38V64h106.89l41.15 96H198z"></path>  </svg>
+        </div>
+        <h4
+          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
+          Voir le lieu de production d’un coup d’oeil
+        </h4>
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Un simple passage de la souris dévoile le lieu de production.
+          C’est encore moins long que de chercher sur une étiquette !
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white">
+  <div class="container mx-auto px-6 pt-2 pb-16 relative">
+    <div class="bg-white lg:shadow-lg rounded lg:px-16 py-6 flex flex-col-reverse md:flex-row flex-wrap justify-between lg:mt-10">
+      <div class="w-full md:w-2/3">
+        <h4
+            class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
+            Vous êtes producteur ?
+            <span class="bg-primary h-1 w-20 block mt-4" />
+          </h4>
+        <p class="text-xl mb-4">Sheaft a été pensé pour vous faire gagner du temps.</p>
+        <p class="text-xl mb-8">Trouvez plus facilement des clients, fixez vos prix, gagnez en flexibilité, simplifiez la prise de commande.</p>
+        <a
+          class="mx-auto lg:mx-0 hover:underline bg-accent 
+          font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white"
+          href="/producers"
+          target="_blank">
+          En savoir plus
+        </a>
+      </div>
+      <img src="./img/youre_producer.jpg" style="max-width: 170px; height: 190px;" alt="Producteurs" />
+    </div>
+
+    <div class="bg-white lg:shadow-lg rounded lg:px-16 py-6 flex flex-wrap justify-between mt-10">
+      <img src="./img/youre_shops.jpg" style="max-width: 230px; height: 180px;" alt="Commerçants" />
+      <div class="w-full md:w-2/3">
+        <h4
+            class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
+            Vous êtes commerçant ?
+            <span class="bg-primary h-1 w-20 block mt-4" />
+          </h4>
+        <p class="text-xl mb-4">Sheaft intègre dans sa première version des fonctionnalités pour vous aider à simplifier vos échanges avec les producteurs.</p>
+        <p class="text-xl mb-4"><span class="text-accent">Contactez-nous</span> pour en savoir plus !</p>
       </div>
     </div>
   </div>
@@ -354,32 +463,44 @@
           <h3
             class="flex flex-col text-3xl md:text-4xl font-bold
             mb-6 mt-4 md:mt-0">
-            Une idée née à la ferme
+            Construire ensemble un futur responsable
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h3>
           <p class="text-xl mb-4">
-            Sheaft est littéralement né dans une ferme, plus précisément au sein
-            du GAEC La Ferme du Parquet en Haute-Savoie.
+            Ensemble, posons les briques de nouveaux modes de consommation tournés vers l’humain et l’écologie. 
           </p>
           <p class="text-xl mb-4">
-            Un jour que leur frère leur fait part de ses problèmes en tant que
-            producteur de yaourts, Noël et Geoffrey, font le constat que ses problèmes peuvent
-            être résolus à l'aide d'une plateforme unique.
+            Aujourd’hui, nous travaillons à rendre plus accessibles les produits de consommation alimentaire.
+            Mais demain, nous voulons faire la même chose pour les produits d’artisanat, pour les confections 
+            de nos voisins, que ce soit des sculptures de bois ou des livres pour enfants.
           </p>
           <p class="text-xl mb-4">
-            Leur défi ? Briser les barrières de la consommation locale, pour
-            faciliter ce mode d'achat.
+            Nous sommes tous ensemble responsables de demain. Il est temps d’arrêter de demander le changement, il est temps de le devenir.
           </p>
           <div class="my-8">
             <a
-              class="hover:underline bg-white font-bold
-              rounded-full py-4 px-8 shadow-lg text-xl ml-2"
+              class="mx-auto lg:mx-0 hover:underline bg-accent 
+              font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white"
               href="/about"
               target="_blank">
               En savoir plus
             </a>
           </div>
         </div>
+      </div>
+      <div class="bg-white lg:shadow-lg rounded lg:px-16 py-6 flex flex-col-reverse md:flex-row flex-wrap justify-between mt-10 items-center">
+        <div class="w-full md:w-2/3">
+          <h4
+            class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
+            Vous avez beaucoup à apporter
+            <span class="bg-primary h-1 w-20 block mt-4" />
+          </h4>
+          <p class="text-xl mb-4">Sheaft est présent sur Discord pour qu’on puisse échanger tous ensemble, autour de vos idées ou d’un débat chocolatine/pain au chocolat <span class="text-xs">(pain au chocolat bien sûr 😉)</span>.</p>
+          <p class="text-xl mb-4">Vous avez une suggestion ? Envoyez la sur notre canal « suggestions » et toute notre communauté pourra débattre autour.</p>
+          <p class="text-xl mb-4">Vous êtes un collègue développeur ? Vous pratiquez couramment le Svelte, le .NET Core ainsi que le GraphQL ? Prenez notre code, changez-le et montrez-nous directement !</p>
+          <img src="https://i.imgur.com/D5vyVzCg.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
+        </div>
+        <img src="./img/community.jpg" style="width: 260px; height: 230px;" alt="Communauté" />
       </div>
     </div>
   </div>
@@ -530,6 +651,26 @@
 
     .map-module.active {
       transform: translateY(0);
+    }
+  }
+
+  #association svg {
+    width: 30px;
+    fill: #009689;
+    height: 30px;
+  }
+
+  #features svg {
+    width: 30px;
+    fill: #ffffff;
+    height: 30px;
+  }
+
+
+  @media (min-width: 1024px) {
+
+    #features .feature-element div {
+      max-width: 500px;
     }
   }
 </style>

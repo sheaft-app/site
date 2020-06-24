@@ -27,6 +27,10 @@ body {
   color: #ff4081;
 }
 
+.bg-accent {
+  background-color: #ff4081;
+}
+
 .gradient {
   background: linear-gradient(90deg, #009688 0%, #33d7c3 100%);
 }
