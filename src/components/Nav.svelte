@@ -136,7 +136,7 @@
               Je suis producteur
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a
               on:click={closeNav}
               class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
@@ -146,7 +146,7 @@
               href="/producers">
               Je suis commercant
             </a>
-          </li>
+          </!-->
           <li>
             <a
               on:click={closeNav}
