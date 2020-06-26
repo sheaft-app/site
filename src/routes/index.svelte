@@ -349,7 +349,7 @@
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
         <p class="text-xl mb-4">Sheaft intègre dans sa première version des fonctionnalités pour vous aider à simplifier vos échanges avec les producteurs.</p>
-        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="#discord" target="_blank">posez nous la question sur Discord</a>.</p>
+        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="#discord" target="_blank">posez-nous la question sur Discord</a>.</p>
       </div>
     </div>
   </div>
@@ -505,7 +505,7 @@
     class="my-4 md:my-8 text-xl md:text-3xl leading-tight text-white px-3
     md:px-0">
     Nous prévoyons la sortie avant la fin de l'été 2020.<br/>
-    Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter
+    Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter :
   </h3>
   <div class="items-center w-full px-4 pb-6">
     <form

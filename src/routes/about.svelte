@@ -52,7 +52,7 @@
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-4xl sm:leading-none md:text-5xl">
             Nous avons l'ambition de 
             <br class="xl:hidden" />
-            <span class="text-primary">remanier la consommation locale.</span>
+            <span class="text-primary">remanier la consommation locale</span>.
           </h2>
         </div>
       </div>
@@ -95,7 +95,7 @@
           Les producteurs font un travail sans lequel nous ne pourrions vivre. Nous ne pouvons pas leur tourner le dos.
         </p>
         <p class="text-xl text-gray-600 font-light">
-          Mettons en valeur la production locale produite dans des conditions optimales pour l’humain et pour la terre,
+          Mettons en valeur la production locale réalisée dans des conditions optimales pour l’humain et pour la terre,
           rémunérons correctement les producteurs et réduisons l’impact financier des intermédiaires sur la chaîne.
         </p>
       </div>
@@ -146,24 +146,23 @@
 
 <div id="story" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
-    <div class="flex items-center h-auto flex-wrap lg:mx-auto -mx-6">
-      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
-        La petite histoire
-        <span class="bg-primary h-1 w-20 block mt-4" />
+    <div class="flex items-center h-auto flex-wrap lg:mx-auto">
+      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163;">
+        De la start-up à l'association
       </h4>
-      <div class="pt-6 px-6 lg:px-4">
+      <div class="pt-6 lg:px-0 lg:text-justify">
         <p class="mb-2">A la base, on voulait faire une start-up.</p>
-        <p class="mb-2">En septembre 2019, on avait réfléchi à un modèle économique viable, fait des recherches sur toutes nos charges d’infrastructure,
-        établi des Excel pour calculer notre rentabilité... bref, on ressemblait vraiment à une start-up. 
-        Mais on a fini par perdre en motivation en décembre et à travailler de moins en moins dessus.</p>
-        <p class="mb-2">Quand le confinement est apparu, la demande en local a explosé. En trois semaines, des dizaines de boîtes avaient
-        sauté sur la tendance pour créer chacune leur site et "aider" la consommation locale (à coup d'abonnements et de marges intermédiaires), appuyant le 
-        phénomène de prolifération des micro-sites web que nous voulions combattre à la base. Et d'un coup, on a compris pourquoi on avait
-         perdu notre motivation.</p>
-        <p class="mb-2">Nous avions passés tellement de temps à étudier la rentabilité du projet que nous avions totalement
-         perdus de vue le besoin initial : développer la consommation locale. La solution nous apparut comme une évidence, il fallait 
-         supprimer la marge et remettre le besoin sur le devant de la scène. Il fallait une application gratuite, transparente et communautaire.
-         Quoi de mieux pour ce projet qu'une association ?</p>
+        <p class="mb-2">En septembre 2019, on avait réfléchi à un modèle économique, estimé nos charges, 
+        établi des feuilles Excel pour calculer notre rentabilité... bref, on 
+        ressemblait vraiment à une start-up ! Mais plus on avançait, plus on avait 
+        le sentiment que quelque chose n'allait pas.</p>
+        <p class="mb-2">Quand le confinement est apparu, la demande en local a explosé. En quelques semaines, des dizaines de boîtes
+         ont surfé sur la tendance et chacune ont créé leur site pour aider la consommation locale, à coup d'abonnements et de taux 
+         de commission. Et là, on a compris.</p>
+        <p class="mb-2">On avait passé tellement de temps à étudier la rentabilité de notre projet qu'on avait totalement perdu de vue le besoin initial : 
+          développer la consommation locale. La solution est alors apparue comme une évidence ; il faut remettre ce besoin sur le 
+          devant de la scène grâce à une application gratuite, transparente, et communautaire ➡️ exit les taux de commission et les abonnements.
+           Et quoi de mieux pour ce projet qu'une association ?</p>
         <p class="mb-2">C'est comme ça que naquit la <b class="text-primary">fraise</b>. Une fraise et des milliers de lignes de code en libre accès.</p>
       </div>  
     </div>
@@ -171,18 +170,18 @@
 </div>
 <div id="why-us" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
-    <div class="flex items-center h-auto flex-wrap lg:mx-auto -mx-6">
-      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
+    <div class="flex items-center h-auto flex-wrap lg:mx-auto">
+      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163;">
         Pourquoi nous ?
-        <span class="bg-primary h-1 w-20 block mt-4" />
       </h4>
-      <div class="pt-6 px-6 lg:px-4">
-          <p class="mb-2">Les problèmes des producteurs, nous les connaissons bien. Petits-fils, 
-          neveux et frères de paysans, nous avons à coeur d’aider les producteurs à gagner du temps. 
-          C’est pour nous, littéralement, une affaire de famille.</p>
+      <div class="pt-6 lg:text-justify">
+        <p class="mb-2">Les problèmes des producteurs, nous les connaissons bien. Petits-fils, 
+        neveux et frères de paysans, nous avons à coeur d’aider les producteurs. 
+        C’est pour nous, littéralement, une affaire de famille.</p>
         <p class="mb-2">Notre expérience professionnelle dans l’innovation numérique nous a permis d’acquérir 
         un savoir autour des bons outils et des bonnes pratiques permettant de réduire les coûts liés 
-        aux tiers (paiement en ligne) et à l’infrastructure (serveurs).</p>
+        aux tiers.</p>
+        <p class="mb-2"></p>
         <p class="mb-2">En tant qu'association, nous sommes aussi renforcés par l'intelligence collective : tout le monde peut aider le projet
         à grandir. Nous n'allons que dans le sens du bien commun, défini par la communauté.</p>
         <p class="mb-2">A l'heure où nous écrivons ce paragraphe, nous sommes quatre. Mais nous espérons de tout coeur 
@@ -194,18 +193,17 @@
 
 <div id="vision" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
-    <div class="items-center h-auto lg:mx-auto -mx-6">
-      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
+    <div class="items-center h-auto lg:mx-auto">
+      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163; width: fit-content;">
         Sheaft dans cinq ans
-        <span class="bg-primary h-1 w-20 block mt-4" />
       </h4>
-      <div class="pt-6 px-6 lg:px-4 mb-6">
+      <div class="pt-6 mb-6 lg:text-justify">
         <div class="flex flex-wrap flex-col-reverse md:flex-row justify-between">
           <div class="w-full lg:w-1/2">
-            <p class="mb-2">Pour l’instant, Sheaft c’est une association qui créé une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans c’est bien plus que ça. Nous aimerions créer un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
+            <p class="mb-2">Pour l’instant, Sheaft c’est une association qui créé une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans c’est bien plus que ça. Nous aimerions en faire un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
             <p class="mb-2">Nous avons déjà quelques idées pour agrémenter notre plateforme et améliorer ses apports à la société. Les projets, ce n’est pas ce qu’il manque.</p>
           </div>
-          <img src="./img/whatsapp.png" class="m-auto lg:m-0 mb-5 lg:mb-0" style="max-height: 310px;" />
+          <img src="./img/whatsapp.png" class="m-auto lg:m-0 mb-5 lg:mb-0" style="max-height: 270px;" />
         </div>
       </div>
       <div class="px-2">
@@ -241,7 +239,7 @@
             />
           </div>
           <h2 class="text-xl font-semibold">Noël Mugnier</h2>
-          <span class="block mb-5">Développeur backend</span>
+          <span class="block mb-5">Développeur</span>
 
           <a href="https://fr.linkedin.com/in/nmugnier" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a
           >
@@ -259,7 +257,7 @@
             />
           </div>
           <h2 class="text-xl font-semibold">Geoffrey Mugnier</h2>
-          <span class="block mb-5">Développeur frontend</span>
+          <span class="block mb-5">Développeur</span>
 
           <a href="https://fr.linkedin.com/in/geoffrey-mugnier" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a>
         </div>
@@ -321,7 +319,7 @@
   <div class="container mx-auto px-6 py-16 relative text-center">
     <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">On cause ?</h1>
     <span class="bg-primary h-1 w-20 block mt-4 mb-4 text-center m-auto" />
-    <p class="mb-2">Ca nous ferait super plaisir de parler de Sheaft avec vous ! Ou de tout autre chose, on aime bien plein de sujets.</p>
+    <p class="mb-2">Ça nous ferait super plaisir de parler de Sheaft avec vous ! Ou de tout autre chose, on aime bien plein de sujets.</p>
     <p class="mb-2">N'hésitez pas à rejoindre notre Discord pour qu'on puisse échanger ensemble.</p>
     <img src="https://i.imgur.com/D5vyVzCg.png" style="max-width: 200px;" class="m-auto" />
   </div>

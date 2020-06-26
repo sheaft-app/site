@@ -50,7 +50,7 @@
           Regrouper vos commandes pour limiter les erreurs
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Traitez vos commandes à un seul et même endroit. Terminé les prises de commande par téléphone, les modifications par email : toutes vos commandes apparaissent en temps réel dans votre espace.
+          Traitez vos commandes en un seul et même endroit. Terminé les prises de commande par téléphone, les modifications par email : toutes vos commandes apparaissent en temps réel dans votre espace.
         </p>
       </div>
     </div>
@@ -61,7 +61,7 @@
             Gagner en visibilité pour augmenter vos ventes
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Les consommateurs vous trouveront plus facilement et pourront immédiatement connaître vos produits et vos stocks. Ils seront donc plus enclin à acheter vos produits et ce en plus grande quantité.
+          Grâce à Sheaft, les consommateurs ont un accès direct aux producteurs autour d’eux. Ils vous trouveront donc plus facilement et pourront immédiatement découvrir et commander vos produits. 
         </p>
       </div>
        <img src="/img/1.jpg" class="md:w-1/3 hidden lg:block" alt="Trouvez" />
@@ -78,7 +78,7 @@
           Automatiser pour vous faire gagner du temps
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Génération de bons de préparation, bons de livraison, factures, vous n’avez qu’à donner les ordres et nos algorithmes s’occuperont de tout. Tout a été pensé pour vous faire gagner un maximum de temps pour que vous puissiez vous concentrer sur les choses importantes.
+          Génération de bons de préparation, bons de livraison, factures, vous n’avez qu’à donner les ordres et nos algorithmes s’occuperont de tout. Tout est pensé pour vous faire gagner un maximum de temps afin que vous puissiez vous concentrer sur l'essentiel.
         </p>
       </div>
     </div>
@@ -89,7 +89,7 @@
             Connaître l’avis de vos clients pour améliorer la qualité de vos produits
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Consultez les avis de vos clients sur tous vos produits pour comprendre ceux qu’ils préfèrent et pourquoi. Améliorez vos produits pour satisfaire vos clients et augmenter vos ventes.
+          Consultez les avis de vos clients pour comprendre ce qu’ils aiment ou non dans vos produits afin de vous aider à les améliorer.
         </p>
       </div>
       <img src="/img/4.jpg" class="md:w-1/3 hidden lg:block" alt="Evaluations" />
@@ -101,7 +101,7 @@
   <div class="container mx-auto px-6 py-6 relative text-center">
     <h1 class="text-3xl font-bold lg:pt-0 text-center">Vous avez une question ?</h1>
     <span class="bg-primary h-1 w-20 block mt-4 mb-4 text-center m-auto" />
-    <p class="mb-2">Ca nous ferait super plaisir de répondre à toutes vos questions sur Sheaft.</p>
+    <p class="mb-2">Ça nous ferait super plaisir de répondre à toutes vos questions sur Sheaft.</p>
     <p class="mb-2">N'hésitez pas à rejoindre notre Discord, nous essayons de répondre le plus rapidement possible.</p>
     <img src="https://i.imgur.com/D5vyVzCg.png" style="max-width: 200px;" class="m-auto" />
   </div>
