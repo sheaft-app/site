@@ -3,36 +3,36 @@
 </svelte:head>
 
 <script>
-const ideas = [
-  {
-    title: "Point de retrait",
-    content: "Créer des points de retrait pour limiter les déplacements"
-  },
-  {
-    title: "Livraison participative",
-    content: "Votre voisin commande aussi ? Regroupez votre commande !"
-  },
-  {
-    title: "Carte des invendus",
-    content: "Localisez rapidement des invendus à la ferme"
-  },
-  {
-    title: "Jardins particuliers",
-    content: "Vendez le surplus de votre propre potager"
-  },
-  {
-    title: "Cagnotte producteur",
-    content: "Finançons les projets des producteurs"
-  },
-  {
-    title: "Demander un coup de main",
-    content: "Les patates à ramasser ? Les foins ? Demandez un coup de main aux bénévoles !"
-  },
-  {
-    title: "Proposer de l'artisanat",
-    content: "Le local, c'est bien plus que de la nourriture"
-  }
-]
+  const ideas = [
+    {
+      title: "Point de retrait",
+      content: "Créer des points de retrait communs pour limiter les déplacements"
+    },
+    {
+      title: "Livraison participative",
+      content: "Votre voisin commande aussi ? Regroupez vos commandes !"
+    },
+    {
+      title: "Carte des invendus",
+      content: "Localisez rapidement des invendus à la ferme"
+    },
+    {
+      title: "Jardins particuliers",
+      content: "Vendez le surplus de votre propre potager"
+    },
+    {
+      title: "Cagnotte producteur",
+      content: "Finançons les projets des producteurs"
+    },
+    {
+      title: "Demander un coup de main",
+      content: "Les patates à ramasser ? Les foins ? Demandez un coup de main aux volontaires !"
+    },
+    {
+      title: "Proposer de l'artisanat",
+      content: "Le local, c'est bien plus que de la nourriture"
+    }
+  ];
 </script>
 
 <div class="relative bg-white overflow-hidden landing lg:flex">
@@ -61,9 +61,9 @@ const ideas = [
 </div>
 
 <div id="missions" class="relative bg-white pt-12">
-  <div class="container mx-auto px-6 py-16 relative">
+  <div class="container mx-auto px-6 pb-1 relative">
     <div  
-      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
+      class="flex flex-col md:flex-row items-center mb-16 mt-16
       md:mt-16 lg:mt-0">
       <img
         src="/img/pushing_forward.svg"
@@ -73,7 +73,7 @@ const ideas = [
         <h4
           class="text-2xl md:text-3xl font-semibold mb-4 mt-4 md:mt-0">
           Simplifier l’accès à la consommation responsable
-          <span class="bg-primary h-1 w-20 block mt-4" />
+          <span class="bg-accent h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
           Pourquoi est-il plus facile d’acheter un avocat au Mexique qu’un yaourt produit à 20km de chez soi ?
@@ -84,11 +84,11 @@ const ideas = [
         </p>
       </div>
     </div>
-    <div class="flex flex-col-reverse md:flex-row items-center mb-16 xl:mb-8">
+    <div class="flex flex-col-reverse md:flex-row items-center mb-16 mt-16">
       <div class="md:mr-16 xl:mr-32">
         <h4
           class="text-2xl md:text-3xl font-semibold mb-4 mt-4 md:mt-0">
-          Soutenir nos producteurs et l'économie locale
+          Soutenir l'économie locale
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
@@ -102,43 +102,44 @@ const ideas = [
       <img src="/img/soutenir.svg" class="md:w-1/3" alt="soutenez-les" />
     </div>
     <div
-      class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
-      md:mt-16 lg:mt-0">
-      <img src="/img/valorize.svg" class="md:w-1/3" alt="cuisinez" />
+      class="flex flex-col md:flex-row items-center mb-16 mt-16">
+      <img src="/img/innovation.svg" class="md:w-1/3" alt="cuisinez" />
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
           Innover dans le sens de l’humain et de l’écologie
-          <span class="bg-primary h-1 w-20 block mt-4" />
+          <span class="bg-accent h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
           Jamais dans le sens du profit.
         </p>
         <p class="text-xl mb-4 text-gray-600 font-light">
           Il est possible de proposer des outils pratiques et innovants sans avoir à chercher un
-           « business model scalable et replicable » qui ouvre la voie à une « croissance exponentielle » et à devenir une licorne « disruptive ».
+           « business model scalable et replicable » au travers d'un produit « disruptif » qui ouvre la voie à une « croissance exponentielle » 
+           et au statut de « licorne ».
         </p>
       </div>
     </div>
-    <div class="flex flex-col-reverse md:flex-row items-center mb-16 xl:mb-8">
+    <div class="flex flex-col-reverse md:flex-row items-center mb-16 mt-16">
       <div class="md:mr-16 xl:mr-32">
         <h4
           class="text-2xl md:text-3xl font-semibold mb-4 mt-4 md:mt-0">
-          Anticiper pour avoir la force de réagir
+          Anticiper et développer notre résilience
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
-          Les dégâts engendrés par ceux de la dernière crise sanitaire de 2020 ont été colossaux pour nous tous. 
-          Si la science nous dit que c’est une première crise, la raison impose de tout faire pour combattre 
-          l’apparition des prochaines et de réduire au maximum leur impact si elles venaient à se produire.
+          Nous avons tous été touchés par la dernière crise sanitaire. Et si ce n'était que la première ?
+        </p>
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Nous devons tout faire pour combattre 
+          l’apparition des prochaines et atténuer les dégâts au maximum si elles venaient à se produire.
         </p>
         <p class="text-xl text-gray-600 font-light">
-         En créant Sheaft, nous voulions développer un outil qui soit basé sur un modèle résilient, 
-         c’est-à-dire qui soit le moins possible dépendant des fluctuations économiques. 
-         En période de crise, nous ne chercherons pas à sauver notre croissance mais à protéger les intérêts de toute notre communauté.
+         Sheaft s'est écarté du profit pour être le moins possible dépendant des fluctuations économiques.
+         En période de crise, nous ne chercherons pas à sauver notre croissance mais à protéger les intérêts de toute notre communauté, producteurs et consommateurs.
         </p>
       </div>
-      <img src="/img/soutenir.svg" class="md:w-1/3" alt="Anticipons" />
+      <img src="/img/resilience.svg" class="md:w-1/3" alt="Anticipons" />
     </div>
   </div>
 </div>
@@ -146,27 +147,23 @@ const ideas = [
 <div id="story" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
     <div class="flex items-center h-auto flex-wrap lg:mx-auto -mx-6">
-      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-3 lg:px-0">
+      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
         La petite histoire
         <span class="bg-primary h-1 w-20 block mt-4" />
       </h4>
-      <div class="p-4 md:p-12">
+      <div class="pt-6 px-6 lg:px-4">
         <p class="mb-2">A la base, on voulait faire une start-up.</p>
-        <p class="mb-2">En septembre 2019, on avait commencé à travailler sur les prémices de l’outil Sheaft, 
-        on avait réfléchi à un modèle économique viable, fait des recherches sur toutes nos charges d’infrastructure,
-        établi des Excel pour calculer notre rentabilité, etc… on ressemblait vraiment à une start-up. 
-        Mais on a fini par perdre en motivation en décembre sans vraiment savoir pourquoi.</p>
-        <p class="mb-2">Quand le confinement de mars 2020 apparaît, la demande en local explose pour éviter les files d’attentes 
-        et par solidarité envers les producteurs. En trois semaines, des dizaines d’acteurs avaient
-        déjà sauté sur la tendance pour créer leur outil et « aider » la consommation locale, venant 
-        appuyer le phénomène de prolifération des outils que nous voulions combattre à la base, tout ça pour faire peu de profit. 
-        Et d'un coup, nous comprenons pourquoi nous avions perdus notre motivation.</p>
-        <p class="mb-2">Nous avions passés tellement de temps à peaufiner le modèle économique pour
-        être rentable que nous avions totalement perdus de vue le besoin initial : développer la consommation
-        locale. La solution nous paraît comme une évidence : il faut supprimer la marge et remettre le
-        besoin sur le devant de la scène. Il faut un outil gratuit, transparent et communautaire.
-        Il faut une association. </p>
-
+        <p class="mb-2">En septembre 2019, on avait réfléchi à un modèle économique viable, fait des recherches sur toutes nos charges d’infrastructure,
+        établi des Excel pour calculer notre rentabilité... bref, on ressemblait vraiment à une start-up. 
+        Mais on a fini par perdre en motivation en décembre et à travailler de moins en moins dessus.</p>
+        <p class="mb-2">Quand le confinement est apparu, la demande en local a explosé. En trois semaines, des dizaines de boîtes avaient
+        sauté sur la tendance pour créer chacune leur site et "aider" la consommation locale (à coup d'abonnements et de marges intermédiaires), appuyant le 
+        phénomène de prolifération des micro-sites web que nous voulions combattre à la base. Et d'un coup, on a compris pourquoi on avait
+         perdu notre motivation.</p>
+        <p class="mb-2">Nous avions passés tellement de temps à étudier la rentabilité du projet que nous avions totalement
+         perdus de vue le besoin initial : développer la consommation locale. La solution nous apparut comme une évidence, il fallait 
+         supprimer la marge et remettre le besoin sur le devant de la scène. Il fallait une application gratuite, transparente et communautaire.
+         Quoi de mieux pour ce projet qu'une association ?</p>
         <p class="mb-2">C'est comme ça que naquit la <b class="text-primary">fraise</b>. Une fraise et des milliers de lignes de code en libre accès.</p>
       </div>  
     </div>
@@ -175,17 +172,21 @@ const ideas = [
 <div id="why-us" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
     <div class="flex items-center h-auto flex-wrap lg:mx-auto -mx-6">
-      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-3 lg:px-0">
+      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
         Pourquoi nous ?
         <span class="bg-primary h-1 w-20 block mt-4" />
       </h4>
-      <div class="p-4 md:p-12">
+      <div class="pt-6 px-6 lg:px-4">
           <p class="mb-2">Les problèmes des producteurs, nous les connaissons bien. Petits-fils, 
           neveux et frères de paysans, nous avons à coeur d’aider les producteurs à gagner du temps. 
           C’est pour nous, littéralement, une affaire de famille.</p>
         <p class="mb-2">Notre expérience professionnelle dans l’innovation numérique nous a permis d’acquérir 
         un savoir autour des bons outils et des bonnes pratiques permettant de réduire les coûts liés 
         aux tiers (paiement en ligne) et à l’infrastructure (serveurs).</p>
+        <p class="mb-2">En tant qu'association, nous sommes aussi renforcés par l'intelligence collective : tout le monde peut aider le projet
+        à grandir. Nous n'allons que dans le sens du bien commun, défini par la communauté.</p>
+        <p class="mb-2">A l'heure où nous écrivons ce paragraphe, nous sommes quatre. Mais nous espérons de tout coeur 
+        que "nous" définira bientôt des centaines de personnes.</p>
       </div>
     </div>
   </div>
@@ -194,11 +195,11 @@ const ideas = [
 <div id="vision" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
     <div class="items-center h-auto lg:mx-auto -mx-6">
-      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-3 lg:px-0">
+      <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 px-6 lg:px-0">
         Sheaft dans cinq ans
         <span class="bg-primary h-1 w-20 block mt-4" />
       </h4>
-      <div class="p-4 md:p-12">
+      <div class="pt-6 px-6 lg:px-4 mb-6">
         <div class="flex flex-wrap flex-col-reverse md:flex-row justify-between">
           <div class="w-full lg:w-1/2">
             <p class="mb-2">Pour l’instant, Sheaft c’est une association qui créé une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans c’est bien plus que ça. Nous aimerions créer un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
@@ -229,7 +230,6 @@ const ideas = [
     <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">Membres de l'association</h1>
     <span class="bg-primary h-1 w-20 block mt-4 mb-4 text-center m-auto" />
     <div class="flex flex-col sm:flex-row justify-center">
-      <!-- Card 1 -->
       <div class="sm:w-1/4 p-2">
         <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
           <div class="mb-3">
@@ -248,7 +248,6 @@ const ideas = [
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="sm:w-1/4 p-2">
         <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
           <div class="mb-3">
@@ -266,31 +265,28 @@ const ideas = [
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="sm:w-1/4 p-2">
         <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
           <div class="mb-3">
             <img
               class="w-auto mx-auto rounded-full"
-              src="https://www.ecoris.com/wp-content/uploads/2018/06/Ma%C3%ABva-DI-MARINO-portrait-e1510304563864.jpg"
+              src="./img/team/maeva.jpg"
               style="max-width: 150px;  min-height: 150px;"
               alt=""
             />
           </div>
           <h2 class="text-xl font-semibold">Maëva Di Marino</h2>
           <span class="block mb-5">Community Manager</span>
-
-          <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a>
+          <a href="https://fr.linkedin.com/in/maëva-di-marino-a08bb9129" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a>
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="sm:w-1/4 p-2">
         <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
           <div class="mb-3">
             <img
               class="w-auto mx-auto rounded-full"
-              src="https://media-exp1.licdn.com/dms/image/C5603AQFCNEC1mRTD1A/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=QmpVIZaCi6G7FY3-CvJkAWeWvKkx2HjNzYHwyPElhvE"
+              src="./img/team/fanny.jpeg"
               style="max-width: 150px;  min-height: 150px;"
               alt=""
             />
@@ -301,13 +297,12 @@ const ideas = [
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="sm:w-1/4 p-2">
         <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
           <div class="mb-3">
             <img
               class="w-auto mx-auto rounded-full"
-              src="./img/team/coffee.jpeg"
+              src="./img/team/coffee.jpg"
               style="max-width: 150px; min-height: 150px;"
               alt=""
             />

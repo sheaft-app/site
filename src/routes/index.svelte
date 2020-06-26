@@ -26,10 +26,8 @@
   <div
     class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row
     items-center text-white pb-12 md:p-16 md:p-0">
-    <!--Left Col-->
     <div
       class="flex flex-col w-full lg:w-2/5 justify-center items-start text-left">
-      <!-- <p class="uppercase tracking-loose w-full">un petit texte</p> -->
       <h1 class="my-4 text-4xl md:text-5xl font-bold leading-tight">
         Consommer local,
         <br />
@@ -43,13 +41,6 @@
       <div
         class="flex flex-wrap flex-col-reverse md:flex-row self-center
         md:self-auto">
-        <!-- <a
-          class="mx-auto lg:mx-0 hover:underline bg-white 
-          font-bold rounded-full my-6 py-4 px-8 shadow-lg text-normal"
-          href="https://app.sheaft.com"
-          target="_blank">
-          Lancer l'application
-        </a> -->
         <a
           href="#introduction"
           class="mx-auto lg:mx-0 hover:underline bg-white 
@@ -57,11 +48,7 @@
           En savoir plus
         </a>
       </div>
-
-                <!-- class="mx-auto hover:underline text-white font-bold self-center lg:ml-2" -->
-
     </div>
-    <!--Right Col-->
     <div class="hidden lg:block w-full md:w-3/5 py-6 text-center">
       <img
         class="w-full md:w-4/5 z-50"
@@ -141,12 +128,10 @@
           Vous voulez mieux manger, mieux rémunérer les agriculteurs de votre région et participer à la lutte
           contre le réchauffement climatique.
         </p>
-        <!-- <p class="text-gray-600 text-xl mb-4">Il y a plein de producteurs autour de votre maison, que vous soyez en Île-de-France ou en Ardèche. Pourtant, c'est un effort de les trouver et d'acheter leurs produits.</p> -->
         <p class="text-xl mb-4">
           Pourtant, il est plus compliqué d'acheter un yaourt produit à 20km de
           chez vous qu'un avocat produit au Mexique.
         </p>
-        <!-- <p class="text-gray-600 text-xl mb-4">700km pour amener des légumes que nous pouvons presque aller chercher à vélo sur le lieu de production ? Non merci.</p> -->
         <p class="text-xl mb-4">
           Il est temps de changer les choses.
         </p>
@@ -207,34 +192,28 @@
 </div>
 
 <div id="process" class="relative bg-gray-100">
-  <div class="container mx-auto px-6 py-12 pb-12 relative">
-    <h3
-      class="flex flex-col items-center text-3xl md:text-4xl text-secondary
-      font-bold mb-12 text-center">
-      Une consommation en 3 étapes
-      <span class="bg-primary h-1 w-20 block mt-4" />
-    </h3>
+  <div class="container mx-auto px-6 lg:px-0 py-12 pb-12 relative">
     <div class="flex flex-col md:flex-row">
-      <div class="flex flex-col items-center md:px-6 lg:px-12">
-        <span class="text-6xl text-primary">1</span>
-        <h4 class="font-semibold text-2xl mb-2">Rechercher</h4>
-        <p class="text-center text-xl leading-relaxed">
-          Sheaft affiche tous les produits de tous les producteurs
+      <div class="flex flex-col items-center md:px-6 lg:px-6 mb-5 lg:mb-0">
+        <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">1</span>
+        <h4 class="font-semibold text-2xl mb-2 text-primary">Rechercher</h4>
+        <p class="text-center text-xl leading-relaxed font-light">
+          Sheaft affiche tous les produits des producteurs
           <b>autour de vous</b>. Vous n'avez qu'à faire vos emplettes !
         </p>
       </div>
-      <div class="flex flex-col items-center md:px-6 lg:px-12">
-        <span class="text-6xl text-primary">2</span>
-        <h4 class="font-semibold text-2xl mb-2">Récupérer</h4>
-        <p class="text-center text-xl leading-relaxed">
-          Une fois votre commande prête, vous êtes notifié par le producteur.
-          C'est l'heure <b>d'aller la chercher</b> !
+      <div class="flex flex-col items-center md:px-6 lg:px-6 mb-5 lg:mb-0">
+        <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">2</span>
+        <h4 class="font-semibold text-2xl mb-2 text-primary">Récupérer</h4>
+        <p class="text-center text-xl leading-relaxed font-light">
+          Vous êtes notifié dès que votre commande est prête :
+          c'est l'heure <b>d'aller la chercher</b> !
         </p>
       </div>
-      <div class="flex flex-col items-center md:px-6 lg:px-12">
-        <span class="text-6xl text-primary">3</span>
-        <h4 class="font-semibold text-2xl mb-2">Acquérir</h4>
-        <p class="text-center text-xl leading-relaxed">
+      <div class="flex flex-col items-center md:px-6 lg:px-6">
+        <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">3</span>
+        <h4 class="font-semibold text-2xl mb-2 text-primary">Cumuler</h4>
+        <p class="text-center text-xl leading-relaxed font-light">
           A mesure que vous utilisez l'application, vous gagnez des points vous permettant
           de <b>gagner des cadeaux</b> des acteurs de votre région.
         </p>
@@ -243,48 +222,11 @@
   </div>
 </div>
 
-<!-- <div class="block lg:hidden bg-white container mx-auto px-6 pt-16 relative">
-  <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-8 md:mt-10">
-    Consommez local, gagnez des cadeaux !
-    <span class="bg-primary h-1 w-20 block mt-4" />
-  </h4>
-  <p class="text-xl mb-4">
-    Quand on fait quelque chose de bien, il est normal d'être récompensé.
-  </p>
-  <p class="text-xl mb-4">
-    Sur Sheaft, chacune de vos actions vous rapporte des points : un achat, un
-    avis sur un produit, un partage sur les réseaux... toutes ces actions qui
-    aident à faire connaître et améliorer les conditions de travail de nos
-    producteurs.
-  </p>
-  <p class="text-xl mb-4">
-    Tous les mois, nous établissons des partenariats avec des artisans et
-    producteurs de votre région qui proposeront des cadeaux aux membres ayant le
-    plus de points.
-  </p>
-  <p class="text-xl mb-4">
-    Votre position sera, avec votre accord, visible de tous en temps réel. Vous
-    êtes un consommateur éthique et responsable, vous pouvez être fier !
-  </p>
-  <button
-    class="hover:underline text-white font-bold rounded-full py-4 px-8 shadow-lg
-    md:text-xl bg-primary"
-    on:click={showMap}>
-    Montrez moi la carte !
-  </button>
-</div> -->
-
-<!-- <div
-  class="fixed lg:static map-module bottom-0 w-full z-10"
-  class:active={$mapActive}>
-  <Map />
-</div> -->
-
 <div id="features" class="relative bg-white">
   <div class="container mx-auto px-6 py-6 relative">
     <div  
       class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 mt-6 md:mt-0
-      md:mt-16 lg:mt-0 feature-element justify-center">
+      lg:mt-0 feature-element justify-center">
       <img
         src="/img/1.jpg"
         style="width: 700px;"
@@ -299,8 +241,8 @@
           Trouvez les produits autour de vous
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
-          Utilisez Sheaft pour trouver les producteurs et leurs produits autour de vous.
-          Chaque produit s’accompagne d’une jauge de proximité pour vous aider à juger plus vite de la distance de production.
+          Utilisez Sheaft pour trouver les produits des producteurs autour de vous.
+          Chaque produit est étiquetté par un code couleur pour prendre connaissance de la distance de production d'un coup d'oeil.
         </p>
       </div>
     </div>
@@ -335,7 +277,7 @@
           Sur Sheaft, chaque action rapporte des points : commandes, avis, partage sur les réseaux, report d’un bug.
         </p>
         <p class="text-xl mb-4 text-gray-600 font-light">
-          Tous les mois, nous établissons des partenariats avec des artisans et producteurs de votre région qui pourront proposer des cadeaux aux membres ayant cumulé le plus de points.
+          Tous les mois, des artisans et producteurs de votre région pourront proposer des cadeaux aux membres ayant cumulé le plus de points.
         </p>
       </div>
     </div>
@@ -369,7 +311,7 @@
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
           Un simple passage de la souris dévoile le lieu de production.
-          C’est encore moins long que de chercher sur une étiquette !
+          C’est encore plus rapide que de chercher sur une étiquette !
         </p>
       </div>
     </div>
@@ -382,7 +324,7 @@
       <div class="w-full md:w-2/3">
         <h4
             class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-            Vous êtes producteur ?
+            Vous êtes producteur/productrice ?
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
         <p class="text-xl mb-4">Sheaft a été pensé pour vous faire gagner du temps.</p>
@@ -403,11 +345,11 @@
       <div class="w-full md:w-2/3">
         <h4
             class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-            Vous êtes commerçant ?
+            Vous êtes commerçant(e) ?
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
         <p class="text-xl mb-4">Sheaft intègre dans sa première version des fonctionnalités pour vous aider à simplifier vos échanges avec les producteurs.</p>
-        <p class="text-xl mb-4"><span class="text-accent">Contactez-nous</span> pour en savoir plus !</p>
+        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="#discord" target="_blank">posez nous la question sur Discord</a>.</p>
       </div>
     </div>
   </div>
@@ -470,12 +412,11 @@
             Ensemble, posons les briques de nouveaux modes de consommation tournés vers l’humain et l’écologie. 
           </p>
           <p class="text-xl mb-4">
-            Aujourd’hui, nous travaillons à rendre plus accessibles les produits de consommation alimentaire.
-            Mais demain, nous voulons faire la même chose pour les produits d’artisanat, pour les confections 
-            de nos voisins, que ce soit des sculptures de bois ou des livres pour enfants.
+            Nous sommes tous ensemble responsables de demain. Il est temps d’arrêter de demander le changement, il est temps de le devenir.
           </p>
           <p class="text-xl mb-4">
-            Nous sommes tous ensemble responsables de demain. Il est temps d’arrêter de demander le changement, il est temps de le devenir.
+            Sheaft, c'est aujourd'hui une association qui lutte pour le développement de la
+            consommation alimentaire en circuit court. Mais ce n'est qu'un début.
           </p>
           <div class="my-8">
             <a
@@ -496,8 +437,7 @@
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
           <p class="text-xl mb-4">Sheaft est présent sur Discord pour qu’on puisse échanger tous ensemble, autour de vos idées ou d’un débat chocolatine/pain au chocolat <span class="text-xs">(pain au chocolat bien sûr 😉)</span>.</p>
-          <p class="text-xl mb-4">Vous avez une suggestion ? Envoyez la sur notre canal « suggestions » et toute notre communauté pourra débattre autour.</p>
-          <p class="text-xl mb-4">Vous êtes un collègue développeur ? Vous pratiquez couramment le Svelte, le .NET Core ainsi que le GraphQL ? Prenez notre code, changez-le et montrez-nous directement !</p>
+          <p class="text-xl mb-4">Vous êtes un(e) collègue développeur/se ? Vous pratiquez couramment le Svelte, le .NET Core ainsi que le GraphQL ? Prenez notre code, changez-le et montrez-nous directement !</p>
           <img src="https://i.imgur.com/D5vyVzCg.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
         </div>
         <img src="./img/community.jpg" style="width: 260px; height: 230px;" alt="Communauté" />
@@ -556,7 +496,7 @@
   <h1
     class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center
     text-white">
-    Restons en contact !
+    Et ça sort quand ?!
   </h1>
   <div class="w-full mb-4">
     <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
@@ -564,8 +504,8 @@
   <h3
     class="my-4 md:my-8 text-xl md:text-3xl leading-tight text-white px-3
     md:px-0">
-    Pour rester informé de toutes nos avancées, inscrivez-vous à notre
-    newsletter
+    Nous prévoyons la sortie avant la fin de l'été 2020.<br/>
+    Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter
   </h3>
   <div class="items-center w-full px-4 pb-6">
     <form
