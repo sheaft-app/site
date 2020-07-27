@@ -349,7 +349,7 @@
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
         <p class="text-xl mb-4">Sheaft intègre dans sa première version des fonctionnalités pour vous aider à simplifier vos échanges avec les producteurs.</p>
-        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="#discord" target="_blank">posez-nous la question sur Discord</a>.</p>
+        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="https://discord.gg/nur5Aem" target="_blank">posez-nous la question sur Discord</a>.</p>
       </div>
     </div>
   </div>
@@ -437,8 +437,13 @@
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
           <p class="text-xl mb-4">Sheaft est présent sur Discord pour qu’on puisse échanger tous ensemble, autour de vos idées ou d’un débat chocolatine/pain au chocolat <span class="text-xs">(pain au chocolat bien sûr 😉)</span>.</p>
-          <p class="text-xl mb-4">Vous êtes un(e) collègue développeur/se ? Vous pratiquez couramment le Svelte, le .NET Core ainsi que le GraphQL ? Prenez notre code, changez-le et montrez-nous directement !</p>
-          <img src="https://i.imgur.com/D5vyVzCg.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
+          <a href="https://discord.gg/nur5Aem" target="_blank">
+            <img class="mb-4" src="img/discord.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
+          </a>
+          <p class="text-xl mb-4">Vous êtes un(e) développeur/se web ? Prenez notre code sur GitHub, changez-le et montrez-nous directement !</p>
+          <a href="https://github.com/sheaft-app/app" target="_blank">
+            <img src="img/github.jpg" style="max-width: 200px;" alt="Voir notre code source" />
+          </a>
         </div>
         <img src="./img/community.jpg" style="width: 260px; height: 230px;" alt="Communauté" />
       </div>

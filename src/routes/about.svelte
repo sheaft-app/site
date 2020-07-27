@@ -321,7 +321,9 @@
     <span class="bg-primary h-1 w-20 block mt-4 mb-4 text-center m-auto" />
     <p class="mb-2">Ça nous ferait super plaisir de parler de Sheaft avec vous ! Ou de tout autre chose, on aime bien plein de sujets.</p>
     <p class="mb-2">N'hésitez pas à rejoindre notre Discord pour qu'on puisse échanger ensemble.</p>
-    <img src="https://i.imgur.com/D5vyVzCg.png" style="max-width: 200px;" class="m-auto" />
+    <a href="https://discord.gg/nur5Aem" target="_blank">
+      <img src="img/discord.png" class="m-auto" style="max-width: 200px;" alt="Rejoindre notre Discord" />
+    </a>
   </div>
 </div>
 

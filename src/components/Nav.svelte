@@ -95,6 +95,14 @@
             A propos
           </a>
         </li>
+        <li class="mr-3">
+          <a
+            class="inline-block py-2 px-4 text-white font-bold no-underline"
+            aria-current={segment === 'support-us' ? 'page' : undefined}
+            href="/support-us">
+            Soutenir le projet
+          </a>
+        </li>
       </ul>
       <!-- <a
         id="navAction"
@@ -156,6 +164,17 @@
               class:active={segment === 'about'}
               href="/about">
               A propos
+            </a>
+          </li>
+          <li>
+            <a
+              on:click={closeNav}
+              class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
+              border-b border-gray-300 hover:bg-gray-500"
+              aria-current={segment === 'support-us' ? 'page' : undefined}
+              class:active={segment === 'support-us'}
+              href="/support-us">
+              Soutenir le projet
             </a>
           </li>
         </ul>
