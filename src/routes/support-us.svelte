@@ -66,7 +66,7 @@
               src="/img/donation.svg"
               class="md:w-6/12 m-auto mb-12"
               alt="mettre en avant" />
-            <a href="#" class="mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white cusor-pointer">
+            <a href="https://opencollective.com/sheaft" class="mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white cusor-pointer">
               Je fais un don
             </a>
           </div>
