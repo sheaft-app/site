@@ -34,6 +34,10 @@
   })
 </script>
 
+<svelte:head>
+  <title>Sheaft - Nous soutenir</title>
+</svelte:head>
+
 <div class="pt-16 md:pt-24">
   <div class="container px-6 mx-auto relative">
     <div

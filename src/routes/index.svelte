@@ -441,7 +441,7 @@
             <img class="mb-4" src="img/discord.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
           </a>
           <p class="text-xl mb-4">Vous êtes un(e) développeur/se web ? Prenez notre code sur GitHub, changez-le et montrez-nous directement !</p>
-          <a href="https://github.com/sheaft-app/app" target="_blank">
+          <a href="https://github.com/sheaft-app" target="_blank">
             <img src="img/github.jpg" style="max-width: 200px;" alt="Voir notre code source" />
           </a>
         </div>

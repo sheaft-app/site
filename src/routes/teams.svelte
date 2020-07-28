@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>L'équipe</title>
+  <title>Sheaft - L'équipe</title>
 </svelte:head>
 
 <div class="flex justify-center flex-wrap hidden">
