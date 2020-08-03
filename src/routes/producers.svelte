@@ -20,7 +20,7 @@
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-4xl sm:leading-none md:text-5xl">
             J’ai besoin d’un outil qui me permette de 
             <br class="xl:hidden" />
-            <span class="text-primary">passer plus de temps avec ma famille.</span>
+            <span class="text-primary">passer plus de temps avec ma famille</span>.
           </h2>
         </div>
       </div>

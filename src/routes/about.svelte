@@ -3,6 +3,38 @@
 </svelte:head>
 
 <script>
+  const members = [
+    {
+      name: "Noël Mugnier",
+      title: "Développeur",
+      linkedIn: "https://fr.linkedin.com/in/nmugnier",
+      img: "nono.jpg"
+    },
+    {
+      name: "Geoffrey Mugnier",
+      title: "Développeur",
+      linkedIn: "https://fr.linkedin.com/in/geoffrey-mugnier",
+      img: "geoffrey.jpg"
+    },
+    {
+      name: "Maëva Di Marino",
+      title: "Community Manager",
+      linkedIn: "https://fr.linkedin.com/in/maëva-di-marino-a08bb9129",
+      img: "maeva.jpg"
+    },
+    {
+      name: "Fanny Mugnier",
+      title: "Chargée du support sur l'outil",
+      linkedIn: "https://fr.linkedin.com/in/fmugnier",
+      img: "fanny.jpeg"
+    },
+    {
+      name: "Machine à café",
+      title: "Responsable du bonheur",
+      img: "coffee.jpg"
+    }
+  ];
+
   const ideas = [
     {
       title: "Point de retrait",
@@ -14,15 +46,15 @@
     },
     {
       title: "Carte des invendus",
-      content: "Localisez rapidement des invendus à la ferme"
+      content: "Localiser rapidement des invendus à la ferme, réduire le gaspillage"
     },
     {
       title: "Jardins particuliers",
-      content: "Vendez le surplus de votre propre potager"
+      content: "Vendre plus facilement les fruits et les légumes de son propre potager"
     },
     {
       title: "Cagnotte producteur",
-      content: "Finançons les projets des producteurs"
+      content: "Financer les projets des producteurs grâce à une cagnotte démocrative"
     },
     {
       title: "Demander un coup de main",
@@ -75,10 +107,10 @@
           Simplifier l’accès à la consommation responsable
           <span class="bg-accent h-1 w-20 block mt-4" />
         </h4>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Pourquoi est-il plus facile d’acheter un avocat au Mexique qu’un yaourt produit à 20km de chez soi ?
         </p>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Sheaft, c’est la volonté d’inverser cette tendance. Mieux manger ne devrait pas impliquer un travail d’investigation fastidieux, 
           ça devrait être un réflexe. 
         </p>
@@ -91,10 +123,10 @@
           Soutenir l'économie locale
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Les producteurs font un travail sans lequel nous ne pourrions vivre. Nous ne pouvons pas leur tourner le dos.
         </p>
-        <p class="text-xl text-gray-600 font-light">
+        <p class="text-xl text-gray-600 font-light text-justify">
           Mettons en valeur la production locale réalisée dans des conditions optimales pour l’humain et pour la terre,
           rémunérons correctement les producteurs et réduisons l’impact financier des intermédiaires sur la chaîne.
         </p>
@@ -110,10 +142,10 @@
           Innover dans le sens de l’humain et de l’écologie
           <span class="bg-accent h-1 w-20 block mt-4" />
         </h4>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Jamais dans le sens du profit.
         </p>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Il est possible de proposer des outils pratiques et innovants sans avoir à chercher un
            « business model scalable et replicable » au travers d'un produit « disruptif » qui ouvre la voie à une « croissance exponentielle » 
            et au statut de « licorne ».
@@ -127,16 +159,16 @@
           Anticiper et développer notre résilience
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Nous avons tous été touchés par la dernière crise sanitaire. Et si ce n'était que la première ?
         </p>
-        <p class="text-xl mb-4 text-gray-600 font-light">
+        <p class="text-xl mb-4 text-gray-600 font-light text-justify">
           Nous devons tout faire pour combattre 
-          l’apparition des prochaines et atténuer les dégâts au maximum si elles venaient à se produire.
+          l’apparition des prochaines et atténuer au maximum les dégâts si elles venaient à se produire.
         </p>
-        <p class="text-xl text-gray-600 font-light">
-         Sheaft s'est écarté du profit pour être le moins possible dépendant des fluctuations économiques.
-         En période de crise, nous ne chercherons pas à sauver notre croissance mais à protéger les intérêts de toute notre communauté, producteurs et consommateurs.
+        <p class="text-xl text-gray-600 font-light text-justify">
+         Sheaft s'est écartée du profit pour être le moins possible dépendante des fluctuations économiques.
+         En période de crise, nous ne chercherons pas à sauver notre croissance mais à protéger les intérêts de toute notre communauté : producteurs et consommateurs.
         </p>
       </div>
       <img src="/img/resilience.svg" class="md:w-1/3" alt="Anticipons" />
@@ -150,20 +182,20 @@
       <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163;">
         De la start-up à l'association
       </h4>
-      <div class="pt-6 lg:px-0 lg:text-justify">
-        <p class="mb-2">A la base, on voulait faire une start-up.</p>
+      <div class="pt-6 lg:px-0 text-justify">
+        <p class="mb-2">À la base, on voulait faire une start-up.</p>
         <p class="mb-2">En septembre 2019, on avait réfléchi à un modèle économique, estimé nos charges, 
         établi des feuilles Excel pour calculer notre rentabilité... bref, on 
         ressemblait vraiment à une start-up ! Mais plus on avançait, plus on avait 
         le sentiment que quelque chose n'allait pas.</p>
         <p class="mb-2">Quand le confinement est apparu, la demande en local a explosé. En quelques semaines, des dizaines de boîtes
-         ont surfé sur la tendance et chacune ont créé leur site pour aider la consommation locale, à coup d'abonnements et de taux 
+         ont surfé sur la tendance et chacune a créé son site pour aider la consommation locale, à coup d'abonnements et de taux 
          de commission. Et là, on a compris.</p>
         <p class="mb-2">On avait passé tellement de temps à étudier la rentabilité de notre projet qu'on avait totalement perdu de vue le besoin initial : 
-          développer la consommation locale. La solution est alors apparue comme une évidence ; il faut remettre ce besoin sur le 
-          devant de la scène grâce à une application gratuite, transparente, et communautaire ➡️ exit les taux de commission et les abonnements.
+          développer la consommation locale. La solution est alors apparue comme une évidence : il faut remettre ce besoin sur le 
+          devant de la scène grâce à une application gratuite, transparente, et communautaire ; exit les taux de commission et les abonnements.
            Et quoi de mieux pour ce projet qu'une association ?</p>
-        <p class="mb-2">C'est comme ça que naquit la <b class="text-primary">fraise</b>. Une fraise et des milliers de lignes de code en libre accès.</p>
+        <p class="mb-2">C'est comme ça qu'est née la <b class="text-primary">fraise</b>. Une fraise et des milliers de lignes de code en libre accès.</p>
       </div>  
     </div>
   </div>
@@ -174,7 +206,7 @@
       <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163;">
         Pourquoi nous ?
       </h4>
-      <div class="pt-6 lg:text-justify">
+      <div class="pt-6 text-justify">
         <p class="mb-2">Les problèmes des producteurs, nous les connaissons bien. Petits-fils, 
         neveux et frères de paysans, nous avons à coeur d’aider les producteurs. 
         C’est pour nous, littéralement, une affaire de famille.</p>
@@ -184,7 +216,7 @@
         <p class="mb-2"></p>
         <p class="mb-2">En tant qu'association, nous sommes aussi renforcés par l'intelligence collective : tout le monde peut aider le projet
         à grandir. Nous n'allons que dans le sens du bien commun, défini par la communauté.</p>
-        <p class="mb-2">A l'heure où nous écrivons ce paragraphe, nous sommes quatre. Mais nous espérons de tout coeur 
+        <p class="mb-2">À l'heure où nous écrivons ce paragraphe, nous sommes sept. Mais nous espérons de tout coeur 
         que "nous" définira bientôt des centaines de personnes.</p>
       </div>
     </div>
@@ -197,17 +229,17 @@
       <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163; width: fit-content;">
         Sheaft dans cinq ans
       </h4>
-      <div class="pt-6 mb-6 lg:text-justify">
+      <div class="pt-6 mb-6 text-justify">
         <div class="flex flex-wrap flex-col-reverse md:flex-row justify-between">
           <div class="w-full lg:w-1/2">
-            <p class="mb-2">Pour l’instant, Sheaft c’est une association qui créé une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans c’est bien plus que ça. Nous aimerions en faire un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
+            <p class="mb-2">Pour l’instant, Sheaft c’est une association qui créé une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans, c’est bien plus que ça. Nous aimerions en faire un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
             <p class="mb-2">Nous avons déjà quelques idées pour agrémenter notre plateforme et améliorer ses apports à la société. Les projets, ce n’est pas ce qu’il manque.</p>
           </div>
           <img src="./img/whatsapp.png" class="m-auto lg:m-0 mb-5 lg:mb-0" style="max-height: 270px;" />
         </div>
       </div>
       <div class="px-2">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2">
           {#each ideas as idea}
             <div class="m-auto text-center">
               <div class="bg-green-100 w-16 h-16 rounded-full m-auto flex items-center justify-center">
@@ -228,89 +260,23 @@
     <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">Membres de l'association</h1>
     <span class="bg-primary h-1 w-20 block mt-4 mb-4 text-center m-auto" />
     <div class="flex flex-col sm:flex-row justify-center">
-      <div class="sm:w-1/4 p-2">
-        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
-          <div class="mb-3">
-            <img
-              class="w-auto mx-auto rounded-full"
-              src="./img/team/noel.jpg"
-              style="max-width: 150px;"
-              alt=""
-            />
+      {#each members as member}
+        <div class="sm:w-1/4 p-2">
+          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center h-full relative" style="padding-bottom: 70px;">
+            <div class="mb-3">
+              <img
+                class="w-auto mx-auto rounded-full"
+                src="./img/team/{member.img}"
+                style="max-width: 150px;  min-height: 150px;"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-semibold">{member.name}</h2>
+            <span class="block mb-5">{member.title}</span>
+            <a href={member.linkedIn} class:invisible={!member.linkedIn} class="px-4 py-2 bg-blue-500 text-white rounded-full absolute" style="left: 50%; margin-left: -50px; bottom: 25px;" target="_blank">LinkedIn</a>
           </div>
-          <h2 class="text-xl font-semibold">Noël Mugnier</h2>
-          <span class="block mb-5">Développeur</span>
-
-          <a href="https://fr.linkedin.com/in/nmugnier" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a
-          >
         </div>
-      </div>
-
-      <div class="sm:w-1/4 p-2">
-        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
-          <div class="mb-3">
-            <img
-              class="w-auto mx-auto rounded-full"
-              style="max-width: 150px;  min-height: 150px;"
-              src="./img/team/geoffrey.jpg"
-              alt=""
-            />
-          </div>
-          <h2 class="text-xl font-semibold">Geoffrey Mugnier</h2>
-          <span class="block mb-5">Développeur</span>
-
-          <a href="https://fr.linkedin.com/in/geoffrey-mugnier" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="sm:w-1/4 p-2">
-        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
-          <div class="mb-3">
-            <img
-              class="w-auto mx-auto rounded-full"
-              src="./img/team/maeva.jpg"
-              style="max-width: 150px;  min-height: 150px;"
-              alt=""
-            />
-          </div>
-          <h2 class="text-xl font-semibold">Maëva Di Marino</h2>
-          <span class="block mb-5">Community Manager</span>
-          <a href="https://fr.linkedin.com/in/maëva-di-marino-a08bb9129" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="sm:w-1/4 p-2">
-        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
-          <div class="mb-3">
-            <img
-              class="w-auto mx-auto rounded-full"
-              src="./img/team/fanny.jpg"
-              style="max-width: 150px;  min-height: 150px;"
-              alt=""
-            />
-          </div>
-          <h2 class="text-xl font-semibold">Fanny Mugnier</h2>
-          <span class="block mb-5">Chargée du support sur l'outil</span>  
-          <a href="https://fr.linkedin.com/in/fmugnier" class="px-4 py-2 bg-blue-500 text-white rounded-full" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="sm:w-1/4 p-2">
-        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
-          <div class="mb-3">
-            <img
-              class="w-auto mx-auto rounded-full"
-              src="./img/team/coffee.jpg"
-              style="max-width: 150px; min-height: 150px;"
-              alt=""
-            />
-          </div>
-          <h2 class="text-xl font-semibold">Machine à café</h2>
-          <span class="block mb-5">Responsable du bonheur</span>
-
-          <span class="px-4 py-2 bg-blue-500 text-white rounded-full invisible">LinkedIn</span>
-        </div>
-      </div>
+      {/each}
     </div>
   </div>
 </div>

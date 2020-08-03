@@ -121,11 +121,11 @@
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-          Consommer local, du parcours d'obstacle à la promenade de santé
+          Consommer local, du parcours d'obstacles à la promenade de santé
           <span class="bg-primary h-1 w-20 block mt-4" />
         </h4>
         <p class="text-xl mb-4">
-          Vous voulez mieux manger, mieux rémunérer les agriculteurs de votre région et participer à la lutte
+          Vous voulez mieux manger, mieux rémunérer les agriculteurs de votre région, et participer à la lutte
           contre le réchauffement climatique.
         </p>
         <p class="text-xl mb-4">
@@ -153,7 +153,7 @@
         </div>  
         <h4 class="font-semibold text-xl mb-3">Gratuit</h4>
         <p class="text-lg leading-relaxed text-gray-600">
-          Aucun abonnement, aucun taux de commission. Un producteur bien rémunéré, un consommateur qui paye moins cher.
+          Aucun abonnement, aucun taux de commission. Un producteur bien rémunéré, un consommateur qui paie moins cher.
         </p>
       </div>
       <div class="flex flex-col px-6 bg-white lg:shadow-lg py-6 md:mr-2">
@@ -214,7 +214,7 @@
         <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">3</span>
         <h4 class="font-semibold text-2xl mb-2 text-primary">Cumuler</h4>
         <p class="text-center text-xl leading-relaxed font-light">
-          A mesure que vous utilisez l'application, vous gagnez des points vous permettant
+          À mesure que vous utilisez l'application, vous gagnez des points vous permettant
           de <b>gagner des cadeaux</b> des acteurs de votre région.
         </p>
       </div>
@@ -242,7 +242,7 @@
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
           Utilisez Sheaft pour trouver les produits des producteurs autour de vous.
-          Chaque produit est étiquetté par un code couleur pour prendre connaissance de la distance de production d'un coup d'oeil.
+          Chaque produit est étiqueté par un code couleur pour prendre connaissance de la distance de production d'un coup d'oeil.
         </p>
       </div>
     </div>
@@ -256,8 +256,8 @@
           À la ferme, au marché, où vous voulez !
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
-          Notre outil permet au producteur de renseigner tous ses points de vente. S’il choisit de le faire, vous pourrez 
-          donc récupérer vos commandes directement à son point de vente qui peut être un marché, la ferme ou n’importe quel stand. Flexibilité !
+          Notre outil permet aux producteurs de renseigner leurs différents points de vente. Vous pourrez donc choisir, 
+          s'il y en a plusieurs, celui auquel vous souhaitez récupérer votre commande : au marché, à la ferme, etc. Flexibilité !
         </p>
       </div>
       <img src="/img/2.jpg" class="md:w-1/3 hidden lg:block" alt="Choisissez votre lieu et horaire et récupération" />
@@ -415,7 +415,7 @@
             Nous sommes tous ensemble responsables de demain. Il est temps d’arrêter de demander le changement, il est temps de le devenir.
           </p>
           <p class="text-xl mb-4">
-            Sheaft, c'est aujourd'hui une association qui lutte pour le développement de la
+            Sheaft, c'est une association qui lutte pour le développement de la
             consommation alimentaire en circuit court. Mais ce n'est qu'un début.
           </p>
           <div class="my-8">
