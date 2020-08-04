@@ -515,7 +515,7 @@
   <div class="items-center w-full px-4 pb-6">
     <form
       method="POST"
-      action="https://api.sheaft.com/contact/newsletter">
+      action="https://functions.sheaft.com/api/CreateContactCommand?code=oamUmnFWNVSRlfaMke7a/mAVIkaUr19iCapj9/7YX0zkPUnrGDCUFQ==">
       <div class="flex flex-wrap my-8 justify-center">
         <div class=" w-full md:w-6/12">
           <div class="w-full text-left">
