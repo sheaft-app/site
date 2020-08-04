@@ -24,9 +24,21 @@
     },
     {
       name: "Fanny Mugnier",
-      title: "Chargée du support sur l'outil",
+      title: "Support",
       linkedIn: "https://fr.linkedin.com/in/fmugnier",
       img: "fanny.jpg"
+    },
+    {
+      name: "Mathilde Scelers",
+      title: "Webmarketing",
+      linkedIn: "https://fr.linkedin.com/in/mathilde-scelers",
+      img: "mathilde.jpg"
+    },
+    {
+      name: "Charlotte Masset",
+      title: "Community Manager",
+      linkedIn: "https://fr.linkedin.com/in/charlotte-masset-082377150",
+      img: "charlotte.jpg"
     },
     {
       name: "Machine à café",
