@@ -8,7 +8,7 @@
       name: "Noël Mugnier",
       title: "Développeur",
       linkedIn: "https://fr.linkedin.com/in/nmugnier",
-      img: "nono.jpg"
+      img: "noel.jpg"
     },
     {
       name: "Geoffrey Mugnier",
@@ -26,7 +26,7 @@
       name: "Fanny Mugnier",
       title: "Chargée du support sur l'outil",
       linkedIn: "https://fr.linkedin.com/in/fmugnier",
-      img: "fanny.jpeg"
+      img: "fanny.jpg"
     },
     {
       name: "Machine à café",
