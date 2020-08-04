@@ -30,7 +30,7 @@
     },
     {
       name: "Mathilde Scelers",
-      title: "Webmarketing",
+      title: "Chargée Webmarketing",
       linkedIn: "https://fr.linkedin.com/in/mathilde-scelers",
       img: "mathilde.jpg"
     },
@@ -39,6 +39,12 @@
       title: "Community Manager",
       linkedIn: "https://fr.linkedin.com/in/charlotte-masset-082377150",
       img: "charlotte.jpg"
+    },
+    {
+      name: "Jack William Beavan",
+      title: "Consultant UX",
+      linkedIn: "https://www.linkedin.com/in/jack-william-beavan-2a893714b/",
+      img: "jack.jpg"
     },
     {
       name: "Machine à café",
@@ -269,12 +275,12 @@
 
 <div id="team" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-16 relative">
-    <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">Membres de l'association</h1>
+    <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">L'équipe Sheaft</h1>
     <span class="bg-primary h-1 w-20 block mt-4 mb-4 text-center m-auto" />
-    <div class="flex flex-col sm:flex-row justify-center">
+    <div class="flex flex-wrap flex-col sm:flex-row justify-center">
       {#each members as member}
-        <div class="sm:w-1/4 p-2">
-          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center h-full relative" style="padding-bottom: 70px;">
+        <div class="p-2">
+          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center h-full relative" style="padding-bottom: 70px; min-width: 256px;">
             <div class="mb-3">
               <img
                 class="w-auto mx-auto rounded-full"
