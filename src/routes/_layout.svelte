@@ -52,15 +52,16 @@
     margin: auto;
     padding: 10px 20px 10px 20px;
     border-radius: 60px;
-
-    a {
-      width: 40px;
-
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    }
   }
+
+  .social-medias a {
+    width: 40px;
+  }
+
+  .social-medias a:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
   svg {
     display: inline !important;
   }
