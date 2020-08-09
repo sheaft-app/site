@@ -95,14 +95,14 @@
             A propos
           </a>
         </li>
-        <li class="mr-3">
+        <!-- <li class="mr-3">
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === 'donate' ? 'page' : undefined}
             href="/donate">
             Soutenir le projet
           </a>
-        </li>
+        </li> -->
       </ul>
       <!-- <a
         id="navAction"
@@ -166,17 +166,17 @@
               A propos
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a
               on:click={closeNav}
               class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
               border-b border-gray-300 hover:bg-gray-500"
-              aria-current={segment === 'support-us' ? 'page' : undefined}
-              class:active={segment === 'support-us'}
-              href="/support-us">
+              aria-current={segment === 'donate' ? 'page' : undefined}
+              class:active={segment === 'donate'}
+              href="/donate">
               Soutenir le projet
             </a>
-          </li>
+          </li> -->
         </ul>
             <!-- <a
               on:click={closeNav}
