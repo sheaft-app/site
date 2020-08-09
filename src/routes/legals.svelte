@@ -11,7 +11,7 @@
       Vue d'ensemble
     </h2>
     <p class="mt-2">
-      Ce site web est exploité par Sheaft SAS. Sur ce site, les termes "nous",
+      Ce site web est exploité par Sheaft (association de loi 1901). Sur ce site, les termes "nous",
       "notre" et "nos" font référence à Sheaft. Sheaft propose ce site web, y
       compris toutes les informations, tous les outils et tous les services qui
       y sont disponibles pour vous, l’utilisateur, sous réserve de votre
@@ -60,7 +60,7 @@
       Article 1 - Mentions Légales
     </h2>
     <p class="mt-2">
-      L'édition du site est assurée par l'association Sheaft, dont
+      L'édition du site est assurée par l'association loi 1901 Sheaft, dont
       le siège social est situé au 285 route de Braille, 73410 Entrelacs.
     </p>
     <div class="mt-2">

@@ -38,6 +38,18 @@
       Ce que Sheaft peut vous apporter
       <span class="bg-primary h-1 w-20 block mt-4" />
     </h4>
+    <div class="flex flex-col-reverse md:flex-row items-center mb-6 xl:mb-8">
+      <div class="lg:mr-16 xl:mr-32">
+        <h4
+          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
+            Gagner en visibilité pour augmenter vos ventes
+        </h4>
+        <p class="text-gray-600 text-lg font-light mb-4">
+          Grâce à Sheaft, les consommateurs ont un accès direct aux producteurs autour d’eux. Ils vous trouveront donc plus facilement et pourront immédiatement découvrir et commander vos produits. 
+        </p>
+      </div>
+       <img src="/img/1.jpg" class="md:w-1/2 hidden lg:block" alt="Trouvez" />
+    </div>
     <div
       class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 mt-6 md:mt-0
       md:mt-16 lg:mt-0">
@@ -56,36 +68,10 @@
       <div class="lg:mr-16 xl:mr-32">
         <h4
           class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
-            Gagner en visibilité pour augmenter vos ventes
-        </h4>
-        <p class="text-gray-600 text-lg font-light mb-4">
-          Grâce à Sheaft, les consommateurs ont un accès direct aux producteurs autour d’eux. Ils vous trouveront donc plus facilement et pourront immédiatement découvrir et commander vos produits. 
-        </p>
-      </div>
-       <img src="/img/1.jpg" class="md:w-1/2 hidden lg:block" alt="Trouvez" />
-    </div>
-    <div
-      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 mt-6 md:mt-0
-      md:mt-16 lg:mt-0">
-      <img src="/img/producer/automate.jpg" class="md:w-1/4 hidden lg:block" alt="Créer un bon de préparation" />
-      <div class="lg:pl-64">
-        <h4
-          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
-          Automatiser pour vous faire gagner du temps
-        </h4>
-        <p class="text-gray-600 text-lg font-light mb-4">
-          Vous n’avez qu’à donner les ordres et nos algorithmes s’occupent de tout. Tout est pensé pour vous faire gagner un maximum de temps afin que vous puissiez vous concentrer sur l'essentiel.
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col-reverse md:flex-row items-center mb-6 xl:mb-8">
-      <div class="lg:mr-16 xl:mr-32">
-        <h4
-          class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
           Importer directement vos produits pour aller à l'essentiel
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-          Ne perdez pas de temps à importer chacun de vos produits. Remplissez notre fichier excel d’exemple avec votre catalogue et notre algorithme s’occupera de créer vos produits pour vous.
+          Ne perdez pas de temps à importer chacun de vos produits. Remplissez notre fichier Excel d’exemple avec votre catalogue et notre algorithme s’occupera de créer vos produits pour vous.
         </p>
       </div>
       <img src="/img/producer/import.jpg" class="md:w-1/2 hidden lg:block" alt="Importez vos produits" />
@@ -126,7 +112,7 @@
           Marquer vos produits consignés pour les mettre en valeur
         </h4>
         <p class="text-gray-600 text-lg font-light mb-4">
-           Certains de vos produits sont vendus consignés ? On gère ça ! Ajoutez vos consignes et reliez les produits concernés en un clic. Les produits seront marqués par une icône 
+           Certains de vos produits sont vendus consignés ? On gère ça ! Ajoutez vos consignes et reliez les produits concernés en un clic. Les produits seront marqués par un icône 
             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 512 512" width="20px" class="ml-1 mr-1"><g><path d="m212 367h89c33.085938 0 60-26.914062 60-60v-43.402344c9.128906-1.851562 16-9.921875 16-19.597656v-70c0-11.046875-8.953125-20-20-20h-201c-11.046875 0-20 8.953125-20 20v70c0 9.675781 6.871094 17.746094 16 19.597656v43.402344c0 33.085938 26.914062 60 60 60zm89-40h-89c-11.027344 0-20-8.972656-20-20v-41h46v8c0 11.046875 8.953125 20 20 20s20-8.953125 20-20v-8h43v41c0 11.027344-8.972656 20-20 20zm-125-133h161v30h-161zm-176-60v-48c0-11.046875 8.953125-20 20-20s20 8.953125 20 20v32.535156c19.679688-30.890625 45.8125-57.316406 76.84375-77.445312 41.4375-26.878906 89.554688-41.089844 139.15625-41.089844 68.378906 0 132.667969 26.628906 181.019531 74.980469 48.351563 48.351562 74.980469 112.640625 74.980469 181.019531 0 11.046875-8.953125 20-20 20s-20-8.953125-20-20c0-119.101562-96.898438-216-216-216-75.664062 0-145.871094 40.15625-184.726562 104h26.726562c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20h-48c-27.570312 0-50-22.429688-50-50zm512 244v47c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20v-33.105469c-19.789062 31.570313-46.289062 58.542969-77.84375 79.011719-41.4375 26.882812-89.554688 41.09375-139.15625 41.09375-68.339844 0-132.464844-26.644531-180.5625-75.023438-48-48.285156-74.4375-112.554687-74.4375-180.976562 0-11.046875 8.953125-20 20-20s20 8.953125 20 20c0 119.101562 96.449219 216 215 216 75.667969 0 145.871094-40.15625 184.726562-104h-26.726562c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20h49c27.570312 0 50 22.429688 50 50zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#205164"/></g> </svg>
           dans la recherche des consommateurs.
         </p>

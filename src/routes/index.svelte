@@ -185,8 +185,8 @@
     <p class="text-white text-center text-xl mb-12">Consommer local ne devrait pas être synonyme de sacrifices sur l’expérience d’achat.
      Pour nous, c’est important d’utiliser un outil qui soit agréable à l’utilisation et à l’oeil.</p>
     <div class="flex flex-col md:flex-row justify-center mt-4">
-      <img src="./img/app_preview.jpg" class="shadow-lg hidden lg:block" alt="Notre application" style="max-width: 900px;" />
-      <img src="./img/app_preview_mobile.jpg" class="shadow-lg block lg:hidden m-auto" alt="Notre application" style="width: 300px;" />
+      <img src="./img/app_preview.jpg" class="shadow-lg hidden lg:block rounded-lg" alt="Notre application" style="max-width: 900px; max-height: 540px;" />
+      <img src="./img/app_preview_mobile.jpg" class="shadow-lg block lg:hidden m-auto rounded-lg" alt="Notre application" style="width: 300px; max-height: 534px;" />
     </div>
   </div>
 </div>
