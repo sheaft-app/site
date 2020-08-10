@@ -55,7 +55,7 @@
 </div>
 
 <div id="help" class="relative text-xl">
-  <div class="container mx-auto px-6 py-6 relative bg-white rounded-lg shadow-xl">
+  <div class="container mx-auto px-6 py-6 relative bg-white md:rounded-lg md:shadow-xl">
     <div class="items-center h-auto lg:mx-auto">
       <div class="pt-6 mb-6 lg:text-justify px-6">
         <div class="flex flex-wrap justify-between">
@@ -78,9 +78,33 @@
               class="md:w-7/12 w-2/3 m-auto mb-12"
               alt="mettre en avant" />
             <a href="https://opencollective.com/sheaft" target="_blank" class="mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white cusor-pointer">
-              Je fais un don
+              Faire un don
             </a>
+            <div class="mt-10">
+              <a href="/donate#connect" class="text-accent">Je n'arrive pas à me connecter à OpenCollective</a>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-6 py-6 relative bg-white md:rounded-lg md:shadow-xl md:mt-10">
+    <div class="items-center h-auto lg:mx-auto">
+      <div class="pt-6 mb-6 lg:text-justify px-6">
+        <div class="w-full">
+          <h4
+            class="text-2xl md:text-3xl font-bold mb-6 mt-4 md:mt-0">
+            À propos de Open Collective
+            <span class="bg-primary h-1 w-20 block mt-4" />
+          </h4>
+          <p id="connect" class="font-semibold mb-2">Comment se connecter à OpenCollective ?</p>
+          <p class="mb-1">OpenCollective utilise la connexion en un clic, ça veut dire qu'il n'y a pas de mot de passe. Une fois que vous avez rempli le premier encart avec votre nom et votre email, vous recevrez un email dans votre boîte.</p>
+          <p class="mb-5">Cliquez sur le bouton bleu à l'intérieur de ce mail pour vous connecter et faire un don.</p>
+
+          <p class="font-semibold mb-2">Pourquoi utiliser OpenCollective ?</p>
+          <p class="mb-1">OpenCollective nous permet de gérer les finances de l'association tout en restant transparent.
+           Grâce à eux, toutes les transactions de l'association sont visibles par tout le monde sur notre <a class="text-accent" href="https://opencollective.com/sheaft" target="_blank">page dédiée OpenCollective</a>.</p>
+          <p class="mb-5">Cela représente pour nous un gage de <b>confiance</b> indispensable.</p>
         </div>
       </div>
     </div>
