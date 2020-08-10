@@ -326,7 +326,7 @@
             Vous êtes producteur/productrice ?
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
-        <p class="text-xl mb-4">Sheaft a été pensé pour vous faire gagner du temps.</p>
+        <p class="text-xl mb-4">Sheaft a été pensée pour vous faire gagner du temps.</p>
         <p class="text-xl mb-8">Trouvez plus facilement des clients, fixez vos prix, gagnez en flexibilité, simplifiez la prise de commande.</p>
         <a
           class="mx-auto lg:mx-0 hover:underline bg-accent 
@@ -435,7 +435,7 @@
             Vous avez beaucoup à apporter
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
-          <p class="text-xl mb-4">Sheaft est présent sur Discord pour qu’on puisse échanger tous ensemble, autour de vos idées ou d’un débat chocolatine/pain au chocolat <span class="text-xs">(pain au chocolat bien sûr 😉)</span>.</p>
+          <p class="text-xl mb-4">Sheaft est présente sur Discord pour qu’on puisse échanger tous ensemble, autour de vos idées ou d’un débat chocolatine/pain au chocolat <span class="text-xs">(pain au chocolat bien sûr 😉)</span>.</p>
           <a href="https://discord.gg/nur5Aem" target="_blank">
             <img class="mb-4" src="img/discord.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
           </a>
