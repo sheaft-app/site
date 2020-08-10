@@ -196,7 +196,7 @@
     <div class="flex flex-col md:flex-row">
       <div class="flex flex-col items-center md:px-6 lg:px-6 mb-5 lg:mb-0">
         <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">1</span>
-        <h4 class="font-semibold text-2xl mb-2 text-primary">Rechercher</h4>
+        <h4 class="font-semibold text-2xl mb-2 text-primary">Recherchez</h4>
         <p class="text-center text-xl leading-relaxed font-light">
           Sheaft affiche tous les produits des producteurs
           <b>autour de vous</b>. Vous n'avez qu'à faire vos emplettes !
@@ -204,18 +204,17 @@
       </div>
       <div class="flex flex-col items-center md:px-6 lg:px-6 mb-5 lg:mb-0">
         <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">2</span>
-        <h4 class="font-semibold text-2xl mb-2 text-primary">Récupérer</h4>
+        <h4 class="font-semibold text-2xl mb-2 text-primary">Choisissez</h4>
         <p class="text-center text-xl leading-relaxed font-light">
-          Vous êtes notifié dès que votre commande est prête :
-          c'est l'heure <b>d'aller la chercher</b> !
+          Choisissez parmi les <b>points de retrait du producteur</b> : à la ferme, au marché, etc.
         </p>
       </div>
       <div class="flex flex-col items-center md:px-6 lg:px-6">
         <span class="text-4xl text-primary rounded-full bg-white w-16 h-16 flex justify-center items-center mb-3 shadow">3</span>
-        <h4 class="font-semibold text-2xl mb-2 text-primary">Cumuler</h4>
+        <h4 class="font-semibold text-2xl mb-2 text-primary">Récupérez</h4>
         <p class="text-center text-xl leading-relaxed font-light">
-          À mesure que vous utilisez l'application, vous gagnez des points vous permettant
-          de <b>gagner des cadeaux</b> des acteurs de votre région.
+          Vous êtes notifié dès que votre commande est prête :
+          c'est l'heure <b>d'aller la chercher</b> !
         </p>
       </div>
     </div>
@@ -263,21 +262,20 @@
       <img src="/img/2.jpg" class="md:w-1/3 hidden lg:block" alt="Choisissez votre lieu et horaire et récupération" />
     </div>
     <div
-      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 feature-element justify-center">
-      <img src="/img/3.jpg" style="width: 700px;" class="md:w-1/3 hidden lg:block" alt="Gagnez des cadeaux !" />
+      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 md:mt-0
+      lg:mt-0 feature-element justify-center">
+      <img src="/img/5.jpg" class="md:w-1/3 hidden lg:block" alt="Voir le lieu de production" style="width: 700px;" />
       <div class="lg:ml-16 xl:ml-32">
         <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
-          <svg version="1.1" class="fa-icon svelte-ieu2dh" width="16" height="16" role="presentation" viewBox="0 0 512 512" style=""><path key="path-0" d="M32 448c0 17.7 14.3 32 32 32h160V320H32v128zm256 32h160c17.7 0 32-14.3 32-32V320H288v160zm192-320h-42.1c6.2-12.1 10.1-25.5 10.1-40 0-48.5-39.5-88-88-88-41.6 0-68.5 21.3-103 68.3-34.5-47-61.4-68.3-103-68.3-48.5 0-88 39.5-88 88 0 14.5 3.8 27.9 10.1 40H32c-17.7 0-32 14.3-32 32v80c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-80c0-17.7-14.3-32-32-32zm-326.1 0c-22.1 0-40-17.9-40-40s17.9-40 40-40c19.9 0 34.6 3.3 86.1 80h-86.1zm206.1 0h-86.1c51.4-76.5 65.7-80 86.1-80 22.1 0 40 17.9 40 40s-17.9 40-40 40z"></path>  </svg>
+          <svg version="1.1" class="fa-icon" role="presentation" viewBox="0 0 640 512" style=""><path key="path-0" d="M528 336c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 112c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24zm80-288h-64v-40.2c0-14.12 4.7-27.76 13.15-38.84 4.42-5.8 3.55-14.06-1.32-19.49L534.2 37.3c-6.66-7.45-18.32-6.92-24.7.78C490.58 60.9 480 89.81 480 119.8V160H377.67L321.58 29.14A47.914 47.914 0 0 0 277.45 0H144c-26.47 0-48 21.53-48 48v146.52c-8.63-6.73-20.96-6.46-28.89 1.47L36 227.1c-8.59 8.59-8.59 22.52 0 31.11l5.06 5.06c-4.99 9.26-8.96 18.82-11.91 28.72H22c-12.15 0-22 9.85-22 22v44c0 12.15 9.85 22 22 22h7.14c2.96 9.91 6.92 19.46 11.91 28.73l-5.06 5.06c-8.59 8.59-8.59 22.52 0 31.11L67.1 476c8.59 8.59 22.52 8.59 31.11 0l5.06-5.06c9.26 4.99 18.82 8.96 28.72 11.91V490c0 12.15 9.85 22 22 22h44c12.15 0 22-9.85 22-22v-7.14c9.9-2.95 19.46-6.92 28.72-11.91l5.06 5.06c8.59 8.59 22.52 8.59 31.11 0l31.11-31.11c8.59-8.59 8.59-22.52 0-31.11l-5.06-5.06c4.99-9.26 8.96-18.82 11.91-28.72H330c12.15 0 22-9.85 22-22v-6h80.54c21.91-28.99 56.32-48 95.46-48 18.64 0 36.07 4.61 51.8 12.2l50.82-50.82c6-6 9.37-14.14 9.37-22.63V192c.01-17.67-14.32-32-31.99-32zM176 416c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zm22-256h-38V64h106.89l41.15 96H198z"></path>  </svg>
         </div>
         <h4
           class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
-          Gagnez des cadeaux !
+          Voir le lieu de production d’un coup d’oeil
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
-          Sur Sheaft, chaque action rapporte des points : commandes, avis, partage sur les réseaux, report d’un bug.
-        </p>
-        <p class="text-xl mb-4 text-gray-600 font-light">
-          Tous les mois, des artisans et producteurs de votre région pourront proposer des cadeaux aux membres ayant cumulé le plus de points.
+          Un simple passage de la souris dévoile le lieu de production.
+          C’est encore plus rapide que de chercher sur une étiquette !
         </p>
       </div>
     </div>
@@ -298,20 +296,21 @@
       <img src="/img/4.jpg" class="md:w-1/3 hidden lg:block" alt="Evaluations" />
     </div>
     <div
-      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 md:mt-0
-      lg:mt-0 feature-element justify-center">
-      <img src="/img/5.jpg" class="md:w-1/3 hidden lg:block" alt="Voir le lieu de production" style="width: 700px;" />
+      class="flex flex-col md:flex-row items-center mb-6 xl:mb-8 feature-element justify-center">
+      <img src="/img/3.jpg" style="width: 700px;" class="md:w-1/3 hidden lg:block" alt="Gagnez des cadeaux !" />
       <div class="lg:ml-16 xl:ml-32">
         <div class="rounded-full w-12 h-12 p-2 flex bg-primary items-center justify-center mb-4">
-          <svg version="1.1" class="fa-icon" role="presentation" viewBox="0 0 640 512" style=""><path key="path-0" d="M528 336c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 112c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24zm80-288h-64v-40.2c0-14.12 4.7-27.76 13.15-38.84 4.42-5.8 3.55-14.06-1.32-19.49L534.2 37.3c-6.66-7.45-18.32-6.92-24.7.78C490.58 60.9 480 89.81 480 119.8V160H377.67L321.58 29.14A47.914 47.914 0 0 0 277.45 0H144c-26.47 0-48 21.53-48 48v146.52c-8.63-6.73-20.96-6.46-28.89 1.47L36 227.1c-8.59 8.59-8.59 22.52 0 31.11l5.06 5.06c-4.99 9.26-8.96 18.82-11.91 28.72H22c-12.15 0-22 9.85-22 22v44c0 12.15 9.85 22 22 22h7.14c2.96 9.91 6.92 19.46 11.91 28.73l-5.06 5.06c-8.59 8.59-8.59 22.52 0 31.11L67.1 476c8.59 8.59 22.52 8.59 31.11 0l5.06-5.06c9.26 4.99 18.82 8.96 28.72 11.91V490c0 12.15 9.85 22 22 22h44c12.15 0 22-9.85 22-22v-7.14c9.9-2.95 19.46-6.92 28.72-11.91l5.06 5.06c8.59 8.59 22.52 8.59 31.11 0l31.11-31.11c8.59-8.59 8.59-22.52 0-31.11l-5.06-5.06c4.99-9.26 8.96-18.82 11.91-28.72H330c12.15 0 22-9.85 22-22v-6h80.54c21.91-28.99 56.32-48 95.46-48 18.64 0 36.07 4.61 51.8 12.2l50.82-50.82c6-6 9.37-14.14 9.37-22.63V192c.01-17.67-14.32-32-31.99-32zM176 416c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zm22-256h-38V64h106.89l41.15 96H198z"></path>  </svg>
+          <svg version="1.1" class="fa-icon svelte-ieu2dh" width="16" height="16" role="presentation" viewBox="0 0 512 512" style=""><path key="path-0" d="M32 448c0 17.7 14.3 32 32 32h160V320H32v128zm256 32h160c17.7 0 32-14.3 32-32V320H288v160zm192-320h-42.1c6.2-12.1 10.1-25.5 10.1-40 0-48.5-39.5-88-88-88-41.6 0-68.5 21.3-103 68.3-34.5-47-61.4-68.3-103-68.3-48.5 0-88 39.5-88 88 0 14.5 3.8 27.9 10.1 40H32c-17.7 0-32 14.3-32 32v80c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-80c0-17.7-14.3-32-32-32zm-326.1 0c-22.1 0-40-17.9-40-40s17.9-40 40-40c19.9 0 34.6 3.3 86.1 80h-86.1zm206.1 0h-86.1c51.4-76.5 65.7-80 86.1-80 22.1 0 40 17.9 40 40s-17.9 40-40 40z"></path>  </svg>
         </div>
         <h4
           class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">
-          Voir le lieu de production d’un coup d’oeil
+          Gagnez des cadeaux !
         </h4>
         <p class="text-xl mb-4 text-gray-600 font-light">
-          Un simple passage de la souris dévoile le lieu de production.
-          C’est encore plus rapide que de chercher sur une étiquette !
+          Sur Sheaft, chaque action rapporte des points : commandes, avis, partage sur les réseaux, report d’un bug.
+        </p>
+        <p class="text-xl mb-4 text-gray-600 font-light">
+          Tous les mois, des artisans et producteurs de votre région pourront proposer des cadeaux aux membres ayant cumulé le plus de points.
         </p>
       </div>
     </div>
