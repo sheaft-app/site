@@ -28,6 +28,9 @@
     items-center text-white pb-12 md:p-16 md:p-0">
     <div
       class="flex flex-col w-full lg:w-2/5 justify-center items-start text-left">
+      <div class="bg-orange-200 shadow-lg p-4 rounded text-normal mt-2 md:mt-0" style="width: fit-content;">
+        <p>La sortie est prévue pour le mois de septembre.</p>
+      </div>
       <h1 class="my-4 text-4xl md:text-5xl font-bold leading-tight">
         Consommer local,
         <br />
