@@ -111,13 +111,20 @@
 
 <div id="introduction" class="relative bg-white">
   <div class="container mx-auto px-6 py-6 md:pt-24 relative">
+    <div class="m-auto text-center mb-16 youtube-frame">
+       <h4
+          class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
+        Découvrez Sheaft en détails dans cette vidéo explicative
+      </h4>
+      <iframe class="m-auto w-11/12 lg:w-1/2" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" frameborder="0" allowfullscreen></iframe>
+    </div>
     <div
       class="flex flex-col md:flex-row items-center mt-16 md:mt-0
       md:mt-16 lg:mt-0">
       <img
         src="/img/easy.svg"
         class="md:w-1/3"
-        alt="consommer local difficil" />
+        alt="Consommer local c'est difficile" />
       <div class="md:ml-16 xl:ml-32">
         <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
