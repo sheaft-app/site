@@ -36,13 +36,13 @@
               src="/img/social.svg"
               class="m-auto"
               style="width: 150px;"
-              alt="Cadeaux !" />
+              alt="Partagez !" />
             <p class="mt-5 text-white">Plus on est de fraises, plus on mûrit !</p>
             <p class="mb-5 text-white">Fais passer le mot en partageant !</p>
             {#if navigator.share}
               <button
                 on:click={() => handleClick()}
-                class="btn bg-white btn-lg mt-3 m-auto">
+                class="btn bg-white shadow rounded-full px-6 py-2 btn-lg mt-3 m-auto">
                 <svg version="1.1" fill="#205163" class="fa-icon mr-2" width="14" height="16" role="presentation" viewBox="0 0 448 512" style=""><path key="path-0" d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"></path>  </svg>
                 Partager
               </button>
