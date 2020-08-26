@@ -250,10 +250,10 @@
       <div class="pt-6 mb-6 text-justify">
         <div class="flex flex-wrap flex-col-reverse md:flex-row justify-between">
           <div class="w-full lg:w-1/2">
-            <p class="mb-2">Pour l’instant, Sheaft c’est une association qui créé une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans, c’est bien plus que ça. Nous aimerions en faire un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
+            <p class="mb-2">Pour l’instant, Sheaft c’est une association qui crée une application pour trouver des produits alimentaires autour de soi. Mais Sheaft dans cinq ans, c’est bien plus que ça. Nous aimerions en faire un standard de la consommation locale afin qu’elle devienne suffisamment agréable et confortable pour devenir un réflexe.</p>
             <p class="mb-2">Nous avons déjà quelques idées pour agrémenter notre plateforme et améliorer ses apports à la société. Les projets, ce n’est pas ce qu’il manque.</p>
           </div>
-          <img src="./img/whatsapp.png" class="m-auto lg:m-0 mb-5 lg:mb-0" style="max-height: 270px;" />
+          <img src="./img/whatsapp.png" class="m-auto lg:m-0 mb-5 lg:mb-0" style="max-height: 270px;" alt="Plateforme de référence du local" />
         </div>
       </div>
       <div class="px-2">
