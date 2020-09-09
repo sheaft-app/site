@@ -133,6 +133,24 @@
   </div>
 </div>
 
+<div id="price" class="relative bg-white">
+  <div class="container mx-auto px-6 py-6 relative">
+    <h4
+      class="text-2xl md:text-4xl font-bold mb-8 mt-4 md:mt-0">
+      Ce que Sheaft vous coûte concrètement
+      <span class="bg-primary h-1 w-20 block mt-4" />
+    </h4>
+    <div class="text-xl">
+       <h4 class="text-2xl md:text-3xl font-medium mb-4 mt-4 md:mt-0">Un prélèvement unique de 2,50€ pour un accès à vie.</h4>
+      <p class="text-gray-600 text-lg font-light mb-4">Sheaft est totalement gratuit. Toutefois, une contrainte légale nous est imposée.</p>
+      <p class="text-gray-600 text-lg font-light mb-4">Les transactions bancaires devant être authentifiées, 
+      une procédure de vérification des informations est faite pour chaque producteur par notre gestionnaire de paiement. 
+      Cette procédure coûte 2,50€ et ce montant est directement prélevé sur la première commande. Après ça, Sheaft en illimité. À vie.</p>
+      <p class="text-gray-600 text-lg font-light mb-4">Sheaft ne touche pas un seul centime de ce montant.</p>
+    </div>
+  </div>
+</div>
+
 <div id="contact" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative text-center">
     <h1 class="text-3xl font-bold lg:pt-0 text-center">Vous avez une question ?</h1>
