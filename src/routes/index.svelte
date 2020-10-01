@@ -119,7 +119,7 @@
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
         Découvrez Sheaft en détails dans cette vidéo explicative
       </h4>
-      <iframe class="m-auto w-11/12 lg:w-1/2" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" frameborder="0" allowfullscreen></iframe>
+      <iframe title="YouTube" class="m-auto w-11/12 lg:w-1/2" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" style="border-radius: 10px; box-shadow: 1px 1px 7px 2px rgba(0,0,0,0.4);" frameborder="0" allowfullscreen></iframe>
     </div>
     <div
       class="flex flex-col md:flex-row items-center mt-16 md:mt-0
