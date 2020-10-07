@@ -31,7 +31,11 @@
   -
   <a href="/privacy" target="_blank">Déclaration de confidentialité</a>
 </p>
-
+<div class="flex justify-center">
+  <a href="https://tree-nation.com/profile/impact/sheaft#co2" target="_blank" style="position:relative;cursor:pointer;display:block;z-index:999;">
+  <img src="https://tree-nation.com/images/tracking/label-co2-website-white-fr.png" style="width:150px; height:auto;" />
+  </a>
+</div>
   <p class="my-3 italic text-center text-gray-100">
     Copyright Sheaft @ 2020
     <a href="/nlregistered" class="hidden"> </a>
