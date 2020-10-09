@@ -522,67 +522,107 @@
     Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter :
   </h3>
   <div class="items-center w-full px-4 pb-6">
-    <form
-      method="POST"
-      action="https://api.sheaft.com/contact/newsletter">
-      <div class="flex flex-wrap my-8 justify-center">
+    <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+  #mc-embedded-subscribe{margin:1em 0 1em ;}
+  #mce-success-response{width:100%!important;text-align:center;color: #fff;}
+  #mce-error-response{width:100%!important;text-align:center;color: #c50000;}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<style type="text/css">
+	#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
+	#mergeRow-gdpr {margin-top: 20px;}
+	#mergeRow-gdpr fieldset label {font-weight: normal;}
+	#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+</style>
+<div id="mc_embed_signup">
+<form action="https://sheaft.us18.list-manage.com/subscribe/post?u=a2e9bef717a56b12586cdbf76&amp;id=e1b8d283f5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <div class="flex flex-wrap justify-center">
         <div class=" w-full md:w-6/12">
-          <div class="w-full text-left">
-            <label class="font-semibold text-white md:text-xl">Prénom*</label>
-            <input
-              class="w-full bg-white font-bold rounded my-2 py-4
-              px-3 shadow-lg md:text-xl"
-              id="FirstName"
-              name="FirstName"
-              type="FirstName"
-              required="required"
-              placeholder="jean" />
-          </div>
-          <div class="w-full text-left">
-            <label class="font-semibold text-white md:text-xl">
-              Adresse e-mail*
-            </label>
-            <input
-              class="w-full bg-white font-bold rounded my-2 py-4
-              px-3 shadow-lg md:text-xl"
-              id="Email"
-              type="Email"
-              name="Email"
-              required="required"
-              placeholder="jean@doe.xyz" />
-          </div>
-          <div class="w-full text-left">
-            <label class="font-semibold text-white md:text-xl">Je suis*</label>
-            <select
-              class:text-normal={selectedValue}
-              class="w-full bg-white font-bold rounded my-2 py-4
-              px-3 shadow-lg md:text-xl custom-select"
-              id="Role"
-              type="Role"
-              on:change={(e) => selectedValue = e.target.value}
-              name="Role"
-              required="required">
-              <option value="" disabled selected>Sélectionnez une option</option>
-              <option value="consumer">Consommateur</option>
-              <option value="producer">Producteur</option>
-              <option value="shop">Commerçant</option>
-              <option value="restorer">Restaurateur</option>
-              <option value="other">Autre</option>
-            </select>
-          </div>
-          <p class="w-full text-white text-left pt-4">(*) champs requis</p>
-          {#if error}
-            <p class="w-full text-red-600 text-xl">{error}</p>
-          {/if}
-        </div>
-      </div>
-      <button
-        type="submit"
-        class="hover:underline bg-white font-bold rounded-full
-        my-3 py-4 px-8 shadow-lg md:text-xl">
-        Je m'inscris à la newsletter
-      </button>
-    </form>
+<div class="indicates-required text-white"><span class="asterisk ">*</span> champs requis</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL" class="text-white">Adresse e-mail  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email w-full bg-white font-bold rounded 
+  px-3 shadow-lg md:text-xl" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME" class="text-white">Prénom  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="FNAME" class="required w-full bg-white font-bold rounded 
+  px-3 shadow-lg md:text-xl" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-KIND" class="text-white">Je suis  <span class="asterisk">*</span>
+</label>
+	<select name="KIND" class="required w-full bg-white font-bold rounded 
+  px-3 shadow-lg md:text-xl" id="mce-KIND">
+	<option value=""></option>
+	<option value="Consommateur">Consommateur</option>
+<option value="Producteur">Producteur</option>
+<option value="Commerçant">Commerçant</option>
+<option value="Restaurateur">Restaurateur</option>
+<option value="Autre">Autre</option>
+
+	</select>
+</div>
+<div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group text-white">
+    <div class="content__gdpr">
+        <h2 class="text-white">Autorisations de communication</h2>
+        <p>Pour quel(s) type(s) de communication souhaitez-vous être contacté par Sheaft ?</p>
+        <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+		<label class="checkbox subfield" for="gdpr_66162"><input type="checkbox" id="gdpr_66162" name="gdpr[66162]" value="Y" class="av-checkbox gdpr"><span>Newsletter</span> </label><label class="checkbox subfield" for="gdpr_66174"><input type="checkbox" id="gdpr_66174" name="gdpr[66174]" value="Y" class="av-checkbox gdpr"><span>Email promotionel</span> </label>
+        </fieldset>
+        <br/>
+        <p>Vous pouvez vous désabonner à n'importe quel moment en cliquant sur le lien dans le bas de page des emails que vous recevrez de notre part.</p>
+    </div>
+    <br/>
+    <div class="content__gdprLegal">
+        <p>Nous utilisons Mailchimp comme plateforme d'emailing. En cliquant sur le bouton s'inscrire, vous acceptez que vos informations soient transmises à Mailchimp pour taiter votre inscription. <a href="https://mailchimp.com/legal/" target="_blank">Cliquez sur ce lien pour en savoir plus.</a></p>
+    </div>
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a2e9bef717a56b12586cdbf76_e1b8d283f5" tabindex="-1" value=""></div>
+    <div class="clear">
+    <div class="flex flex-wrap justify-center">
+      <button type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="hover:underline bg-white font-bold rounded-full
+      my-3 py-4 px-8 shadow-lg md:text-xl">S'inscrire</button></div>
+    </div></div>
+  </div>
+</div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='KIND';ftypes[5]='dropdown'; /*
+ * Translated default messages for the $ validation plugin.
+ * Locale: FR
+ */
+$.extend($.validator.messages, {
+        required: "Ce champ est requis.",
+        remote: "Veuillez remplir ce champ pour continuer.",
+        email: "Veuillez entrer une adresse email valide.",
+        url: "Veuillez entrer une URL valide.",
+        date: "Veuillez entrer une date valide.",
+        dateISO: "Veuillez entrer une date valide (ISO).",
+        number: "Veuillez entrer un nombre valide.",
+        digits: "Veuillez entrer (seulement) une valeur numérique.",
+        creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+        equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+        accept: "Veuillez entrer une valeur avec une extension valide.",
+        maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+        minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+        rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+        range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+        max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+        min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
   </div>
 </section>
 
