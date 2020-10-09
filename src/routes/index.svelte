@@ -522,6 +522,67 @@
     Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter :
   </h3>
   <div class="items-center w-full px-4 pb-6">
+    <form
+      method="POST"
+      action="https://api.sheaft.com/contact/newsletter">
+      <div class="flex flex-wrap my-8 justify-center">
+        <div class=" w-full md:w-6/12">
+          <div class="w-full text-left">
+            <label class="font-semibold text-white md:text-xl">Prénom*</label>
+            <input
+              class="w-full bg-white font-bold rounded my-2 py-4
+              px-3 shadow-lg md:text-xl"
+              id="FirstName"
+              name="FirstName"
+              type="FirstName"
+              required="required"
+              placeholder="jean" />
+          </div>
+          <div class="w-full text-left">
+            <label class="font-semibold text-white md:text-xl">
+              Adresse e-mail*
+            </label>
+            <input
+              class="w-full bg-white font-bold rounded my-2 py-4
+              px-3 shadow-lg md:text-xl"
+              id="Email"
+              type="Email"
+              name="Email"
+              required="required"
+              placeholder="jean@doe.xyz" />
+          </div>
+          <div class="w-full text-left">
+            <label class="font-semibold text-white md:text-xl">Je suis*</label>
+            <select
+              class:text-normal={selectedValue}
+              class="w-full bg-white font-bold rounded my-2 py-4
+              px-3 shadow-lg md:text-xl custom-select"
+              id="Role"
+              type="Role"
+              on:change={(e) => selectedValue = e.target.value}
+              name="Role"
+              required="required">
+              <option value="" disabled selected>Sélectionnez une option</option>
+              <option value="consumer">Consommateur</option>
+              <option value="producer">Producteur</option>
+              <option value="shop">Commerçant</option>
+              <option value="restorer">Restaurateur</option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+          <p class="w-full text-white text-left pt-4">(*) champs requis</p>
+          {#if error}
+            <p class="w-full text-red-600 text-xl">{error}</p>
+          {/if}
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="hover:underline bg-white font-bold rounded-full
+        my-3 py-4 px-8 shadow-lg md:text-xl">
+        Je m'inscris à la newsletter
+      </button>
+    </form>
   </div>
 </section>
 
