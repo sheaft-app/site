@@ -2,7 +2,7 @@ const tailwind = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
 const postcssImport = require("postcss-import");
 const purgecss = require("@fullhuman/postcss-purgecss")({
-	whitelistPatterns: [/svelte/, /fa/, /notyf/, /leaflet/, /ssp/],
+	whitelistPatterns: [/svelte/, /fa/, /notyf/, /leaflet/, /ssp/, /mc_embed/, /mc-/, /mce-/],
 	content: ["./src/**/*.html", "./src/**/*.svelte"],
 	defaultExtractor: (content) => {
 		const regExp = new RegExp(/[\w-/:]+(?<!:)/g);

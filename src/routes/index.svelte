@@ -522,7 +522,7 @@
     Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter :
   </h3>
   <div class="items-center w-full px-4 pb-6">
-<div id="mc_embed_signup">
+<div id="mc_embed_signup" class="mc_embed_signup">
 <form action="https://sheaft.us18.list-manage.com/subscribe/post?u=a2e9bef717a56b12586cdbf76&amp;id=e1b8d283f5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
       <div class="flex flex-wrap justify-center">
@@ -558,6 +558,7 @@
     <div class="content__gdpr">
         <h2 class="text-white">Autorisations de communication</h2>
         <p>Pour quel(s) type(s) de communication souhaitez-vous être contacté par Sheaft ?</p>
+        <br/>
         <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
 		<label class="checkbox subfield" for="gdpr_66162"><input type="checkbox" id="gdpr_66162" name="gdpr[66162]" value="Y" class="av-checkbox gdpr"><span>Newsletter</span> </label><label class="checkbox subfield" for="gdpr_66174"><input type="checkbox" id="gdpr_66174" name="gdpr[66174]" value="Y" class="av-checkbox gdpr"><span>Email promotionel</span> </label>
         </fieldset>
