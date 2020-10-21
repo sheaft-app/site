@@ -12,6 +12,6 @@
   </div>
   <div class="text-2xl text-center">
     <p>Merci de votre intérêt pour Sheaft, nous reviendrons vers vous sous peu. 😊</p>
-    <p>Si vous avez la moindre question d'ici là, n'hésitez pas à nous envoyer un mail sur <b>contact@sheaft.com</b></p>
+    <p>Si vous avez la moindre question d'ici là, n'hésitez pas à nous envoyer un mail sur <b><a target="_blank" class="text-accent" href="mailto:contact@sheaft.com">contact@sheaft.com</a></b></p>
   </div>
 </div>
