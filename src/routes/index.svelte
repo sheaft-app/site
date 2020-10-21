@@ -560,14 +560,14 @@
         <p>Pour quel(s) type(s) de communication souhaitez-vous être contacté par Sheaft ?</p>
         <br/>
         <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
-		<label class="checkbox subfield" for="gdpr_66162"><input type="checkbox" id="gdpr_66162" name="gdpr[66162]" value="Y" class="av-checkbox gdpr"><span>Newsletter</span> </label><label class="checkbox subfield" for="gdpr_66174"><input type="checkbox" id="gdpr_66174" name="gdpr[66174]" value="Y" class="av-checkbox gdpr"><span>Email promotionel</span> </label>
+		    <label class="checkbox subfield" for="gdpr_66162"><input type="checkbox" id="gdpr_66162" name="gdpr[66162]" value="Y" class="av-checkbox gdpr"><span>Newsletter</span> </label><label class="checkbox subfield" for="gdpr_66174"><input type="checkbox" id="gdpr_66174" name="gdpr[66174]" value="Y" class="av-checkbox gdpr"><span>Email promotionel</span> </label>
         </fieldset>
         <br/>
         <p>Vous pouvez vous désabonner à n'importe quel moment en cliquant sur le lien dans le bas de page des emails que vous recevrez de notre part.</p>
     </div>
     <br/>
     <div class="content__gdprLegal">
-        <p>Nous utilisons Mailchimp comme plateforme d'emailing. En cliquant sur le bouton s'inscrire, vous acceptez que vos informations soient transmises à Mailchimp pour taiter votre inscription. <a href="https://mailchimp.com/legal/" target="_blank">Cliquez sur ce lien pour en savoir plus.</a></p>
+        <p>Nous utilisons Mailchimp comme plateforme d'emailing. En cliquant sur le bouton s'inscrire, vous acceptez que vos informations soient transmises à Mailchimp pour traiter votre inscription. <a href="https://mailchimp.com/legal/" class="text-accent" target="_blank">Cliquez sur ce lien pour en savoir plus.</a></p>
     </div>
 </div>
 	<div id="mce-responses" class="clear">
