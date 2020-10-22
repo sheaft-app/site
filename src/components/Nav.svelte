@@ -111,6 +111,13 @@
             Soutenir le projet
           </a>
         </li> -->
+        <!-- <li class="mr-3">
+          <a
+            class="inline-block py-2 px-4 text-white font-bold no-underline"
+            href="/interest">
+            Intérêt
+          </a>
+        </li> -->
       </ul>
       <!-- <a
         id="navAction"

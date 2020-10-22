@@ -11,6 +11,11 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://www.sheaft.com/interest</loc>
+        <lastmod>2020-05-01</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://www.sheaft.com/about</loc>
         <lastmod>2020-05-01</lastmod>
         <changefreq>weekly</changefreq>
