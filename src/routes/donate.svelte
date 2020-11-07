@@ -77,8 +77,11 @@
               src="/img/donation.svg"
               class="md:w-7/12 w-2/3 m-auto mb-12"
               alt="mettre en avant" />
-            <a href="https://www.helloasso.com/associations/sheaft/formulaires/1/widget" target="_blank" class="mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white cusor-pointer">
+            <a href="https://www.helloasso.com/associations/sheaft/formulaires/1" target="_blank" class="mr-1 mx-auto block md:inline hover:underline bg-accent font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white cusor-pointer">
               Faire un don
+            </a> ou 
+            <a href="https://www.helloasso.com/associations/sheaft/adhesions/adhesion-sheaft" target="_blank" class="ml-1 block md:inline mx-auto hover:underline bg-accent font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white cusor-pointer">
+              Adhérer
             </a>
           </div>
         </div>
