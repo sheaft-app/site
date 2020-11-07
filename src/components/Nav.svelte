@@ -103,23 +103,23 @@
             A propos
           </a>
         </li>
-        <!-- <li class="mr-3">
+        <li class="mr-3">
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === 'donate' ? 'page' : undefined}
             href="/donate">
             Soutenir le projet
           </a>
-        </li> -->
+        </li>
       </ul>
-      <!-- <a
+      <a
         id="navAction"
         class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold
         rounded-full mt-4 lg:mt-0 py-4 px-8 shadow"
         target="_blank"
         href="https://app.sheaft.com">
         Ouvrir Sheaft
-      </a> -->
+      </a>
     </div>
   </div>
 </nav>
@@ -185,7 +185,7 @@
               Partager
             </a>
           </li>
-          <!-- <li>
+          <li>
             <a
               on:click={closeNav}
               class="w-full inline-block py-5 px-4 font-bold no-underline text-gray-700
@@ -195,16 +195,16 @@
               href="/donate">
               Soutenir le projet
             </a>
-          </li> -->
+          </li>
         </ul>
-            <!-- <a
+            <a
               on:click={closeNav}
               class="w-full py-5 px-4 font-bold no-underline text-gray-700
               border-t border-solid text-center border-gray-300 hover:bg-gray-500 absolute bottom-0"
               href="https://app.sheaft.com"
               target="_blank">
               Ouvrir l'application
-            </a> -->
+            </a>
     </div>
   </nav>
 {/if}
