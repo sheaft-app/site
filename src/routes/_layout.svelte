@@ -38,7 +38,6 @@
 </div>
   <p class="my-3 italic text-center text-gray-100">
     Copyright Sheaft @ 2020
-    <a href="/nlregistered" class="hidden"> </a>
   </p>
 
 <style lang="scss" global>
