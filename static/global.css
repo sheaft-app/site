@@ -6,6 +6,23 @@ html {
   display: inline !important;
 }
 
+ol{
+  list-style: revert!important;
+  padding-left:2em!important;
+}
+
+ol>li{
+  padding-top:1em;
+}
+
+ol>li>p{
+  padding-top:0.75em;
+}
+
+ol ul{
+  list-style: disc!important;
+  padding-left:1em!important;
+}
 body {
   margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
