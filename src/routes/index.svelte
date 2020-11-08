@@ -27,10 +27,7 @@
     class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row
     items-center text-white pb-12 md:p-16 md:p-0">
     <div
-      class="flex flex-col w-full lg:w-2/5 justify-center items-start text-left">
-      <div class="bg-orange-200 shadow-lg p-4 rounded text-normal mt-2 md:mt-0" style="width: fit-content;">
-        <p>La sortie est prévue pour bientôt, on peaufine !</p>
-      </div>
+      class="flex flex-col w-full lg:w-2/5 justify-center items-start text-left">      
       <h1 class="my-4 text-4xl md:text-5xl font-bold leading-tight">
         Consommer local,
         <br />
@@ -506,19 +503,10 @@
   </g>
 </svg>
 
-<section class="container mx-auto text-center pt-5 mt-3">
-  <h1
-    class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-center
-    text-white">
-    Et ça sort quand ?!
-  </h1>
-  <div class="w-full mb-4">
-    <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
-  </div>
+<section class="container mx-auto text-center pt-5 mt-3">  
   <h3
     class="my-4 md:my-8 text-xl md:text-3xl leading-tight text-white px-3
     md:px-0">
-    La sortie se compte en jours, on peaufine et on est là !<br/>
     Pour rester informé(e) de toutes nos avancées, inscrivez-vous à notre newsletter :
   </h3>
   <div class="items-center w-full px-4 pb-6">
