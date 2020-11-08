@@ -67,7 +67,7 @@
     </h2>
     <ol>
       <li>Les Consommateurs sont expressément informés et acceptent que tous les paiements effectués à travers le Site, sont gérés par la société MANGOPAY S.A., société agréée en tant qu’établissement de monnaie électronique, immatriculée au RCS luxembourgeois sous le n° B173459, dont le siège social est situé 2, avenue Amélie, L-1125 Luxembourg (ci-après : « MangoPay »).
-        <br/><br/>Les Consommateurs contractent directement avec MangoPay s’agissant de la mise en œuvre de leurs paiements à travers le Site, en acceptant les conditions générales de MangoPay par le biais d’une case à cocher lors de leur inscription sur le Site.
+        <br/><br/>Les Consommateurs contractent directement avec MangoPay s’agissant de la mise en œuvre de leurs paiements à travers le Site, en acceptant les <a href="https://www.mangopay.com/terms/end-user-terms-and-conditions/Mangopay_Terms-FR.pdf">conditions générales de MangoPay</a> par le biais d’une case à cocher lors de leur inscription sur le Site.
         <br/><br/>En cas de contradiction entre les conditions générales de MangoPay et les présentes conditions générales, ces dernières prévalent.
       </li>
       <li>Dans le cadre des Services, les Consommateurs transmettent à MangoPay toutes leurs instructions relatives aux paiements à travers leur Profil. En conséquence, les Consommateurs mandatent expressément Sheaft pour transmettre lesdites instructions à MangoPay, en leur nom et pour leur compte.</li>
