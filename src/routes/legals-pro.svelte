@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Conditions Générales d'Utilisation (Consommateurs)</title>
+  <title>Conditions Générales d'Utilisation (Producteurs et Magasins)</title>
 </svelte:head>
 
 <div class="flex text-justify flex-wrap pt-20 bg-white pl-10 pr-10">
