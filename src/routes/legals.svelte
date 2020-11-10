@@ -171,6 +171,7 @@
         <p>Le Consommateur qui souhaite exercer son droit de rétractation doit adresser à Sheaft aux coordonnées mentionnées à l’article « Exploitant du Site et des Services, Contact », avant l’expiration du délai ci-dessus, une déclaration exprimant clairement sa volonté de se rétracter et comportant le nom d’utilisateur, le numéro de la commande concernée et la dénomination du/des Produits.</p>
         <p>Les Produits de la commande doivent alors impérativement être retournés au producteur dans leur emballage d’origine, sans retard excessif et au plus tard dans les 14 (quatorze) jours suivant la communication, par le Consommateur, de sa volonté de se rétracter. Le Consommateur est réputé responsable en cas de détérioration des Produits lors de leur retour au producteur.</p>
         <p>Le Consommateur sera remboursé dans les meilleurs délais et au plus tard dans les 14 (quatorze) jours à compter de la date de réception effective par Sheaft de la demande de rétractation des sommes versées lors de sa Commande pour les Produits retournés, déduction faite le cas échéant des frais de retour, qui resteront à sa charge.</p>
+        <p>Les dons, et frais bancaires liés aux commandes ne font pas l'objet de remboursements.</p>
       </li>
     </ol>
   </div>
