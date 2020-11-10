@@ -2,7 +2,7 @@
   <title>Conditions Générales d'Utilisation (Consommateurs)</title>
 </svelte:head>
 
-<div class="flex text-justify flex-wrap pt-20 bg-white pl-10 pr-10">
+<div class="legals flex text-justify flex-wrap pt-20 bg-white pl-10 pr-10">
   <h1 class="font-bold text-center w-full text-gray-900 uppercase m-8 text-3xl">
     Conditions Générales d'Utilisation (Consommateurs)
   </h1>
@@ -21,7 +21,7 @@
       Objet
     </h2>
     <ol>
-      <li>Sheaft propose une plateforme accessible en ligne via ordinateur, tablette ou mobile à l’adresse <a href="https://app.sheaft.com">https://app.sheaft.com</a> (ci-après : le « Site ») permettant aux Consommateurs de commander des produits agricoles alimentaires ou tout autre bien de consommation courante (ci-après : les « Produits »), et de venir les récupérer à une date et un emplacement choisi lors de la commande.</li>
+      <li>Sheaft propose une plateforme accessible en ligne via ordinateur, tablette ou mobile à l’adresse <a href="https://app.sheaft.com" target="_blank">https://app.sheaft.com</a> (ci-après : le « Site ») permettant aux Consommateurs de commander des produits agricoles alimentaires ou tout autre bien de consommation courante (ci-après : les « Produits »), et de venir les récupérer à une date et un emplacement choisi lors de la commande.</li>
       <li>Les présentes conditions générales ont pour objet de définir les modalités et conditions d’utilisation des services proposés sur le Site aux Consommateurs, ainsi que de définir les droits et obligations des parties mises en relation sur celui-ci ou utilisant les services qui y sont proposés (ci-après : les « Services »). Peut également être amené à utiliser certains Services tout internaute qui navigue sur le Site sans y être connecté.</li>
       <li>Les présentes conditions générales sont accessibles et imprimables à tout moment par un lien direct en bas de page du Site.</li>
       <li>Elles peuvent être complétées, le cas échéant, par des conditions d’utilisation particulières à certains Services, lesquelles complètent les présentes conditions générales et, en cas de contradiction, prévalent sur ces dernières.</li>
@@ -67,7 +67,7 @@
     </h2>
     <ol>
       <li>Les Consommateurs sont expressément informés et acceptent que tous les paiements effectués à travers le Site, sont gérés par la société MANGOPAY S.A., société agréée en tant qu’établissement de monnaie électronique, immatriculée au RCS luxembourgeois sous le n° B173459, dont le siège social est situé 2, avenue Amélie, L-1125 Luxembourg (ci-après : « MangoPay »).
-        <br/><br/>Les Consommateurs contractent directement avec MangoPay s’agissant de la mise en œuvre de leurs paiements à travers le Site, en acceptant les <a href="https://www.mangopay.com/terms/end-user-terms-and-conditions/Mangopay_Terms-FR.pdf">conditions générales de MangoPay</a> par le biais d’une case à cocher lors de leur inscription sur le Site.
+        <br/><br/>Les Consommateurs contractent directement avec MangoPay s’agissant de la mise en œuvre de leurs paiements à travers le Site, en acceptant les <a href="https://www.mangopay.com/terms/end-user-terms-and-conditions/Mangopay_Terms-FR.pdf" target="_blank">conditions générales de MangoPay</a> par le biais d’une case à cocher lors de leur inscription sur le Site.
         <br/><br/>En cas de contradiction entre les conditions générales de MangoPay et les présentes conditions générales, ces dernières prévalent.
       </li>
       <li>Dans le cadre des Services, les Consommateurs transmettent à MangoPay toutes leurs instructions relatives aux paiements à travers leur Profil. En conséquence, les Consommateurs mandatent expressément Sheaft pour transmettre lesdites instructions à MangoPay, en leur nom et pour leur compte.</li>
@@ -338,7 +338,7 @@
     <h2 class="font-bold text-gray-700 uppercase m-3 text-xl">
       Propriété intellectuelle
     </h2>
-    <p>Les systèmes, logiciels, structures, infrastructures, bases de données et contenus de toute nature (textes, images, visuels, musiques, logos, marques, base de données, etc …) exploités par Sheaft le sont sous Licence GPL v3 et peuvent donc être réutilisés, modifiés, diffusés. Le code source de l’application est disponible à l’adresse suivante : <a href="https://www.github.com/sheaft-app">https://www.github.com/sheaft-app</a></p>
+    <p>Les systèmes, logiciels, structures, infrastructures, bases de données et contenus de toute nature (textes, images, visuels, musiques, logos, marques, base de données, etc …) exploités par Sheaft le sont sous Licence GPL v3 et peuvent donc être réutilisés, modifiés, diffusés. Le code source de l’application est disponible à l’adresse suivante : <a href="https://www.github.com/sheaft-app" target="_blank">https://www.github.com/sheaft-app</a></p>
   </div>
   <div class="m-4">
     <h2 class="font-bold text-gray-700 uppercase m-3 text-xl">
@@ -417,7 +417,7 @@
       <li>
         <p>Il peut contacter à cette fin le médiateur de la consommation suivant :</p>
         <p>Fédération du Commerce et de la Distribution (FCD)
-          <br/>Demande en ligne : <a href="https://mediateur.fcd.fr/reclamation ">https://mediateur.fcd.fr/reclamation </a>
+          <br/>Demande en ligne : <a href="https://mediateur.fcd.fr/reclamation" target="_blank">https://mediateur.fcd.fr/reclamation </a>
           <br/>Adresse électronique : <a href="mailto:mediationconsommation@fcd.fr">mediationconsommation@fcd.fr</a>
         </p>
       </li>
