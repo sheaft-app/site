@@ -40,11 +40,17 @@
 
       <div
         class="flex flex-wrap flex-col-reverse md:flex-row self-center
-        md:self-auto">
+        md:self-auto items-center">
+        <a
+          class="mx-auto lg:mx-0 hover:underline bg-white 
+          font-bold rounded-full my-6 py-4 px-8 shadow-lg text-normal"
+          href="https://app.sheaft.com"
+          target="_blank">
+          Ouvrir Sheaft
+        </a>
         <a
           href="#introduction"
-          class="mx-auto lg:mx-0 hover:underline bg-white 
-          font-bold rounded-full my-6 py-4 px-8 shadow-lg text-normal">
+          class="hover:underline font-bold text-white md:ml-5">
           En savoir plus
         </a>
       </div>
