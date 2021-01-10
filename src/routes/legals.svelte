@@ -152,7 +152,7 @@
         <p>Le Consommateur s’engage à réceptionner les Produits qu’il a commandé, directement auprès des Producteurs sur le point de retrait, au jour et à la plage horaire prévus lors de la passation de la Commande.</p>
         <p>Le Consommateur s’oblige à vérifier immédiatement et sur place la conformité des Produits avec le bon de commande. </p>
         <p>Le Consommateur est informé qu’il ne peut en aucun cas solliciter le remboursement ou la remise à une date ultérieure des Produits qu’il a commandé sans les réceptionner, ce qu’il accepte expressément.</p>
-        <p>La validation de la récupération de la commande entraîne le versement au producteur du montant correspondant de la commande.</p>
+        <p>La validation de la récupération de la commande entraîne le versement au producteur du montant correspondant de la commande à j+7.</p>
       </li>
     </ol>
   </div>
@@ -217,7 +217,7 @@
           </ul>
         </div>
       </li>
-      <li>Le Consommateur reconnaît que les Services lui offrent une solution supplémentaire, non alternative, de commander des produits agricoles alimentaires ou tout autre bien de consommation courante et que cette solution ne saurait se substituer aux autres moyens dont le Consommateur peut disposer par ailleurs pour atteindre le même objectif.</li>
+      <li>Le Consommateur reconnaît que les Services lui offrent une solution supplémentaire, non alternative, de commander des produits alimentaires ou tout autre bien de consommation courante et que cette solution ne saurait se substituer aux autres moyens dont le Consommateur peut disposer par ailleurs pour atteindre le même objectif.</li>
       <li>Le Consommateur est informé et accepte que la mise en œuvre des Services nécessite qu’il soit connecté à internet et que la qualité des Services dépend directement de cette connexion, dont il est seul responsable.</li>
     </ol>
   </div>
