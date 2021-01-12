@@ -1,0 +1,16 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+        {
+            "name": "Chrome Portal",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/__sapper__/dev/client",
+            "sourceMaps": true,
+            "skipFiles": [
+                "<node_internals>/**",
+            ]
+        }
+    ]
+}
