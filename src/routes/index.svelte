@@ -117,7 +117,7 @@
 </div>
 
 <div id="introduction" class="relative bg-white">
-  <div class="container mx-auto px-6 py-6 md:pt-16 relative">
+  <div class="container mx-auto px-6 py-6 md:pt-16 relative -mt-1">
     <div class="m-auto text-center">
        <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
@@ -610,6 +610,9 @@ $.extend($.validator.messages, {
 </section>
 
 <style>
+  .leaflet-popup-content {
+    width: auto;
+  }
   .custom-select {
     height: 62px;
     color: #a0aec1;

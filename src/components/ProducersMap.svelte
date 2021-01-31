@@ -141,28 +141,11 @@
       }
     ).addTo(map);
 
-    const data = [
-      {
-        id: "9e960fba-9f65-49fd-a9ff-d2ff98c3af8f",
-        name: "gaec la ferme du parquet",
-        address: {
-          latitude: 45.913124, 
-          longitude: 6.091464
-        }
-      },
-      {
-        id: "3a265298-e3ec-4f68-8c52-8e3e93b74b74",
-        name: "gaec la ferme du piquet",
-        address: {
-          latitude: 45.908375, 
-          longitude: 6.112522
-        }
-      }
-    ];
+    const data = await fetch("https://content.sheaft.com/producers/producers.json").then(response => response.json());
 
      const marker = L.divIcon({
-      className: "custom-marker-me",
-      html: `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="25px" height="25px" viewBox="0 0 485.213 485.212" style="enable-background:new 0 0 485.213 485.212;"	 xml:space="preserve"><g>	<path d="M242.606,0C142.124,0,60.651,81.473,60.651,181.955c0,40.928,13.504,78.659,36.31,109.075l145.646,194.183L388.252,291.03		c22.808-30.416,36.31-68.146,36.31-109.075C424.562,81.473,343.089,0,242.606,0z M242.606,303.257		c-66.989,0-121.302-54.311-121.302-121.302c0-66.989,54.313-121.304,121.302-121.304c66.991,0,121.302,54.315,121.302,121.304		C363.908,248.947,309.598,303.257,242.606,303.257z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>`
+      className: "custom-marker",
+      html: `<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="-46 0 512 512" width="25px" class="hovered-paths"><g><path d="m177.128906 232.5h64.609375l25.210938-55h-101.953125zm0 0" data-original="#000000" class="hovered-path active-path" data-old_color="#000000" fill="#205164"/><path d="m210 0c-115.792969 0-210 94.207031-210 210 0 93.359375 61.519531 175.210938 150.441406 201.429688l46.140625 92.277343c2.539063 5.082031 7.734375 8.292969 13.417969 8.292969 5.679688 0 10.875-3.210938 13.414062-8.292969l46.140626-92.277343c88.925781-26.214844 150.445312-108.070313 150.445312-201.429688 0-115.792969-94.207031-210-210-210zm-39.671875 304.5c-8.261719 0-15-6.738281-15-15s6.738281-15 15-15 15 6.738281 15 15-6.738281 15-15 15zm75 0c-8.261719 0-15-6.738281-15-15s6.738281-15 15-15 15 6.738281 15 15-6.738281 15-15 15zm58.636719-135.75-38.96875 85c-2.441406 5.332031-7.769532 8.75-13.632813 8.75h-86.289062c-7.039063 0-13.132813-4.894531-14.648438-11.769531l-23.867187-108.230469h-8.835938c-8.285156 0-15-6.714844-15-15s6.714844-15 15-15h20.886719c7.042969 0 13.132813 4.894531 14.648437 11.769531l5.125 23.230469h131.945313c5.109375 0 9.867187 2.601562 12.625 6.898438 2.761719 4.300781 3.140625 9.707031 1.011719 14.351562zm0 0" data-original="#000000" class="hovered-path active-path" data-old_color="#000000" fill="#205164"/></g> </svg>`
     });
 
     const coordonnates = data.map((producer, i) =>
@@ -170,11 +153,19 @@
         icon: marker
       })
       .bindPopup(`
-      <h3 style="margin: 0; font-weight: 600;">${producer.name}</h3>
-      <p style="margin: 0">${producer.address.line1}</p>
-      <p style="margin: 0">${producer.address.zipcode} ${producer.address.city} </p>
-      <a class="mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://app.sheaft.com/#/search?producerId=${producer.id}" style="margin: 0">Voir ses produits</a>
-      `)
+      <div class="flex relative flex-wrap justify-between">
+        <img
+          class="h-12 w-12 rounded-full p-1 border border-gray-800 border-solid mb-3 m-auto"
+          src=${producer.picture ? producer.picture : 'img/farmer.svg'}
+          alt="Producteur" />
+        <div class="text-center m-auto">
+          <h3 style="margin: 0; font-weight: 600;">${producer.name}</h3>
+          <p style="margin: 0">${producer.address.line1}</p>
+          <p style="margin: 0">${producer.address.zipcode} ${producer.address.city} </p>
+        </div>
+        <a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://app.sheaft.com/#/search?producerId=${producer.id}" style="margin: 0">Voir ses produits</a>
+      </div>
+        `)
     );
 
     const markers = L.featureGroup(coordonnates);
