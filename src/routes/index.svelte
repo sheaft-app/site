@@ -2,7 +2,7 @@
   import qs from "qs";
   import { onMount } from "svelte";
   import { mapActive } from "../stores";
-  import Map from "../components/Map.svelte";
+  import Map from "../components/ProducersMap.svelte";
   let error = null;
 
   onMount(() => {
@@ -55,11 +55,12 @@
         </a>
       </div>
     </div>
-    <div class="hidden lg:block w-full md:w-3/5 py-6 text-center">
-      <img
+    <div class="w-full md:w-3/5 py-6 text-center">
+      <iframe title="YouTube" class="m-auto w-full lg:w-2/3" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" style="border-radius: 10px; box-shadow: 1px 1px 7px 2px rgba(0,0,0,0.4);" frameborder="0" allowfullscreen></iframe>
+      <!-- <img
         class="w-full md:w-4/5 z-50 m-auto"
         src="img/shopping.svg"
-        alt="Shopper des produits locaux" />
+        alt="Shopper des produits locaux" /> -->
     </div>
 
   </div>
@@ -116,13 +117,15 @@
 </div>
 
 <div id="introduction" class="relative bg-white">
-  <div class="container mx-auto px-6 py-6 md:pt-24 relative">
-    <div class="m-auto text-center mb-16 youtube-frame">
+  <div class="container mx-auto px-6 py-6 md:pt-16 relative -mt-1">
+    <div class="m-auto text-center">
        <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-        Découvrez Sheaft en détails dans cette vidéo explicative
+        Les producteurs sur Sheaft
       </h4>
-      <iframe title="YouTube" class="m-auto w-11/12 lg:w-1/2" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" style="border-radius: 10px; box-shadow: 1px 1px 7px 2px rgba(0,0,0,0.4);" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="m-auto lg:w-3/5 text-center rounded mb-10">
+      <Map />
     </div>
     <div
       class="flex flex-col md:flex-row items-center mt-16 md:mt-0
@@ -607,6 +610,9 @@ $.extend($.validator.messages, {
 </section>
 
 <style>
+  .leaflet-popup-content {
+    width: auto;
+  }
   .custom-select {
     height: 62px;
     color: #a0aec1;

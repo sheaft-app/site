@@ -41,7 +41,7 @@
   </a>
 </div>
   <p class="my-3 italic text-center text-gray-100">
-    Copyright Sheaft @ 2020
+    Copyright Sheaft @ 2021
   </p>
 
 <style lang="scss" global>
