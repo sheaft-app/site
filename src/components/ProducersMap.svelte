@@ -1,125 +1,11 @@
 <script>
   import { onMount } from "svelte";
-  import { mapActive } from "../stores";
-  import ProgressBar from "@okrad/svelte-progressbar";
+  
   import "leaflet/dist/leaflet.css";
   import "leaflet.markercluster/dist/MarkerCluster.css";
   import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 
-  let id = "sheaft-map";
-  let regionsData = null;
-  var map = null;
-  let regionsGeojson = null;
-  let departmentsGeojson = null;
-  let selectedRegion = null;
-  let selectedDepartment = null;
-  let hoveredElement = null;
-  let detailsActive = false;
-
-  function getProgressColor(p) {
-    return p >= 100
-      ? "#33D7A3"
-      : p > 50
-      ? "#9ff193"
-      : p > 25
-      ? "#ffcb92"
-      : p > 0
-      ? "#ffe6c0"
-      : "#e7e7e7";
-  }
-
-  function style(feature) {
-    return {
-      fillColor: getProgressColor(
-        regionsData.Regions.find(r => r.Code === feature.properties.code)
-          .Progress
-      ),
-      weight: 2,
-      opacity: 1,
-      color: "white",
-      dashArray: "0",
-      fillOpacity: 1
-    };
-  }
-
-  function closeMap() {
-    mapActive.set(false);
-    document.body.classList.remove("overflow-hidden");
-  }
-
-  function setDetailsActive(active) {
-    detailsActive = active;
-  }
-
-  function resetHighlight(e, type = "region") {
-    if (
-      selectedDepartment &&
-      e.target.feature.properties.nom === selectedDepartment.properties.nom
-    ) {
-      return null;
-    }
-
-    if (type === "department") {
-      departmentsGeojson.resetStyle(e.target);
-    } else {
-      regionsGeojson.resetStyle(e.target);
-    }
-
-    hoveredElement = null;
-  }
-
-  function highlightFeature(e, type = "region") {
-    if (
-      selectedDepartment &&
-      e.target.feature.properties.nom === selectedDepartment.properties.nom
-    ) {
-      return null;
-    }
-
-    var layer = e.target;
-
-    hoveredElement = layer.feature;
-
-    layer.setStyle({
-      weight: 5,
-      color: "white",
-      dashArray: "",
-      fillOpacity: 0.7
-    });
-
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-      layer.bringToFront();
-    }
-  }
-
-  async function zoomToFeature(e, region) {
-    selectedRegion = {
-      ...e.target.feature,
-      ...region
-    };
-
-    await loadBoundaries("department", e.target.feature.properties.code);
-    map.removeLayer(regionsGeojson);
-    map.fitBounds(e.target.getBounds());
-  }
-
-  const handleReturn = () => {
-    // on déselectionne le département
-    if (selectedDepartment) {
-      selectedDepartment = null;
-      departmentsGeojson.resetStyle();
-      map.fitBounds(departmentsGeojson.getBounds());
-    }
-
-    // on déselectionne la région
-    else if (selectedRegion) {
-      selectedRegion = null;
-      map.removeLayer(departmentsGeojson);
-      regionsGeojson.resetStyle();
-      regionsGeojson.addTo(map);
-      map.fitBounds(regionsGeojson.getBounds());
-    }
-  };
+  let map = null;
 
   onMount(async () => {
     let module = await import("leaflet");
@@ -127,7 +13,7 @@
     module = await import("leaflet.markercluster");
     const L1 = module.default;
 
-    map = L.map(id).setView([46.428967, 4.664555], 5);
+    map = L.map("sheaft-map").setView([46.428967, 4.664555], 5);
     map.doubleClickZoom.disable();
 
     L.tileLayer(
@@ -163,7 +49,10 @@
           <p style="margin: 0">${producer.address.line1}</p>
           <p style="margin: 0">${producer.address.zipcode} ${producer.address.city} </p>
         </div>
-        <a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://app.sheaft.com/#/search?producerId=${producer.id}" style="margin: 0">Voir ses produits</a>
+        ${producer.hasProducts  
+          ? `<a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://app.sheaft.com/#/search?producerId=${producer.id}" style="margin: 0">Voir ses produits</a>`
+          : ''
+        }
       </div>
         `)
     );
@@ -192,19 +81,6 @@
 
   svg.disabled {
     fill: #e1e1e1;
-  }
-
-  @media (max-width: 1024px) {
-    .details-panel {
-      transition: 0.3s all ease-in-out;
-      transform: translateX(-100%);
-      max-height: calc(100vh);
-      padding-bottom: 130px;
-    }
-
-    .details-panel.active {
-      transform: translateX(0);
-    }
   }
 
   button.active {
