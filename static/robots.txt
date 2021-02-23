@@ -1,1 +1,10 @@
 Sitemap: https://www.sheaft.com/sitemap.xml
+User-agent: *
+Disallow: /legals
+Disallow: /privacy
+Disallow: /legals-pro
+Disallow: /interest
+Noindex: /legals
+Noindex: /legals-pro
+Noindex: /privacy
+Noindex: /interest
