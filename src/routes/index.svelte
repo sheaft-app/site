@@ -364,7 +364,7 @@
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
         <p class="text-xl mb-4">Sheaft intègre dans sa première version des fonctionnalités pour vous aider à simplifier vos échanges avec les producteurs.</p>
-        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="https://discord.gg/FGSg6Wm" target="_blank">posez-nous la question sur Discord</a>.</p>
+        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="https://discord.gg/3Edpmh5P5r" target="_blank">posez-nous la question sur Discord</a>.</p>
       </div>
     </div>
   </div>
@@ -452,7 +452,7 @@
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
           <p class="text-xl mb-4">Sheaft est présente sur Discord pour qu’on puisse échanger tous ensemble, autour de vos idées ou d’un débat chocolatine/pain au chocolat <span class="text-xs">(pain au chocolat bien sûr 😉)</span>.</p>
-          <a href="https://discord.gg/FGSg6Wm" target="_blank">
+          <a href="https://discord.gg/3Edpmh5P5r" target="_blank">
             <img class="mb-4" src="img/discord.png" style="max-width: 200px;" alt="Rejoindre notre Discord" />
           </a>
           <p class="text-xl mb-4">Vous êtes un(e) développeur/se web ? Prenez notre code sur GitHub, changez-le et montrez-nous directement !</p>
