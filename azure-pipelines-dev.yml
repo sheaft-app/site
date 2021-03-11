@@ -21,4 +21,4 @@ steps:
   - task: PublishBuildArtifacts@1
     inputs:
       PathtoPublish: '$(System.DefaultWorkingDirectory)/publish_output/build$(Build.BuildId).zip'
-      artifactName: 'sheaft-site'
+      artifactName: 'sheaft-site-sprint'
