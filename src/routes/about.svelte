@@ -43,7 +43,6 @@
     {
       name: "Jack William Beavan",
       title: "Consultant UX",
-      linkedIn: "https://www.linkedin.com/in/jack-william-beavan-2a893714b/",
       img: "jack.jpg"
     },
     {
