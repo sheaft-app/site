@@ -50,7 +50,7 @@
           <p style="margin: 0">${producer.address.zipcode} ${producer.address.city} </p>
         </div>
         ${producer.hasProducts  
-          ? `<a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://app.sheaft.com/#/search?producerId=${producer.id}" style="margin: 0">Voir ses produits</a>`
+          ? `<a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://app.sheaft.com/#/details/producers/${producer.id}" style="margin: 0">Voir sa boutique</a>`
           : ''
         }
       </div>
