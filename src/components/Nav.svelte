@@ -81,20 +81,20 @@
         </li>
         <li class="mr-3">
           <a
+            class="inline-block py-2 px-4 text-white font-bold no-underline"
+            aria-current={segment === 'shops' ? 'page' : undefined}
+            href="/shops">
+            Je suis commercant
+          </a>
+        </li>
+        <li class="mr-3">
+          <a
             class="hidden py-2 px-4 text-white font-bold no-underline"
             aria-current={segment === 'share' ? 'page' : undefined}
             href="/share">
             Partager
           </a>
         </li>
-        <!-- <li class="mr-3">
-          <a
-            class="inline-block py-2 px-4 text-white font-bold no-underline"
-            aria-current={segment === 'shops' ? 'page' : undefined}
-            href="/shops">
-            Je suis commercant
-          </a>
-        </!--> 
         <li class="mr-3">
           <a
             class="inline-block py-2 px-4 text-white font-bold no-underline"
