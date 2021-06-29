@@ -3,6 +3,7 @@
   import { onMount } from "svelte";
   import { mapActive } from "../stores";
   import Map from "../components/ProducersMap.svelte";
+import { config } from './../configs/config';
   let error = null;
 
   onMount(() => {
@@ -44,7 +45,7 @@
         <a
           class="mx-auto lg:mx-0 hover:underline bg-white 
           font-bold rounded-full my-6 py-4 px-8 shadow-lg text-normal"
-          href="https://app.sheaft.com"
+          href="https://{config.subdomain}app.sheaft.com"
           target="_blank">
           Ouvrir Sheaft
         </a>
@@ -121,7 +122,7 @@
     <div class="m-auto text-center">
        <h4
           class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0">
-        Les producteurs sur Sheaft
+        Les <span style="color:#009688">producteurs</span> et <span style="color:#ff4081">magasins</span> sur Sheaft
       </h4>
     </div>
     <div class="m-auto lg:w-3/5 text-center rounded mb-10">

@@ -1,8 +1,9 @@
 <script>
   import { onMount } from "svelte";
+  import { config } from './../configs/config';
 
   let copied = false;
-  const link = 'https://www.sheaft.com';
+  const link = `https://${config.subdomain}www.sheaft.com`;
 
   const handleClick = () => {
     if (navigator.share) {

@@ -1,3 +1,7 @@
+<script>
+import { config } from './../configs/config';
+</script>
+
 <svelte:head>
   <title>Conditions Générales d'Utilisation (Professionels)</title>
 </svelte:head>
@@ -28,7 +32,7 @@
       Objet
     </h2>
     <ol>
-      <li>Sheaft propose une plateforme accessible en ligne via ordinateur, tablette ou mobile à l’adresse <a href="https://app.sheaft.com" target="_blank">https://app.sheaft.com</a> (ci-après : le « Site ») permettant aux Consommateurs de commander des produits agricoles alimentaires ou tout autre bien de consommation courante (ci-après : les « Produits »), et de venir les récupérer à une date et un emplacement choisi lors de la commande.</li>
+      <li>Sheaft propose une plateforme accessible en ligne via ordinateur, tablette ou mobile à l’adresse <a href="https://{config.subdomain}app.sheaft.com" target="_blank">https://{config.subdomain}app.sheaft.com</a> (ci-après : le « Site ») permettant aux Consommateurs de commander des produits agricoles alimentaires ou tout autre bien de consommation courante (ci-après : les « Produits »), et de venir les récupérer à une date et un emplacement choisi lors de la commande.</li>
       <li>Les présentes conditions générales ont pour objet de définir les modalités et conditions d’utilisation du Site et des services proposés sur le Site par les Magasins et les Producteurs (ci-après : les « Professionnels ») ainsi que de définir leurs droits et obligations.</li>
       <li>Les présentes conditions générales sont accessibles et imprimables à tout moment par un lien direct en bas de page du Site.</li>
     </ol>

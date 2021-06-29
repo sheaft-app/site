@@ -1,4 +1,6 @@
 <script>
+import { config } from './../configs/config';
+
 	import { slide } from 'svelte/transition';
   export let segment;
 
@@ -117,7 +119,7 @@
         class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold
         rounded-full mt-4 lg:mt-0 py-4 px-8 shadow"
         target="_blank"
-        href="https://app.sheaft.com">
+        href="https://{config.subdomain}app.sheaft.com">
         Ouvrir Sheaft
       </a>
     </div>
@@ -201,7 +203,7 @@
               on:click={closeNav}
               class="w-full py-5 px-4 font-bold no-underline text-gray-700
               border-t border-solid text-center border-gray-300 hover:bg-gray-500 absolute bottom-0"
-              href="https://app.sheaft.com"
+              href="https://{config.subdomain}app.sheaft.com"
               target="_blank">
               Ouvrir l'application
             </a>

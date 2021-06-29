@@ -4,10 +4,15 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
+    "dev:sprint": "npm install && cpy ./src/configs/config.sprint.js ./src/configs --rename=config.js && set NODE_ENV=LOCAL && run-p dev",
+    "dev:staging": "npm install && cpy ./src/configs/config.staging.js ./src/configs --rename=config.js && set NODE_ENV=LOCAL && run-p dev",
+    "dev:production": "npm install && cpy ./src/configs/config.production.js ./src/configs --rename=config.js && set NODE_ENV=LOCAL && run-p dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
-    "publish": "npm install && set NODE_ENV=PRODUCTION && run-p export ",
+    "publish:sprint": "npm install && cpy ./src/configs/config.sprint.js ./src/configs --rename=config.js && set NODE_ENV=PRODUCTION && run-p export",
+    "publish:staging": "npm install && cpy ./src/configs/config.staging.js ./src/configs --rename=config.js && set NODE_ENV=PRODUCTION && run-p export",
+    "publish:production": "npm install && cpy ./src/configs/config.production.js ./src/configs --rename=config.js && set NODE_ENV=PRODUCTION && run-p export",
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {

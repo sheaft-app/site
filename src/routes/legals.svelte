@@ -1,3 +1,7 @@
+<script>
+  import { config } from './../configs/config';
+  </script>
+
 <svelte:head>
   <title>Conditions Générales d'Utilisation (Consommateurs)</title>
 </svelte:head>
@@ -21,7 +25,7 @@
       Objet
     </h2>
     <ol>
-      <li>Sheaft propose une plateforme accessible en ligne via ordinateur, tablette ou mobile à l’adresse <a href="https://app.sheaft.com" target="_blank">https://app.sheaft.com</a> (ci-après : le « Site ») permettant aux Consommateurs de commander des produits agricoles alimentaires ou tout autre bien de consommation courante (ci-après : les « Produits »), et de venir les récupérer à une date et un emplacement choisi lors de la commande.</li>
+      <li>Sheaft propose une plateforme accessible en ligne via ordinateur, tablette ou mobile à l’adresse <a href="https://{config.subdomain}app.sheaft.com" target="_blank">https://{config.subdomain}app.sheaft.com</a> (ci-après : le « Site ») permettant aux Consommateurs de commander des produits agricoles alimentaires ou tout autre bien de consommation courante (ci-après : les « Produits »), et de venir les récupérer à une date et un emplacement choisi lors de la commande.</li>
       <li>Les présentes conditions générales ont pour objet de définir les modalités et conditions d’utilisation des services proposés sur le Site aux Consommateurs, ainsi que de définir les droits et obligations des parties mises en relation sur celui-ci ou utilisant les services qui y sont proposés (ci-après : les « Services »). Peut également être amené à utiliser certains Services tout internaute qui navigue sur le Site sans y être connecté.</li>
       <li>Les présentes conditions générales sont accessibles et imprimables à tout moment par un lien direct en bas de page du Site.</li>
       <li>Elles peuvent être complétées, le cas échéant, par des conditions d’utilisation particulières à certains Services, lesquelles complètent les présentes conditions générales et, en cas de contradiction, prévalent sur ces dernières.</li>
@@ -82,7 +86,7 @@
     </h2>
     <ol>
       <li>L’utilisateur peut s’inscrire sur le Site, mais ne deviendra Consommateur que s’il termine son enregistrement en choisissant le type de profil d’utilisation du site (un seul type de profil est possible pour un compte).</li>
-      <li>L’inscription de l’utilisateur s’effectue sur le Site (https://auth.sheaft.com), par le biais d’un formulaire prévu à cet effet ou d’une connexion à l’aide d’un compte d’un service tiers (Facebook, Google ou Microsoft). </li>
+      <li>L’inscription de l’utilisateur s’effectue sur le Site (https://{config.subdomain}auth.sheaft.com), par le biais d’un formulaire prévu à cet effet ou d’une connexion à l’aide d’un compte d’un service tiers (Facebook, Google ou Microsoft). </li>
       <li>L’utilisateur doit fournir l’ensemble des informations marquées comme obligatoires, notamment ses prénom, nom, adresse email et mot de passe. Toute inscription incomplète ne sera pas validée.</li>
       <li>Cette inscription entraîne automatiquement l’ouverture d’un compte au nom de l’utilisateur concerné, lui donnant accès à un Profil qui lui permet de gérer son utilisation des Services, sous une forme et selon les moyens techniques que Sheaft juge les plus appropriés pour rendre lesdits Services.</li>
       <li>L’utilisateur garantit que toutes les informations qu’il donne dans le formulaire d’inscription sont exactes, à jour et sincères et ne sont entachées d’aucun caractère trompeur.</li>
