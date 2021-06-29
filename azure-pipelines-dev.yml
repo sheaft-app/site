@@ -11,7 +11,7 @@ pool:
 
 steps:
   - script: |
-      npm run publish
+      npm run publish:sprint
   - task: ArchiveFiles@2
     displayName: "Archive files"
     inputs:
