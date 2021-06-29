@@ -11,7 +11,7 @@ pool:
 
 steps:
   - script: |
-      npm run publish
+      npm run publish:staging
   - task: ArchiveFiles@2
     displayName: "Archive files"
     inputs:
@@ -21,4 +21,16 @@ steps:
   - task: PublishBuildArtifacts@1
     inputs:
       PathtoPublish: '$(System.DefaultWorkingDirectory)/publish_output/build$(Build.BuildId).zip'
-      artifactName: 'sheaft-site'
+      artifactName: 'sheaft-site-staging'
+  - script: |
+      npm run publish:production
+  - task: ArchiveFiles@2
+    displayName: "Archive files"
+    inputs:
+      rootFolderOrFile: "$(System.DefaultWorkingDirectory)/__sapper__/export/"
+      includeRootFolder: false
+      archiveFile: "$(System.DefaultWorkingDirectory)/publish_output/build$(Build.BuildId).zip"
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(System.DefaultWorkingDirectory)/publish_output/build$(Build.BuildId).zip'
+      artifactName: 'sheaft-site-production'
