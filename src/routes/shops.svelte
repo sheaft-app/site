@@ -29,12 +29,6 @@
   </div>
 </div>
 
-<div class="bg-white text-center px-6 lg:px-64 pt-24">
-  <h2 class="text-4xl tracking-tight text-center leading-10 font-extrabold sm:text-4xl sm:leading-none md:text-5xl py-16 bg-primary text-white">
-    BIEN COMPRIS !
-  </h2>
-</div>
-
 <div id="missions" class="relative bg-white">
   <div class="container mx-auto px-6 py-16 relative">
     <div
@@ -66,14 +60,14 @@
         </p>
       </div>
       <div class="relative w-full" style="height: 300px; background-image: url('img/blob-shape-3.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-        <img style="top: 40%;" class="absolute shadow" src="/img/shops/suivi.jpg" alt="Trouvé" />  
+        <img style="top: 40%;" class="absolute shadow" src="/img/shops/suivi.jpg" alt="Suivi de commandes" />  
       </div>
     </div>
     <div
       class="flex flex-col md:flex-row items-center mb-16 xl:mb-8 mt-16 md:mt-0
       md:mt-16 lg:mt-0">
       <div class="relative w-full" style="height: 300px; background-image: url('img/blob-shape-2.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-        <img style="top: 20%;" class="absolute shadow" src="/img/shops/search.jpg" alt="Trouvé" />  
+        <img style="top: 20%;" class="absolute shadow" src="/img/shops/search.jpg" alt="Rechercher des producteurs" />  
       </div>
       <div class="md:ml-16 xl:ml-32 lg:px-24">
         <h4
@@ -97,8 +91,8 @@
           Sur notre plateforme, les consommateurs peuvent noter les produits des producteurs. Utilisez leurs avis pour identifier les produits les plus appréciés et augmenter vos ventes.
         </p>
       </div>
-      <div class="relative w-full" style="height: 300px; background-image: url('img/blob-shape-4.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-        <img style="top: 20%;" class="absolute shadow" src="/img/producer/avis.jpg" alt="Trouvé" />  
+      <div class="relative w-full" >
+        <img class="md:w-1/2 hidden lg:block" src="/img/4.jpg" alt="Evaluations" />  
       </div>
     </div>
   </div>

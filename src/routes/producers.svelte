@@ -20,7 +20,7 @@
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-4xl sm:leading-none md:text-5xl">
             J’ai besoin d’un outil qui me permette de 
             <br class="xl:hidden" />
-            <span class="text-primary">passer plus de temps avec ma famille</span>.
+            <span class="text-primary">gagner du temps et de la visibilité</span>.
           </h2>
         </div>
       </div>
@@ -148,6 +148,7 @@
       Cette procédure coûte 2,93€ et ce montant est directement prélevé sur la première commande. Après ça, Sheaft en illimité. À vie.</p>
       <p class="text-gray-600 text-lg font-light mb-4">Sheaft ne touche pas un seul centime de ce montant.</p>
     </div>
+    <p class="text-gray-600 text-lg font-light mb-4">Si vous l'utiliser uniquement avec des commerçants vous n'avez rien à payer car les paiements ne sont pas gérés par Sheaft dans ce cas là (nous ne gérons, pas encore, la facturation pro).</p>
   </div>
 </div>
 
