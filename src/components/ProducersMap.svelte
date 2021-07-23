@@ -68,7 +68,7 @@ import { config } from './../configs/config';
           <p style="margin: 0">${producer.address.line1}</p>
           <p style="margin: 0">${producer.address.zipcode} ${producer.address.city} </p>
         </div>
-        <a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-primary font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://${config.subdomain}app.sheaft.com/#/details/producers/${producer.id}" style="margin: 0">Voir sa boutique</a>
+        <a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-primary font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://${config.subdomain}app.sheaft.com/#/public/producers/${producer.id}" style="margin: 0">Voir sa boutique</a>
       </div>
         `)
     );
@@ -88,7 +88,7 @@ import { config } from './../configs/config';
           <p style="margin: 0">${store.address.line1}</p>
           <p style="margin: 0">${store.address.zipcode} ${store.address.city} </p>
         </div>
-        <a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://${config.subdomain}app.sheaft.com/#/details/stores/${store.id}" style="margin: 0">Voir le magasin</a>
+        <a class="mt-3 w-full mx-auto lg:mx-0 hover:underline bg-accent font-bold rounded-full my-1 py-1 px-2 shadow-lg text-white text-center" style="display: block; color: #ffffff !important;" target="_blank" href="https://${config.subdomain}app.sheaft.com/#/public/stores/${store.id}" style="margin: 0">Voir le magasin</a>
       </div>
         `)
     );
