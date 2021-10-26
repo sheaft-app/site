@@ -17,16 +17,16 @@
       img: "geoffrey.jpg"
     },
     {
+      name: "Fanny Mugnier",
+      title: "Développeuse",
+      linkedIn: "https://fr.linkedin.com/in/fmugnier",
+      img: "fanny.jpg"
+    },
+    {
       name: "Maëva Di Marino",
       title: "Community Manager",
       linkedIn: "https://fr.linkedin.com/in/maëva-di-marino-a08bb9129",
       img: "maeva.jpg"
-    },
-    {
-      name: "Fanny Mugnier",
-      title: "Support",
-      linkedIn: "https://fr.linkedin.com/in/fmugnier",
-      img: "fanny.jpg"
     },
     {
       name: "Mathilde Scelers",
