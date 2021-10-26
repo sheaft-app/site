@@ -57,11 +57,11 @@ import { config } from './../configs/config';
       </div>
     </div>
     <div class="w-full md:w-3/5 py-6 text-center">
-      <iframe title="YouTube" class="m-auto w-full lg:w-2/3" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" style="border-radius: 10px; box-shadow: 1px 1px 7px 2px rgba(0,0,0,0.4);" frameborder="0" allowfullscreen></iframe>
-      <!-- <img
+      <!-- <iframe title="YouTube" class="m-auto w-full lg:w-2/3" height="315" src="https://www.youtube.com/embed/AU6PrtmXN-U" style="border-radius: 10px; box-shadow: 1px 1px 7px 2px rgba(0,0,0,0.4);" frameborder="0" allowfullscreen></iframe> -->
+      <img
         class="w-full md:w-4/5 z-50 m-auto"
         src="img/shopping.svg"
-        alt="Shopper des produits locaux" /> -->
+        alt="Shopper des produits locaux" />
     </div>
 
   </div>
