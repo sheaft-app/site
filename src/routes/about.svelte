@@ -193,7 +193,7 @@
   </div>
 </div>
 
-<div id="story" class="relative bg-white text-xl">
+<!-- <div id="story" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
     <div class="flex items-center h-auto flex-wrap lg:mx-auto">
       <h4 class="text-2xl md:text-3xl font-bold mb-4 mt-4 md:mt-0 p-4" style="border: 3px solid #215163;">
@@ -216,7 +216,7 @@
       </div>  
     </div>
   </div>
-</div>
+</div> -->
 <div id="why-us" class="relative bg-white text-xl">
   <div class="container mx-auto px-6 py-6 relative">
     <div class="flex items-center h-auto flex-wrap lg:mx-auto">
