@@ -364,8 +364,14 @@ import { config } from './../configs/config';
             Vous êtes commerçant(e) ?
             <span class="bg-primary h-1 w-20 block mt-4" />
           </h4>
-        <p class="text-xl mb-4">Sheaft intègre dans sa première version des fonctionnalités pour vous aider à simplifier vos échanges avec les producteurs.</p>
-        <p class="text-xl mb-4">Pour en savoir plus, <a class="text-accent hover:underline" href="mailto:contact@sheaft.com" target="_blank">contactez-nous par mail</a> ou <a class="text-accent hover:underline" href="https://discord.gg/3Edpmh5P5r" target="_blank">posez-nous la question sur Discord</a>.</p>
+        <p class="text-xl mb-4">Sheaft intègre des fonctionnalités pour vous aider à trouver des producteurs, commander leurs produits rapidement et améliorer le suivi des documents.</p>
+        <a
+          class="mx-auto lg:mx-0 hover:underline bg-accent 
+          font-bold rounded-full my-6 py-4 px-8 shadow-lg text-white"
+          href="/shops"
+          target="_blank">
+          En savoir plus
+        </a>
       </div>
     </div>
   </div>
