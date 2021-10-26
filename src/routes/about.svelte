@@ -184,7 +184,7 @@
           l’apparition des prochaines et atténuer au maximum les dégâts si elles venaient à se produire.
         </p>
         <p class="text-xl text-gray-600 font-light text-justify">
-         Sheaft s'est écartée du profit pour être le moins possible dépendante des fluctuations économiques.
+         <!-- Sheaft s'est écartée du profit pour être le moins possible dépendante des fluctuations économiques. -->
          En période de crise, nous ne chercherons pas à sauver notre croissance mais à protéger les intérêts de toute notre communauté : producteurs et consommateurs.
         </p>
       </div>
