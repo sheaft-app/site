@@ -56,7 +56,7 @@
     "sapper": "^0.27.12",
     "sirv-cli": "^0.4.0",
     "stylelint-config-recommended": "^3.0.0",
-    "svelte": "^3.0.0",
+    "svelte": "^3.49.0",
     "svelte-preprocess": "^3.5.0",
     "tailwindcss": "^1.2.0"
   }
