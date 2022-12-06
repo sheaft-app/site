@@ -21,7 +21,7 @@
     "leaflet": "^1.6.0",
     "leaflet.markercluster": "^1.4.1",
     "polka": "next",
-    "qs": "^6.9.3",
+    "qs": "^6.9.7",
     "sirv": "^0.4.0"
   },
   "devDependencies": {
